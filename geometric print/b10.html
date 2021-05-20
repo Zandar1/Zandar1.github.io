@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // bai 1
+        function printTriangle (n){
+            if ( n < 2){
+                console.log("hay nhap so hop le")
+            }else{
+                var str = '';
+                for (var i=1; i <= n; i++ ){
+                    for (var j = 0; j < i ; j++){
+                        str += '*';
+                    }
+                    str += '\n';
+                }
+                console.log(str)
+            }
+        }
+
+        printTriangle (4)
+
+        //bai 2
+        function printEmptyRectangle (a,b){
+            if ( a < 3 || b < 3){
+                console.log("hay nhap so hop le")
+            }else{
+                var str = '';
+                for (var i = 1; i <= b ; i++){
+                    for (var j = 1 ; j <= a; j++){
+                        if (i === 1 || i === b || j === 1 || j === a){
+                            str += '*';
+                    } else {
+                        str += ' ';
+                    }
+                    }
+                    str += '\n';
+                }
+                console.log (str)
+            }
+        }
+        printEmptyRectangle(5,3)
+
+        // bai 3 
+        function printSpecialTriangle(n){
+            if ( n < 1 ){
+                console.log("hay nhap so hop le")
+            }else{
+                var str ='';
+                for (var i = 0; i < n; i++){
+                    for (var j = 0; j< i; j++){
+                        str += ' '; 
+                    }
+                    for (var k = 0; k < 2*(n-i)-1;k++){
+                        str += '*';
+                    }
+                    str += '\n'
+                }
+                console.log(str)
+            }
+        }
+
+        printSpecialTriangle(3)
+
+        // bai 4
+        function printX(n){
+            if ( n < 1 ){
+                console.log("hay nhap so hop le")
+            }else{
+                var str ='';
+                for (i = 0; i <n; i++){
+                    var j = n-1-i;
+                    for (k = 0; k < n; k++){
+                        if ( k == i || k == j){
+                            str += '*';
+                        }else {
+                            str += ' ';
+                        }
+                    }
+                str += '\n'
+                }
+            console.log(str)
+            }
+        }
+
+        printX(5)
+
+
+       // bai 5 
+        function printButterfly(n){
+            if ( n < 4 ){
+                console.log("hay nhap so hop le")
+            }else{
+                var str ='';
+                console.log(str)
+            }
+        } 
+
+        printButterfly(5)
+    </script>
+</body>
+</html>
