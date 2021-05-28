@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // bai 1
+        let isEmpty = (obj) => {
+            for(var key in obj) {
+                if(obj.hasOwnProperty(key))
+                    return false;
+                }
+                return true;
+            }
+        
+        let checkEmpty = isEmpty({width: 100,height:200})
+        let checkEmpty2 = isEmpty({})
+        console.log('checkEmpty :>> ', checkEmpty);
+        console.log('checkEmpty2 :>> ', checkEmpty2);
+        
+        // bai 2
+        let employee=[{name: 'nhan vien a', salary: 100}, {name: 'nhan vien b', salary: null}, {name: 'nhan vien c', salary: 300},{name:'nhan vien d', salary: 400}]
+        let total = employee.reduce(function(sum,value){
+            return sum + value.salary;
+        },0);
+        console.log('tong luong :>> ', total); 
+        // bai 4
+        const multiplyNumeric = (obj) => {
+            for (let key in obj) {
+                if (typeof obj[key] == 'number') {
+                obj[key] *= 2;
+                }
+            }
+            return obj
+        }
+
+        let menu= multiplyNumeric({
+            width: 200,
+            height: 300,
+            title: "My menu cafedev"
+        });
+        console.log('menu', menu);
+
+        //bai 6
+        let print = (arr) =>{
+            for ( i = 0; i<= arr.length -1;i++){
+                if (arr[i].parent != undefined){
+                    console.log(arr[i].title,'- co id la',arr[i].id,'- parent id la', arr[i].parent );
+                }else{
+                    console.log(arr[i].title,'- co id la',arr[i].id);
+                }
+            }
+        }
+        const check = print([{ title: '1234', id: 2 }, { title: 'day la ko la con cua id nao', id: 6 }, { title: 'ĐEN VÂU', parent: 6, id: 9 }, { title: 'xin chao các bạn', parent: 2, id: 3 }, { title: 'Một triệu like', parent: 6, id: 69 }])
+        // bai 7
+        const arrange = (arr) =>{
+            if (arr.length < 2){
+                alert('hay nhap mang hop le')
+            }else{
+                for ( i =0; i <= arr.length -1; i++){
+                    for (j = 0; j <= arr.length -1; j++){
+                        if ( arr[i] < arr[j]){
+                            let temp = arr[i]
+                            arr[i] = arr[j]
+                            arr [j] = temp
+                            }
+                        }
+                    }
+                }
+                
+                for (k = 0; k <= arr.length -1; k++){
+                    if (arr[k] < 0){
+                        for (l = 0; l<= arr.length -1; l++){
+                            if (arr[l] < 0){
+                                if (arr[k] > arr[l] ){
+                                    let nega = arr[k]
+                                    arr[k] = arr[l]
+                                    arr [l] = nega
+                                }
+                            }
+                        }
+                    }
+                }
+
+                for (m = 0; m <= arr.length -1; m++){
+                    if (arr[m] >= 0){
+                        for (n = 0; n< arr.length; n++){
+                            if (arr[n] >= 0){
+                                if (arr[m] > arr[n] ){
+                                    let posi = arr[m]
+                                    arr[m] = arr[n]
+                                    arr [n] = posi
+                                }
+                            }
+                        }
+                    }
+                }
+            return arr
+        }
+
+        let check_arr = arrange ([-4, 10 , 5, -7, 8, -1, 2, 1])
+        console.log('check_arr', check_arr);
+    </script>
+</body>
+</html>
