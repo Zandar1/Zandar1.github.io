@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //bai 1
+        let getTodayDate = (day) =>{
+            var weekday = ['SU','MO','TU','WE','TH','FR','SA'];
+            var showday = weekday[day.getDay()];
+            console.log('showday', showday);
+        } 
+
+        getTodayDate(new Date('06/20/2015'))
+        
+        //bai 2
+        let getDateAgo =(date, days)=>{
+            let FixDate = new Date(date);
+            FixDate.setDate(date.getDate() - days);
+            return FixDate.getDate();
+        }
+        let date = new Date(2015, 0, 2);
+
+        alert( getDateAgo(date, 1) ); // 1, (1 Jan 2015)
+        alert( getDateAgo(date, 2) ); // 31, (31 Dec 2014)
+        alert( getDateAgo(date, 365) ); // 2, (2 Jan 2014)
+        
+        //bai 3
+        let getLastDayofMonth =(year,month) =>{
+            console.log(new Date(year, month+1, 0).getDate());
+        }
+        getLastDayofMonth(2015,3)
+        getLastDayofMonth(2012,1)
+        getLastDayofMonth(2017,2)
+
+        // bai 4
+        let getSecondToTomorrow = () =>{
+            var now = new Date();
+            var tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1);
+            var diff = tomorrow.getTime() - now.getTime();
+            console.log('Amount of seconds until tomorrow is', diff);
+        }
+
+        getSecondToTomorrow()
+
+        //bai 6
+        let difference = (date1,date2) =>{
+            var difference_in_time = date2.getTime() - date1.getTime();
+            var difference_in_day = difference_in_time / (1000*3600*24);
+            console.log("Total number of days between dates", '\n' + date1, 'and', '\n'+ date2, "is" , '\n' +difference_in_day, 'days');
+        }
+
+        difference(new Date('06/30/2017'),new Date('03/23/2019'))
+    </script>
+</body>
+</html>
