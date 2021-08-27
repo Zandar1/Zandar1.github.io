@@ -1,0 +1,179 @@
+﻿productToCustomerServices.controller('ProductToCustomerController', ['$scope', 'ProductToCustomerService', /*'BidData', */
+	function ($scope, ProductToCustomerService/*, bidData*/) {
+		var P2Cvm = this;
+
+		P2Cvm.P2Cinit = {};//[];
+		//Prime both P2Ctypes with a show/hide flag
+		for (var ProductToCustomerType in ProductToCustomerService.ProductToCustomerProductsData) {
+			if (ProductToCustomerService.ProductToCustomerProductsData.hasOwnProperty(ProductToCustomerType)) {
+				// do stuff
+				P2Cvm.P2Cinit[ProductToCustomerType] = false;
+				//P2Cvm.P2Cinit.push({ ProductToCustomerType: ProductToCustomerType, Visible: false });//Initially hide..."lazy load = true" scenario
+			}
+		}
+		P2Cvm.collapse = function (productToCustomerType) {
+			var oldP2CinitStatus;
+			if (typeof productToCustomerType === 'undefined') {//If parameter undefined, assume we want to open Wishlists(if all closed) or close ALL
+				oldP2CinitStatus = [];
+				for (var ProductToCustomerType in ProductToCustomerService.ProductToCustomerProductsData)
+					if (ProductToCustomerService.ProductToCustomerProductsData.hasOwnProperty(ProductToCustomerType))
+						oldP2CinitStatus.push({ ProductToCustomerType: ProductToCustomerType, ProductToCustomerInitStatus: P2Cvm.P2Cinit[ProductToCustomerType] });
+
+
+				if (oldP2CinitStatus.filter(function(v) {return v.ProductToCustomerInitStatus === true;}).length == 0)//is all closed
+					productToCustomerType = 'Wishlist';//open Wishlists
+				else {//close All..
+					for (var ProductToCustomerType in ProductToCustomerService.ProductToCustomerProductsData)
+						if (ProductToCustomerService.ProductToCustomerProductsData.hasOwnProperty(ProductToCustomerType)) {
+							if (oldP2CinitStatus.filter(function (v) { return v.ProductToCustomerType === ProductToCustomerType })[0].ProductToCustomerInitStatus == true)//.. or leave closed
+							{
+								P2Cvm.P2Cinit[ProductToCustomerType] = false;
+								//reset promises if returning to visible false status
+								ProductToCustomerService.ClearCachedProductToCustomerProductsPromise(ProductToCustomerType, ProductToCustomerService.ProductToCustomerProductsRequestTypeEnum.ProductToCustomerFill);
+							}
+						}
+					return;//return early after "close all"
+				}
+			}
+			//else {//If parameter defined, assume we want to open it...
+			//If parameter defined, or weve defined it by assuming we want to open Wishlists then open it
+				/*var */oldP2CinitStatus = P2Cvm.P2Cinit[productToCustomerType];
+				if (oldP2CinitStatus == false)//.. or leave open
+					P2Cvm.P2Cinit[productToCustomerType] = true;//!P2Cvm.P2Cinit[productToCustomerType];
+			//}
+		};
+	}
+]);
+
+productToCustomerServices.directive('onFinishRender', ['$timeout', '$parse', function ($timeout, $parse) {
+	return {
+		restrict: 'A',
+		link: function (scope, element, attr) {
+			if (scope.$last === true) {
+				$timeout(function () {
+					scope.$emit('ngRepeatFinished');
+					if (!!attr.onFinishRender) {
+						$parse(attr.onFinishRender)(scope);
+					}
+				});
+			}
+		}
+	}
+}])
+
+productToCustomerServices.directive('productToCustomerCarousel', ['ProductToCustomerService', '$window',
+	function (ProductToCustomerService, $window) {
+		return {
+			restrict: 'A',
+			//replace: true,
+			transclude: false,
+			scope: {
+				prodToCustRelType: "@",
+				prodToCustInit: "="
+			},
+			templateUrl: '/productToCustomer/template/ProductToCustomerItems',
+			controller: function ($scope) {
+				$scope.Remove = function (prodToCustRelType, prod) {
+					$window.ga('send', 'event', $scope.prodToCustRelType, $scope.prodToCustRelType + ' Bar', 'Remove from ' + $scope.prodToCustRelType); //This would log a GA Event
+					ProductToCustomerService.RemoveProductToCustomerProduct(prodToCustRelType, prod).then/*.success*/(function (data) {
+						if (data.Success) {
+							//ProductToCustomerService.SetProductToCustomerProductsData('Wishlist', data.P2CList);
+						}
+						else
+							console.log('There was a problem removing this P2C relationship');
+						//$scope.prodToCustItems = ProductToCustomerService.ProductToCustomerProductsData[prodToCustRelType];
+					});
+				}
+				$scope.ReloadCarousel = function () {
+					//var container = $(element);
+					//var carousel = container.children('.jcarouselwishlist')
+					var carousel = $('.jcarouselwishlist');
+					carousel.jcarousel('reload');
+				}
+
+				$scope.GetCurrency = function (CurrencyCode) {
+					return (CurrencyCode != null && CurrencyCode == "GBP") ? "p" : "e";
+				};
+				$scope.prodToCustItems = null;
+				/*$scope.prodToCustItems = [
+					{
+						Availability: "/Date(1533078000000)/", BrandName: null, BuyButton: "CanBuyOnline", CurrencyCode: "GBP", Discontinued: false, DisplayPriceWithCurrency: "OQBZAF0AWgAdAD0AZgAFAHoA0",
+						FreeDelivery: true, ImageFileName: "FOL076923_1_4062338_LargeThumbnail.jpg", ImageFileVer: 2, Price: "OQBZAF0AWgAdAD0AZgAFAHoA0", ProductID: 776619, RRPPrice: "£399.97", SavingPrice: "OQBZAF0AWgAeADQAbwAMAH0A0",
+						ShowLightBoxOnBuyAction: true, StockCode: "FOL076923", URL: "merlin-study-bunk-in-beech_34822", WebTitle: "Seconique Merlin Study Mid Sleeper in Oak Effect",
+						displayPriceImageURL: "/ShowPrice?s=15&amp;c=p&amp;col=rgb000000&amp;f=arial&amp;sd=0&amp;o=OQBZAF0AWgAdAD0AZgAFAHoA0",
+						imageFullFileName: "/Images/FOL076923_1_4062338_LargeThumbnail.jpg?v=2&amp;width=125&amp;height=125&amp;switchoff=enabled"
+					}
+				];*/
+			},
+			link: function link(scope, element, attrs) {
+				var container = $(element);
+				var carousel = container.children('.jcarouselwishlist')
+
+				carousel.jcarousel();
+
+				scope.$watch(function () {
+					// do i need to add to prodToCustInit array for cases where initition is invoked not from the click.
+					return ProductToCustomerService.ProductToCustomerProductsData[attrs.prodToCustRelType].Data;//ProductToCustomerService.GetProductToCustomerProducts/*Data*/(attrs.prodToCustRelType);
+				},
+				function (newVal, oldVal, scope) {
+						if (scope.prodToCustInit)//if open
+					if (newVal) {
+						if (newVal.Success) {
+							//ProductToCustomerService.SetProductToCustomerProductsData(attrs.prodToCustRelType, data.P2CList);
+							scope.prodToCustItems = newVal.P2CList;//ProductToCustomerService.ProductToCustomerProductsData[attrs.prodToCustRelType];
+							//carousel.jcarousel('reload');
+						}
+						//$window.setTimeout(function () { console.log('gonna reload'); carousel.jcarousel('reload'); }, 1000);
+						//carousel.jcarousel('reload');
+					}
+				});
+
+				/*scope.$watch(scope.prodToCustItems, function (value) {
+					carousel.jcarousel('reload');
+				});*/
+
+				scope.$watch('prodToCustInit', function (newValue, oldValue) {
+					//if (newValue) {
+						//Set service fill parameter...
+						ProductToCustomerService.SetProductToCustomerProductsRequestTypeStatus(attrs.prodToCustRelType,/* implicit cast + */+newValue/*ProductToCustomerService.ProductToCustomerProductsRequestTypeEnum.ProductToCustomerFill*/);//Then set the service to start returning product data(rather than just ids)..."lazy load = true" scenario
+
+						if (newValue/* == true*/) {//if prodToCustRelType has just been initialised(added via ngclick collapse)
+							ProductToCustomerService.GetProductToCustomerProducts(attrs.prodToCustRelType)/*.then(function (data) {//then retrieve p2C data(lazy)
+								if (data.Success) {
+									scope.prodToCustItems = data.P2CList;//ProductToCustomerService.ProductToCustomerProductsData[attrs.prodToCustRelType];
+								}
+							})*/;
+						}
+					//}
+				});
+
+//				scope.$watch('prodToCustInit', function (newValue, oldValue) {
+//					if (newValue.indexOf(attrs.prodToCustRelType) > -1 && oldValue.indexOf(attrs.prodToCustRelType) == -1) {//if prodToCustRelType has just been initialised(added via ngclick collapse) AND not already added
+//						ProductToCustomerService.GetProductToCustomerProducts(attrs.prodToCustRelType).then/*.success*/(function (data) {//then retrieve p2C data(lazy)
+							//for (var i = 0; i < data/*.ProductToCustomerRelationshipItem*/.length; i++) {
+							//	if (data/*.ProductToCustomerRelationshipItem*/[i]/*.ProductID*/ == wishlistAmendCtrl.productID) {
+							//		wishlistAmendCtrl.IsInWishList = true;
+							//		break;
+							//	}
+							//}
+//							if (data.Success) {
+								//ProductToCustomerService.SetProductToCustomerProductsData(attrs.prodToCustRelType, data.P2CList);
+//								scope.prodToCustItems = data.P2CList;//ProductToCustomerService.ProductToCustomerProductsData[attrs.prodToCustRelType];
+								//carousel.jcarousel('reload');
+//							}
+//						});
+//					}
+//				}, true/*true will watch the array collection*/);
+
+				container.find('.jcarouselwishlist-control-prev')
+				.jcarouselControl({
+					target: '-=1'
+				});
+
+				container.find('.jcarouselwishlist-control-next')
+				.jcarouselControl({
+					target: '+=1'
+				});
+			}
+		};
+	}]);

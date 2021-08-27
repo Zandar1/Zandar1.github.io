@@ -1,0 +1,121 @@
+﻿bundleServices.directive('myhero', function() {
+	return {
+		restrict : 'A',
+		/*replace : true,*/
+		scope: {
+			myhero: '@',
+			isPrimaryBundleSeparate: '@'
+
+		},
+		link : function(scope, elem, attrs) {
+			//alert(scope.index);
+			if (scope.isPrimaryBundleSeparate)
+			{
+				if(scope.myhero == 0)
+				{
+					$('div#ultpackage').append(elem);
+					$('div#ultpackage').show();
+				} else if(scope.myhero == 1)
+				{
+					$('span#ultpackagespan').after('<a id="ultpackagelink" href="#bundleEngine" target="_self" onclick="ShowTab($(\'#mainnav a[href=&quot;#bundleEngine&quot;]\').parent().index())">See more great deals</a>');
+				}
+			}
+		}
+	}
+});
+
+bundleServices.directive('fancybox3', function(){
+	return {
+		restrict: 'A',
+
+		link: function(scope, element, attrs){
+			$(element).fancybox({
+				onComplete: function (instance, slide) { /*console.log('onComplete');*/ /*compile angular in fancybox product pop up (for bundles and availability and wishlists/recently viewed to work in fancybox*/MyBIDAngularUtils.helpers.compileAngularElement('.qv-wrapper'); ProductMiniLoadScripts(); }/*,
+				afterLoad: function () { console.log('afterload');ProductMiniLoadScripts();}*/
+			});
+		}
+	}
+});
+
+bundleServices.directive('isLoaded', function (){
+	return{
+		scope:false, //don't need a new scope
+		restrict: 'A', //Attribute type
+		link: function (scope, elements, arguments){ 
+			if (scope.$last) {
+				scope.$emit('content-changed');
+				console.log('page Is Ready!');
+			}
+		}   
+	}
+})
+    	
+bundleServices.directive('carousel', function(){
+	return {
+		restrict: 'A',
+		replace: true,
+		transclude: false,
+		scope: {
+			bundle: "="
+		},
+		templateUrl: '/SiteContent/templates/CarouselBundleRow.html',
+		controller: function($scope) {
+			$scope.GetFancyBoxURL = function(bundleProductID) {
+				return '/Version/ProductMini/' + bundleProductID;
+			};
+			$scope.visibleBundleLine = function(bundles) {
+				return bundles.Visible;
+			}
+		},
+		link: function link(scope, element, attrs) {
+			scope.$on('content-changed', function() {
+				new Swiper(element, {
+					navigation: {
+						nextEl: element.find('.swiper-button-next'),
+						prevEl: element.find('.swiper-button-prev')
+					},
+					slidesPerView: 3
+				});
+			});
+		}
+	};
+});
+
+bundleServices.controller('BundleController',
+	['$scope', 'BundleService',
+	function ($scope, BundleService) {
+		$scope.init = function (isPrimaryBundleSeparate, bundleItemsPerLine) {
+			$scope.isPrimaryBundleSeparate = isPrimaryBundleSeparate;
+			$scope.bundleItemsPerLine = bundleItemsPerLine;
+		};
+
+		$scope.showallbundles = false;
+
+		$scope.ShowMoreBundles = function(showallbundles) {
+			$scope.showallbundles = showallbundles;
+		}
+
+		function loadBundles() {
+			$scope.bundles = null;
+			BundleService.GetBundles(/*$scope.productid*/).then(function (resp) {
+				$scope.bundles = resp.data;
+				if (resp.data.length > 0) {
+					if (resp.data.length > $scope.isPrimaryBundleSeparate) {
+						$('#bundles_header').show();
+						$('#bundleAngular').show();
+						//ShowTab(1);
+					}
+				$('#ultpackage').show();
+			}
+			}, function(resp) {
+				console.log(resp.statusText);
+				// called asynchronously if an error occurs
+				// or server returns response with an error status.
+				//ShowTab(1);
+			});
+		}
+
+		// initial table load
+		loadBundles();
+	}]
+);

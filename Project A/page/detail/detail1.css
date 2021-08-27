@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrap-info{
+  display: flex;
+  margin: 20px 112px 0 112px;
+}
+/*--------------------------------------------------------------Picture-left--------------------------------------------------------------*/
+.product-small-img{
+    display: flex;
+    
+}
+
+.product-small-img img{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    display: block;
+    margin: 0 20px 0 0;
+    border: 1px solid #CECECE;
+}
+
+.product-small-img img:hover{
+    border: 1px solid black;
+    opacity: 70%;
+}
+.img-container img{
+    height: 478px;
+    width: 664px;
+    cursor: pointer;
+}
+
+.product-gallery{
+    margin: 0px 20px 0 0;
+    width: 729px;
+    height: 712px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+
+.guide img{
+  background-color: white
+}
+
+.guide{
+  margin-bottom: 8px;
+}
+
+
+/*--------------------------------------------------------------Product info right--------------------------------------------------------------*/
+.fa-fire{
+  color: red;
+}
+
+.col-12.col-lg-6.col-sm-12{
+  margin-left: 20px;
+  width: 547px;
+}
+
+
+.name-product{
+  font-family: Crimson Text;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 36px;
+  margin-top: 5px;
+}
+
+.right-detail{
+  margin-left: 8px;
+}
+.discount-title{
+  font-family: Crimson Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+  color: #F71212;
+}
+
+.saving{
+  font-family: Crimson Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #524D4D;
+}
+
+.price{
+  font-family: Crimson Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 50px;
+  color: #FB4E4E;
+}
+
+.add-button{
+  background-color: #18B40C;
+  border-radius: 5px;
+  width: 243px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Crimson Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-top: 12px
+}
+
+.add-button:hover{
+  background-color: #1FBE13;
+}
+
+.fa-check{
+  color: #00C02B;
+}
+
+.fa-chevron-double-right{
+  font-size: 15px;
+  padding-left: 4px;
+}
+
+.price-box{
+  display: flex;
+  margin-top: 20px;
+}
+
+.price-tag{
+  margin-right: 88px;
+}
+
+.availability{
+  margin-bottom: 4px;
+}
+
+.availability span, .deliver span{
+  font-family: Crimson Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.right-detail{
+  border-bottom: 1px solid #C5C5C5;
+  padding-bottom: 8px;
+}

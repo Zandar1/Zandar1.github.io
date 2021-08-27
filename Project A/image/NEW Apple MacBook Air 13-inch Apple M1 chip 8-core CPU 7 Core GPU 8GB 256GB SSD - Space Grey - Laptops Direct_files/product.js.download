@@ -1,0 +1,507 @@
+/*function addExtra(theForm, theElementNum)
+{
+theElement = "checkbox" + theElementNum;
+quantity = "Q" + theElementNum;
+if ( document.getElementById(theElement).checked==true )
+	{
+      theForm.numLineCount.value = parseInt(theForm.numLineCount.value) + 1;
+      document.getElementById(quantity).value = 1;
+    }
+else
+	{
+      theForm.numLineCount.value = parseInt(theForm.numLineCount.value) - 1;
+      document.getElementById(quantity).value = 0;
+	}	
+}
+
+    $(document).ready(function () {
+    	$('#otheritemscarousel > div.jcarousel').jcarousel({ animation: 750 });
+
+    	//$('#swatchCarousel > div.jcarousel').jcarousel();
+
+    	$('#otheritemscarousel > div.jcarousel-control-prev')
+            .on('jcarouselcontrol:active', function() {
+                $(this).removeClass('inactive');
+            })
+            .on('jcarouselcontrol:inactive', function() {
+                $(this).addClass('inactive');
+            })
+            .jcarouselControl({
+                target: '-=3'
+            });
+
+    	$('#otheritemscarousel > div.jcarousel-control-next')
+            .on('jcarouselcontrol:active', function() {
+                $(this).removeClass('inactive');
+            })
+            .on('jcarouselcontrol:inactive', function() {
+                $(this).addClass('inactive');
+            })
+            .jcarouselControl({
+                target: '+=3'
+            });
+
+		$('#otheritemscarousel').on('jcarousel:scroll', function(event, carousel, target, animate) {
+			// "this" refers to the root element
+			// "carousel" is the jCarousel instance
+			// "target" is the target argument passed to the `scroll` method
+			// "animate" is the animate argument passed to the `scroll` method
+		    //      indicating whether jCarousel was requested to do an animation
+		    if (typeof ga != 'undefined') {
+		        var carouselevent = 'arrows';
+		        if (typeof target === 'string')
+		            if (target.indexOf('+=') == 0)
+		                carouselevent = 'next arrow';
+		            else
+                        carouselevent = 'previous arrow';
+                ga('send', 'event', 'range carousel', carouselevent);
+		    }
+		});
+    });
+
+*/
+function addPDI(theForm, theElementNum) {
+    quantity = "Q" + theElementNum;
+    theForm.numLineCount.value = parseInt(theForm.numLineCount.value) + 1;
+    document.getElementById(quantity).value = 1;
+}
+
+// redirect click on dummy button to main addtobasket
+function redirectDummyAddToBasketClick(dummyAddToBasketButtonObj) {
+    var dummyAddToBasketButton = $(dummyAddToBasketButtonObj);
+    //Find quantity selected(input field relative to dummy add to basket button clicked)
+    var dummyQuantityFieldVal = $(dummyAddToBasketButtonObj).parents('div.fixed-basket').find(":input[name='items[0].Quantity']").val();
+    //Populate actual quantity selected
+    $('form#form0').find(":input[name='items[0].Quantity']").val(dummyQuantityFieldVal);
+    //invoke main add to basket button click
+    $("#addtobasket").trigger("click");
+}
+
+// Moves selected Item elements into Basket submission form
+function addRelatedProduct(productID, Qty, lineID, checked, relationTypeID, originType) {
+    var elementCount = $('#relatedItemsAddedhidden :input[name$=ProductId]').length + 1;
+
+    //var lineID = '@lineID';
+
+    if (checked) {
+        if ($('#relatedItemsAddedhidden :input[value=' + productID + ']').length == 0) {
+            $('<input>').attr({ id: elementCount + "_" + '0', type: 'hidden', name: 'items[' + elementCount + '].ProductId', value: '' + productID + '' }).appendTo('#relatedItemsAddedhidden');
+            $('<input>').attr({ id: elementCount + "_" + '1', type: 'hidden', name: 'items[' + elementCount + '].Quantity', value: '' + Qty + '' }).appendTo('#relatedItemsAddedhidden');
+            $('<input>').attr({ id: elementCount + "_" + '2', type: 'hidden', name: 'items[' + elementCount + '].LineID', value: '' + lineID + '' }).appendTo('#relatedItemsAddedhidden');
+
+            var seq = 3;
+            if (relationTypeID) {
+                var relatedLineId = $("input[name='items[0].LineID']").val();
+                $('<input>').attr({ id: elementCount + "_" + seq++, type: 'hidden', name: 'items[' + elementCount + '].RelatedLineId', value: '' + relatedLineId + '' }).appendTo('#relatedItemsAddedhidden');
+                $('<input>').attr({ id: elementCount + "_" + seq++, type: 'hidden', name: 'items[' + elementCount + '].RelationType', value: relationTypeID }).appendTo('#relatedItemsAddedhidden');
+            }
+
+            if (originType) {
+                $('<input>').attr({ id: elementCount + "_" + seq, type: 'hidden', name: 'items[' + elementCount + '].OriginType', value: '' + originType + '' }).appendTo('#relatedItemsAddedhidden');
+            }
+        }
+    }
+    else {
+        // Remove item element 
+        var idToDelete = $('#relatedItemsAddedhidden :input[value=' + productID + ']').attr('id').split('_')[0];
+        $('#relatedItemsAddedhidden :input[id^=' + idToDelete + '_]').remove();
+
+        // Re-order
+        var c = 1;
+        $('#relatedItemsAddedhidden :input[name$=ProductId]').each(function () {
+            $(this).attr('name', 'items[' + c + '].ProductId');
+            c++;
+        });
+        c = 1;
+        $('#relatedItemsAddedhidden :input[name$=Quantity]').each(function () {
+            $(this).attr('name', 'items[' + c + '].Quantity');
+            c++;
+        });
+        c = 1;
+        $('#relatedItemsAddedhidden :input[name$=LineID]').each(function () {
+            $(this).attr('name', 'items[' + c + '].LineID');
+            c++;
+        });
+        c = 1;
+        $('#relatedItemsAddedhidden :input[name$=RelatedLineId]').each(function () {
+            $(this).attr('name', 'items[' + c + '].RelatedLineId');
+            c++;
+        });
+        c = 1;
+        $('#relatedItemsAddedhidden :input[name$=RelationType]').each(function () {
+            $(this).attr('name', 'items[' + c + '].RelationType');
+            c++;
+        });
+        c = 1;
+        $('#relatedItemsAddedhidden :input[name$=OriginType]').each(function () {
+            $(this).attr('name', 'items[' + c + '].OriginType');
+            c++;
+        });
+    }
+
+}
+
+
+function addChildProduct(productID, Qty, lineID, relationType, checked, originType) {
+
+    productID = $.trim(productID);
+    var elementCount = $('#relatedItemsAddedhidden :input[name$=ProductId]').length + 1;
+
+    var relatedLineID = $('input[name$=LineID]').val();
+    var newQty = $('select[name$=Quantity]').val();
+
+    if (newQty > 0)
+        Qty = newQty;
+
+    //if ($('#relatedItemsAddedhidden :input[value=' + productID + ']').length == 0) {
+    if (checked) {
+        $('<input>').attr({ id: elementCount + "_" + '0', type: 'hidden', name: 'items[' + elementCount + '].ProductId', value: '' + productID + '' }).appendTo('#relatedItemsAddedhidden');
+        $('<input>').attr({ id: elementCount + "_" + '1', type: 'hidden', name: 'items[' + elementCount + '].Quantity', value: '' + Qty + '' }).appendTo('#relatedItemsAddedhidden');
+        $('<input>').attr({ id: elementCount + "_" + '2', type: 'hidden', name: 'items[' + elementCount + '].LineID', value: '' + lineID + '' }).appendTo('#relatedItemsAddedhidden');
+        $('<input>').attr({ id: elementCount + "_" + '3', type: 'hidden', name: 'items[' + elementCount + '].RelationType', value: '' + relationType + '' }).appendTo('#relatedItemsAddedhidden');
+        $('<input>').attr({ id: elementCount + "_" + '4', type: 'hidden', name: 'items[' + elementCount + '].RelatedLineId', value: '' + relatedLineID + '' }).appendTo('#relatedItemsAddedhidden');
+        $('<input>').attr({ id: elementCount + "_" + '5', type: 'hidden', name: 'items[' + elementCount + '].OriginType', value: originType }).appendTo('#relatedItemsAddedhidden');
+    }
+    else {
+        // Remove item element 
+        var idToDelete = $('#relatedItemsAddedhidden :input[value=' + productID + ']').attr('id').split('_')[0];
+        $('#relatedItemsAddedhidden :input[id^=' + idToDelete + '_]').remove();
+
+        // Re-order
+        var c = 1;
+        $('#relatedItemsAddedhidden :input[name$=ProductId]').each(function () {
+            $(this).attr('name', 'items[' + c + '].ProductId');
+            c++;
+        });
+        c = 1;
+        $('#relatedItemsAddedhidden :input[name$=Quantity]').each(function () {
+            $(this).attr('name', 'items[' + c + '].Quantity');
+            c++;
+        });
+        c = 1;
+        $('#relatedItemsAddedhidden :input[name$=LineID]').each(function () {
+            $(this).attr('name', 'items[' + c + '].LineID');
+            c++;
+        });
+        c = 1;
+        $('#relatedItemsAddedhidden :input[name$=RelationType]').each(function () {
+            $(this).attr('name', 'items[' + c + '].RelationType');
+            c++;
+        });
+        c = 1;
+        $('#relatedItemsAddedhidden :input[name$=RelatedLineId]').each(function () {
+            $(this).attr('name', 'items[' + c + '].RelatedLineId');
+            c++;
+        });
+        c = 1;
+        $('#relatedItemsAddedhidden :input[name$=OriginType]').each(function () {
+            $(this).attr('name', 'items[' + c + '].OriginType');
+            c++;
+        });
+    }
+}
+
+
+function CheckDeliveryServices(prodID, isColPlusAvail, deliveryType, logGetDelServ,currencyCode) {
+ 
+    var userPostcode = $('#delOptPostcode').val().replace(/[^\w\s]/g, "");
+    var currencySymbol = '';
+    if (currencyCode == 'GBP') {
+        currencySymbol = "&pound;";
+    }
+    else if (currencyCode == 'EUR') {
+        currencySymbol = "&euro;";
+    }
+    // set the cookie
+    $.cookie('delOptPostcode', userPostcode, { expires: 365, path: '/' });
+	//var prodID = $('input[name$=ProductId]').val();Joe...dont take off Q&A tab as dependent on Q&A tab being visible!
+	if (userPostcode.length == 0) {
+		$('#delOptPostcode').animate({ backgroundColor: "#FFADAD" }, 600, function () { $('#delOptPostcode').animate({ backgroundColor: "#ffffff" }, 700) });
+		return;
+	}
+
+	$("#delOptProgress").show();
+	$("#delOptbtn").hide();
+	$('#delOptList > li').remove();
+
+	var logStartTime = new Date();
+	var logTimeDiff, logErrorMsg, logFoundBrowser = 0;
+
+	$.ajax({
+		type: "POST",
+		url: "/basket/GetDeliveryServices",
+		traditional: true,
+		data: { country: "UK", postcode: userPostcode, productID: [prodID], productQty: [1] },
+		dataType: "json"
+	})
+    .done(function (data,request) {
+        if (data.Services != null) {
+            //if success and postcode returned results to browser
+            logFoundBrowser = 1;
+            
+            var len = data.Services.length;
+            for (i = 0; i < len; i++) {
+                var priceDisplay = data.Services[i].Price.PriceDisplay == 0 ? 'FREE' : currencySymbol + data.Services[i].Price.PriceDisplay.toFixed(2);
+                var txt = '<li style="padding-bottom: 10px;">' + data.Services[i].WebTitle + ' - <b>' + priceDisplay + '</b>' + '</li>';
+                $('#delOptList').append(txt);
+            }
+        }
+
+    	if (isColPlusAvail == "Available") {
+    		var txt = '<li style="padding-bottom: 10px;">Collect from over 5,000 collection points - <b>from &pound;3.95</b></li>';
+    		$('#delOptList').append(txt);
+    	}
+
+    	if (data.Services != null) {
+    	    if (deliveryType == "2 man delivery") {
+    	        var txt = '<li class="delpoint">You will be given a time slot the day before delivery</li>' +
+                    '<li class="delpoint">Our delivery team will take your item into a room of your choice, however we cannot take up or down stairs</li>' +
+                    '<li class="delpoint">We&#39;ll also unpack your item so you can inspect it & take away the packaging</li>' +
+                    '<li class="delpoint">If you are ordering a very large product, such as a range cooker or American fridge freezer, then please ensure your doorway is wide enough to fit it through &#45; if not our carriers are happy to deliver it to your front door or garage</li>';
+
+    	        $('#delOptList').append(txt);
+    	    }
+    	}
+    	
+    	$("#delOptList").each(function () {//if no results(div empty) then report to user
+    		if ($.trim($(this).html()) == '')
+    			$(this).append('<li style="padding-bottom: 10px;"><b>Unfortunately we cannot locate your postcode.</b></li>');
+    	});
+    }).fail(function (request, status, error) {
+        //log the error message
+        logErrorMsg = status + ': ' + error;
+
+    	$('#delOptList').append('<li style="padding-bottom: 10px;"><b>Problem occurred when checking delivery options, please try again or call our customer service.</b></li>');
+    }).always(function () {
+    	$("#delOptProgress").hide();
+    	$("#delOptbtn").show();
+
+        //log getdeliveryservices only if enabled in app settings
+    	if (logGetDelServ) {
+    	    //browser response time
+    	    logTimeDiff = new Date() - logStartTime;
+    	    LogGetDeliveryServices(userPostcode, logFoundBrowser, logTimeDiff, logErrorMsg);
+    	}
+    });
+};
+
+function LogGetDeliveryServices(postcode, logFoundBrowser, logTimeDiff, logErrorMsg) {
+
+    $.ajax({
+        type: "POST",
+        url: "/basket/LogGetDeliveryServices",
+        traditional: true,
+        data: { postcode: postcode, foundBrowser: logFoundBrowser, browserTime: logTimeDiff, errorMessage: logErrorMsg },
+        dataType: "json"
+    });
+}
+
+/*
+function PopUpPriceMatch(phonenumber) {
+    if ($("#PriceMatchPopUp").length == 0) {
+        $("#ProductTitle").append("<div id='PriceMatchPopUp' style='display: none'><div id='PopUpHead'><i class='icon-pricematch'></i><h3>Need some help?</h3></div><div id='PopUPbody'><p>Call our expert team on<span>" + phonenumber + "</span>for help and advice.</p></div></div>");
+    }
+    $("#PriceMatchPopUp").show(20);
+
+    var hostnameNowww = window.location.hostname.replace(/^(?:[a-z0-9\-\.]+\.)??([a-z0-9\-]+)(\.com|\.ie|\.co\.uk)$/, '$1$2');
+    //Exclude this behaviour from Debenhams Plus
+    if (hostnameNowww !== 'debenhamsplus.com')
+        document.title = "We price match!";
+    setTimeout(function () {
+        $("#PriceMatchPopUp").hide(250);
+        //document.title = title;
+    }, 3000);
+
+}
+*/
+
+function AddItemToBasketFromLightBox(productID, originType, relatedLineID, lineRelationType) {
+    $("#overlay_" + productID).show();
+    $("#addOndiv_" + productID).css("opacity", 0.3);
+    $.ajax({
+        url: '/Basket/AddItemToBasketFromLightBox',
+        data: $.param({ productID: productID, source: originType, relatedLineID: relatedLineID, lineRelationType: lineRelationType }, true),
+        success: function (data) {
+            if (data.Status == "Success") {
+                $('#addToBas_' + productID).hide();
+                $('#addtoBasDis_' + productID).show();
+                $('.addtosummarytotal').html('<span>Basket Total: </span>' + data.Financials.DocumentPrice.Currency.Symbol + data.Financials.DocumentPrice.PriceDisplay);
+                $('.basket-icon').html('<span>' + data.Products.length + '</span>');
+            }
+        },
+        complete: function () {
+            $("#overlay_" + productID).hide();
+            $("#addOndiv_" + productID).css("opacity", 1);
+        }
+    })
+}
+
+function AttachProductPageMini(hangDialogOffThisPegSelector, ProductId) {
+    hangDialogOffThisPegSelector.append($loading).load('/Version/ProductMini/' + ProductId).dialog({
+        minHeight: 500,
+        height: 'auto',
+        width: 1033,
+        autoOpen: false,
+        modal: true,
+        closeOnEscape: true,
+        resizable: false,
+        dialogClass: 'dialogTitle',
+        draggable: false,
+        zIndex: 10000,
+        stack: false,
+        open: function () {
+            $("#ui-dialog-title-dialog").hide();
+            $(".ui-dialog-titlebar").removeClass('ui-widget-header');
+            $(".ui-widget-overlay").css('opacity', 0.9);
+
+            //to change the close icon
+            $(".ui-dialog .ui-dialog-titlebar-close").addClass('titlebarclose');
+            $(".ui-dialog-titlebar-close .ui-icon").addClass('closeicon');
+            $(".ui-icon-closethick").addClass('closethick');
+
+            $('.ui-widget-overlay').bind('click', function (event) {
+                hangDialogOffThisPegSelector.dialog('close');
+            });
+        },
+        close: function () {
+            //clear the dialog div on close
+            hangDialogOffThisPegSelector.html("");
+            $(".ui-widget-overlay").css('opacity', 0.5);
+            $('.ui-widget-overlay').unbind("click");
+            ga('send', 'event', 'QuickView', 'quick view – close');
+        }
+    });
+
+    $(window).scroll(function () { hangDialogOffThisPegSelector.dialog('option', 'position', 'center'); });
+
+    hangDialogOffThisPegSelector.dialog('open');
+}
+
+function SlidetoDivFromFancyBox(div) {
+
+    
+        div.collapsible({
+            expand: function (event, ui) {
+
+                if ($(".fancybox-slide").length > 0) {
+                    $(".fancybox-slide").animate({
+                        //scrollTop: div.position().top + 50
+                        scrollTop: div.position().top + $("#ProductTitle").position().top
+                        
+                    }, 2000);
+                }
+                else {
+                 
+                    $(window).scrollTop(div.offset().top);
+                 
+                }
+            }
+        });
+
+        //div.offset().top;
+        div.collapsible("expand");
+   
+}
+
+/***START Hydrate JSON-LD object***/
+function hydrateJSONLDObject() {
+	var jsonall = {};
+	$('script[type="application/ld+json"]').each(function () {
+		var jsonsnippet = JSON.parse($(this).html());
+		jsonall = deepmerge(jsonall, jsonsnippet);
+	});
+	return jsonall;
+}
+
+//Start DEEP MERGE utility https://davidwalsh.name/javascript-deep-merge
+function isMergeableObject(val) {
+	var nonNullObject = val && typeof val === 'object'
+
+	return nonNullObject
+        && Object.prototype.toString.call(val) !== '[object RegExp]'
+        && Object.prototype.toString.call(val) !== '[object Date]'
+}
+
+function emptyTarget(val) {
+	return Array.isArray(val) ? [] : {}
+}
+
+function cloneIfNecessary(value, optionsArgument) {
+	var clone = optionsArgument && optionsArgument.clone === true
+	return (clone && isMergeableObject(value)) ? deepmerge(emptyTarget(value), value, optionsArgument) : value
+}
+
+function defaultArrayMerge(target, source, optionsArgument) {
+	var destination = target.slice()
+	source.forEach(function (e, i) {
+		if (typeof destination[i] === 'undefined') {
+			destination[i] = cloneIfNecessary(e, optionsArgument)
+		} else if (isMergeableObject(e)) {
+			destination[i] = deepmerge(target[i], e, optionsArgument)
+		} else if (target.indexOf(e) === -1) {
+			destination.push(cloneIfNecessary(e, optionsArgument))
+		}
+	})
+	return destination
+}
+
+function mergeObject(target, source, optionsArgument) {
+	var destination = {}
+	if (isMergeableObject(target)) {
+		Object.keys(target).forEach(function (key) {
+			destination[key] = cloneIfNecessary(target[key], optionsArgument)
+		})
+	}
+	Object.keys(source).forEach(function (key) {
+		if (!isMergeableObject(source[key]) || !target[key]) {
+			destination[key] = cloneIfNecessary(source[key], optionsArgument)
+		} else {
+			destination[key] = deepmerge(target[key], source[key], optionsArgument)
+		}
+	})
+	return destination
+}
+
+function deepmerge(target, source, optionsArgument) {
+	var array = Array.isArray(source);
+	var options = optionsArgument || { arrayMerge: defaultArrayMerge }
+	var arrayMerge = options.arrayMerge || defaultArrayMerge
+
+	if (array) {
+		return Array.isArray(target) ? arrayMerge(target, source, optionsArgument) : cloneIfNecessary(source, optionsArgument)
+	} else {
+		return mergeObject(target, source, optionsArgument)
+	}
+}
+
+deepmerge.all = function deepmergeAll(array, optionsArgument) {
+	if (!Array.isArray(array) || array.length < 2) {
+		throw new Error('first argument should be an array with at least two elements')
+	}
+
+	// we are sure there are at least 2 values, so it is safe to have no initial value
+	return array.reduce(function (prev, next) {
+		return deepmerge(prev, next, optionsArgument)
+	})
+}
+/***END Hydrate JSON-LD object***/
+
+
+/***Make Reevoo Ask an owner  embedded reviews invisible/visible dependent on if there are any reviews ***/
+function enableDisableRevooAskAnOwner() {
+  //  $('#reevoo-conversations-reviews').on("DOMSubtreeModified", function () {
+        document.getElementById('reevoo-conversations-reviews').addEventListener('ready', function (e) {
+            if ($("#reviews").length == 0 || $("#reevoo-conversations-reviews").length ==0) {
+                //if ($("#reevoomark > div").hasClass('embedded no-reviews')) {
+                    $('#reevoo-conversations').hide();
+                    $('#ProductAskanOwner h2').hide();
+                    $('#ProductAskanOwner').css("display", "none");             
+            }
+            else {
+                   $('#reevoo-conversations').show();
+                    $('#ProductAskanOwner h2').show();
+                    $('#ProductAskanOwner').css("display", "block");
+            }
+    });
+}
+/***END Make Reevoo Ask an owner  embedded reviews invisible/visible dependent on if there are any reviews***/

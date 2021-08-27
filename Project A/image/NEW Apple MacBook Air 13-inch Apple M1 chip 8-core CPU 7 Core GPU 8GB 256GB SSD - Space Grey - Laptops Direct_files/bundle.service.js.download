@@ -1,0 +1,20 @@
+﻿bundleServices.
+  factory('BundleService', ['$http', 'bundle.services.config',
+    function ($http, config) {
+    	return {
+    		/*config: {
+    			productid: null,
+    			WebAPIURL: null,
+    			requestInfo: null,
+    			invalidateCache: null,
+    			previewMode: null
+    		},*/
+    		GetBundles: function (/*productid*/) {
+    			var pagingInfo3 = { productid: config.productid, requestInfo: config.requestInfo, invalidateCache: config.invalidateCache, previewMode: config.previewMode };
+    			return $http.post(config.WebAPIURL + '/api/Product/', pagingInfo3);
+    		}
+    	};
+    }
+  ]);
+
+
