@@ -21,7 +21,7 @@ let products_popular = [
     },
     {
         id: 2,
-        img: '../../image/logitech-g305/logitech-305-1.jpg',
+        img: '../../image/Mouse/logitech-g305/logitech-305-1.jpg',
         name: 'Logitech G305 Black',
         des: 'Wireless Gaming Mouse',
         oldPrice: '',
@@ -33,8 +33,9 @@ let products_popular = [
             Mouse_Type: 'Optical',
             Colour: 'Black',
         },
+        save: '£229',
         sale: '',
-        imgs: ['../../img/desktop-computer-500x500.jpeg', '../../img/desktop-computer2-500x500.jpeg', '../../img/img-cate.png']
+        imgs: ['../../image/Mouse/logitech-g305/logitech-305-1.jpg', '../../image/Mouse/logitech-g305/logitech-305-2.jpg', '../../image/Mouse/logitech-g305/logitech-305-3.jpg', '../../image/Mouse/logitech-g305/logitech-305-4.jpg', '../../image/Mouse/logitech-g305/logitech-305-5.jpg']
     },
     {
         id: 3,
@@ -54,7 +55,7 @@ let products_popular = [
             Operating_System: 'Windows 10',
         },
         sale: '11%',
-        imgs: ['../../img/desktop-computer-500x500.jpeg', '../../img/desktop-computer2-500x500.jpeg', '../../img/img-cate.png']
+        imgs: ['../../image/acer-nitro-5/nitro-5-1.jpg', '../../image/acer-nitro-5/nitro-5-2.jpg', '../../image/acer-nitro-5/nitro-5-3.jpg', '../../image/acer-nitro-5/nitro-5-4.jpg','../../image/acer-nitro-5/nitro-5-4.jpg','../../image/acer-nitro-5/nitro-5-5.jpg','../../image/acer-nitro-5/nitro-5-6.jpg','../../image/acer-nitro-5/nitro-5-7.jpg']
     },
     {
         id: 4,
