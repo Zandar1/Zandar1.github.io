@@ -96,8 +96,10 @@ let products_popular = [
             Warranty: '1 year',
             Operating_System: 'MacOS',
         },
+        discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining',
+        save: '£200',
         sale: '18%',
-        imgs: ['../../img/desktop-computer-500x500.jpeg', '../../img/desktop-computer2-500x500.jpeg', '../../img/img-cate.png']
+        imgs: ['../../image/Macbook-air-13/macbook-air-13-1.jpg', '../../image/Macbook-air-13/macbook-air-13-2.jpg', '../../image/Macbook-air-13/macbook-air-13-3.jpg']
     },
 ]
 let business_product = [

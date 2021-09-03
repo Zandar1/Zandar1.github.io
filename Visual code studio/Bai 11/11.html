@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const dotdotdot_Text = (str) => {
+            if(typeof str !== 'string') {
+                alert('please enter text')
+                return
+            }
+            if(str.length <= 8) {
+                return str
+            } else {
+                return `${str.slice(0,9)}...`
+            }
+        }
+        var newText = dotdotdot_Text('name="viewport" content="width=device-width, initial-')
+        console.log('newText :>> ', newText);
+
+        //'toi Ten La tung' -> 'Gnut al net iot'
+
+        // -> cho vao arr -> dao nguoc ->
+
+        // var number = [4,3,9]
+        // var newArr = number.sort(function(a, b){
+        //     return a - b
+        // })
+        // console.log('newArr :>> ', newArr);
+
+        // tach chuoi thanh arr -> sau do dao nguoc -> sau do join thanh string // sau do tach chu dau viet hoa + cac chu sau viet thuong
+            
+       /*  let convert (str) => {
+            if(typeof str !== 'string') {
+                alert('please enter text')
+                return
+            }else{
+                str.toLocaleLowerCase()
+                str.split()
+            }
+
+        }
+
+        convert('toi Ten La tung') */
+
+    </script>
+</body>
+</html>

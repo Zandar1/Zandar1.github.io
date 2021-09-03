@@ -1,0 +1,39 @@
+.wrap-menu {
+    display: flex;
+    padding: 27px 10%;
+    }
+    .wrap-menu .left img {
+    height: 19px;
+    width: 75px;
+    }
+    
+    .left {
+    width: 50%;
+    }
+    
+    .right {
+    width: 50%;
+    display: flex;
+    }
+    
+    .wrap {
+    max-width: 1920px;
+    }
+    
+    .menu ul {
+    display: flex;
+    }
+    
+    .menu ul li {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #333333;
+    color: #333333;
+    font-family: YoonGothic700-50;
+    }
+    
+    .avatar {
+    cursor: pointer;
+    }
+

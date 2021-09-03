@@ -1,0 +1,72 @@
+/*html{
+    --color: red;
+    --margin: 100px;
+}*/
+
+/*.check-mau{
+    background: var(--color);
+    width: calc(100% - var(--margin));
+    width: 200px;
+    height: 200px;
+}
+
+.heart{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+img{
+    animation: heart-beat 2s infinite;
+    width: 100%;
+}
+
+
+@keyframes heart-beat{
+    0%{
+
+    }
+    100%{
+        transform: scale(1.5) ;
+        width: 100%;
+    }
+}*/
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    transform: translateX(50);
+    position: absolute;
+} 
+
+.item{
+    width:33.3%
+}
+
+img{
+    width: 100%;
+}
+
+.orange{
+    position: absolute;
+    top: 0;
+    left:0%;
+    height: 100%;
+    width: 100%;
+    background: orange;
+    opacity: 0 ;
+}
+
+.orange:hover{
+    animation: opacity-increase 1.5s forwards;
+}
+
+@keyframes opacity-increase{
+    0%{
+
+    }
+
+    100%{
+        opacity: 0.5;
+    }
+
+}

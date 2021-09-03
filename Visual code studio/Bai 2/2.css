@@ -1,0 +1,48 @@
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 7;
+}
+
+.wrap div {
+    width: 32%;
+    background-color: blue;
+    padding: 3px;
+    box-sizing: border-box;
+    margin: 3px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside {
+    flex-grow: 3;
+    background-color: yellow;
+}
+
+.all{
+    display: flex;
+}
+
+.header {
+    background-color: grey;
+    justify-content: center;
+    display: flex;
+    padding: 15px;
+}
+
+.nav {
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+    padding: 3px;
+    margin: 4px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+    padding: 2px;
+}

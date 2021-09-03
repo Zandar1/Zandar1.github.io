@@ -1,0 +1,530 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg-style{
+    border: 1px solid red;
+    background-color: #FF4747;
+    padding: 0 20px 0 20px;
+    color: white;
+    border-radius: 25px;
+}
+
+.font-menu{
+    font-size: 20px;
+}
+
+body{
+    background-color: #eff1f5;
+}
+
+/* thanh dang ky*/
+
+.login-link{
+    display: flex;
+    height: 40px;
+    background-color: #404040;   
+    justify-content: space-between;
+}
+
+.link{
+    margin-left: 70px;
+}
+
+img.padded{
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 20px;
+}
+
+.login-regis{
+    display: flex;
+}
+
+.register{
+    margin: 7px 40px 7px 0px;
+}
+
+.register:hover{
+    background-color: #EE0000;
+}
+
+.login{
+    margin: 7px 120px 7px 0px;
+}
+
+.login:hover{
+    background-color: #EE0000 ;
+}
+
+@media screen and (max-width: 768px) {
+    .login-link{
+        display: none;
+    }
+}
+
+/* menu*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    height: 60px;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    flex-grow: 3;
+    font-size: 2.5em;
+    color: orange;
+    padding-left: 40px;
+}
+
+.main-menu{
+    display: flex;
+    list-style: none;
+    flex-grow: 3;
+    padding-left: 90px;
+}
+
+.main-item{
+    display: flex;
+    min-width: 110px;
+    font-size: 1.3em;
+    transition: all 0.7s;
+}
+
+.main-item:hover{
+    color: red;
+    height: 60px;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.search{
+    color: black;
+    border-radius: 20px;
+    outline: none;
+    flex-grow: 1 ;
+    height: 30px;
+    padding-left: 7px;
+    margin-right: 20px;
+}
+
+.search:hover{
+    border: 2px solid blue;
+}
+
+@media screen and (max-width: 1140px) {
+    .main-menu{
+        display: none;
+    }
+
+    .search{
+        display: none;}
+}
+/*Review*/
+ul.review{
+    position: absolute;
+    list-style: none;
+    min-width: 250px;
+    min-height: 100px;
+    top: 120px;
+    color: black;
+    background-color: whitesmoke;
+    display: none;
+    font-size: 20px;
+}
+
+.main-item:hover ul.review{
+    display: block;
+    animation: review 0.3s forwards;
+    background-color: white;
+}
+
+@keyframes review{
+    0%{
+    }
+
+    100%{
+        position:absolute;
+        top: 100px;
+    }
+}
+
+li.typesR{
+    margin: 5px 50px 5px 40px;
+}
+
+li.typesR:hover{
+    color: #0DBAEF;
+    width: fit-content;
+}
+
+    /*software*/
+    ul.software{
+        position: absolute;
+        list-style: none;
+        min-width: 250px;
+        top: 120px;
+        min-height: 100px;
+        color: black;
+        background-color: whitesmoke;
+        display: none;
+    }
+
+    .main-item:hover ul.software{
+        display: block;
+        animation: software 0.3s forwards;
+        background-color: white;
+    }
+
+    @keyframes software{
+        0%{
+        }
+
+        100%{
+            position:absolute;
+            top: 100px;
+        }
+    }
+
+    li.typesS{
+        margin: 5px 50px 5px 40px;
+    }
+
+    li.typesS:hover{
+        color: #0DBAEF;
+        width: fit-content;
+    }
+
+    /*games*/
+    ul.games{
+        position: absolute;
+        list-style: none;
+        min-width: 200px;
+        top: 120px;
+        display: none;
+        color: black;
+        background-color: white;
+    }
+
+
+    .main-item:hover ul.games{
+        display: block;
+        animation: games 0.3s forwards;
+    }
+
+    @keyframes games{
+        0%{
+        }
+
+        100%{
+            position:absolute;
+            top: 100px;
+        }
+    }
+
+    li.typesG{
+        margin: 5px 50px 5px 60px;
+    }
+
+    li.typesG:hover{
+        background-color:#CCE5FF;
+        width: fit-content;
+    }
+
+        /*Action*/
+    ul.action{
+        list-style: none;
+        position: absolute;
+        left: 210px;
+        min-width: 200px;
+        top: 0px;
+        display: none;
+        background-color: white;
+        display: none;
+    }
+
+    li.type1A{
+        margin: 5px 0px 10px 0px;
+    }
+    li.type1A:hover{
+        width: fit-content;
+        border-bottom: 1px solid red;
+    }
+
+    ul.games:hover ul.action{
+        display: block;
+        animation: action 0.3s forwards;
+    }
+
+    @keyframes action{
+        0%{
+
+        }
+
+        100%{
+            position: absolute;
+            left: 195px;
+        }
+    }
+
+/*navigation bar*/
+.navigation{
+    background: rgba(58, 120, 177, 0.8);
+    height: 125px;
+    color: #fff;
+}
+
+.nav-po{
+    padding: 2% 0 3% 9%;  
+}
+
+.current{
+    font-size: 17px;
+    margin-bottom: 1%;
+}
+
+.software-nav{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.home-nav{
+    text-decoration: none;
+    color: #fff;
+}
+.current-detail{
+    font-size: 32px;
+}
+
+/*mid*/
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: -1;
+}
+
+.item {
+    width: 27%;
+    position: relative;
+    overflow: hidden;
+    margin: 40px 6px 10px 6px;
+}
+
+
+img.content-img {
+    width: 100%;
+}
+
+.cover-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    background: #606060;
+    opacity: 0;
+}
+
+.item:hover .cover-color{
+    animation: opacity-increa 1.7s forwards;
+}
+
+
+@keyframes opacity-increa {
+    0%{
+    }
+    100%{
+        opacity: 0.8;
+    }
+}
+
+.icon-top {
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    z-index: 1;
+}
+
+
+.item:hover .icon-top {
+    animation: from-left 1.5s forwards;
+}
+@keyframes from-left {
+    0%{
+    }
+    100%{
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+}
+
+
+/* content */
+.content {
+    position: absolute;
+    bottom: -125px;
+    left: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+    color: black;
+    z-index: 1;
+    font-family: 'Lora', serif;
+}
+.item:hover .content {
+    animation: from-bottom 1.5s forwards;
+}
+@keyframes from-bottom {
+    0%{
+    }
+    100%{
+        position: absolute;
+        bottom: -10px;
+    }
+}
+
+.title{
+    font-weight: 800;
+}
+
+.sub-title{
+    font-weight: 300;
+}
+
+/*page-number*/
+.page-area{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+}
+
+.page-numbers{
+    display: inline-block;
+    line-height: 40px;
+    min-width: 50px;
+    background-color: white;
+    border-radius: 30px;
+    font-weight: 400;
+    text-align: center;
+    transition: all 0.8s;
+    text-decoration: none;
+    margin: 0 5px 0 5px;
+}
+
+.page-numbers:hover{
+    background-color: black;
+    color: white
+}
+
+
+/*footer*/
+.footer{
+    margin: 90px 0 0 0; 
+    height: 250px;
+    background-color:#252525; 
+    color: #a1a5a9;
+    font-size: 17px;
+    z-index: -2;
+}
+
+.brand{
+    font-size: 2.5em;
+    color: orange;
+}
+
+.f1{
+    display: block;
+    float: left;
+    padding: 5% 3% 0% 13%;
+}
+
+.f2{
+    display: block;
+    float:left;
+    margin: 3% 1% 0 20%;
+}
+
+.amount{
+    z-index: 2;
+    color: white;
+    position: relative;
+    top: 55%;
+    left:14%;
+}
+
+.diamond{
+    background-color: grey;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    transform: rotate(45deg);
+}
+
+.created{
+    position: relative;
+    width: 100%;
+    width: 100px;
+    height: 100px;
+    margin: 17% 0 0 0;
+}
+
+.f3{
+    display: block;
+    float: left;
+    margin: 7% 0% 0% 25%;
+}
+
+.fixf3{
+    text-decoration: none;
+    color: #a1a5a9;;
+}
+
+.a:hover{
+    border-bottom: 1px solid #a1a5a9;
+    width: fit-content;
+}
+
+
+
+/*back to top*/
+a.top{
+    display: inline-block;  
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom:10px;
+    right: 10px;
+    background: #3097d1;
+    border-radius: 50px;
+}
+
+.icon{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+
+/*keep menu*/
+.keep{
+    position: sticky;
+    top:0px;
+    left: 0px;
+    z-index: 2;
+}

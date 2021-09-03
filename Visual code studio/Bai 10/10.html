@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let color = [1, "real", true, null]
+        color.forEach((item, index) => {
+            console.log('item :>> ', item);
+            console.log('index :>> ', index);
+        });
+
+        // bai 1 
+        let sum = () =>{
+            let kq = 0
+            for(i= 0;i <= 100;i++){
+                kq += i
+            }
+            console.log('kq :>> ', kq);
+        }
+
+        sum()
+
+        //bai 2
+        let sum2 = () =>{
+            let kq2 = 0
+            for(i=0; i<=100; i++){
+                if (i % 2 === 1)
+                    kq2 += i
+            }
+            console.log('kq2 :>> ', kq2);
+        } 
+
+        sum2()
+
+        //bai 3
+        let sum3 = () =>{
+            let kq3 = 0
+            for (i=0; i<= 100; i++){
+                if (i % 3 ===0)
+                    kq3 += i
+            }
+            console.log('kq3 :>> ', kq3);
+        }
+
+        sum3()
+
+        // bai 4
+        let sum4 = () =>{
+            let kq4 = 0
+            for (i=0; i <= 100; i++){
+                if (i % 3 === 0 && i % 5 === 0 && i % 7 ===0)
+                    kq4 += i
+            }
+            console.log('kq4 :>> ', kq4);
+        }
+        sum4()
+
+        // bai 5
+        let sum5 =() =>{
+            let kq5 = 0
+            for (i=0; i <= 100; i++){
+                if (i % 3 ===0 || i % 5 === 0 || i % 7 ===0)
+                    kq5 = kq5 + i * i
+            }
+            console.log('kq5 :>> ', kq5);
+        }
+
+        sum5()
+        
+        // bai 6 - so nguyen to
+        /* let primeNumber = (n) =>{
+            if ( n < 2){
+                console.log('hay nhap so hop le');
+            }else{
+            for (i= 2; i < n-1; i++){
+                if ( n % i === 0){
+                    console.log("day khong la so nguyen to")
+                    break;
+                }
+                else{
+                    console.log("day la so nguyen to")
+                }
+                }
+            } 
+        }   
+        primeNumber(9) */
+
+         function soBatKi (n) {
+            if(n<2){
+                console.log(n+ ` ko la so nguyen`);
+            }else{
+                let check = true
+                for(i=2;i<n-1;i++){
+                    if(n%i===0){
+                        check = false
+                    }
+                }
+                if(check) {
+                    console.log(n+ `la so nguyen to`);
+                } else {
+                    console.log(n+ `ko la so nguyen to`);
+                }
+            }
+        }
+
+        // bai 7 - tinh giai thua
+        let giaithua = (n) =>{
+            var a = 1
+            for (i = 1 ; i <= n; i++){
+                a *= i
+            }
+            console.log(a);
+        } 
+        giaithua (8)
+    </script>
+</body>
+</html>

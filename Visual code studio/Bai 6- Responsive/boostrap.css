@@ -1,0 +1,155 @@
+/*.image img{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrap-item{
+    width: 33.3%;
+}
+
+@media screen and (max-width: 992px) {
+    .wrap-item {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .wrap-item {
+        width: 100%;
+    }
+}*/
+
+
+.image img {
+    width: 100%;
+}
+
+.big-menu {
+    width: 100%;
+    /* max-width: 1700px; */
+    /*position: absolute;*/
+    /* top: 25px; */
+    /* left: 200px; */
+    z-index: 1;
+}
+.menu {
+    /* width: 70%; */
+    background-color: red;
+    width:100%
+}
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    background-color:transparent;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+.main-item {
+    flex-grow: 1;
+    list-style: none;
+   
+    min-width: 200px;
+    height: 50px;
+    position: relative;
+   
+}
+
+li.main-item:hover {
+    background-color: lightsalmon;
+    opacity: 0.8;
+}
+
+.sub {
+    background-color: lightsalmon;
+    position: absolute;
+    top: 50px;
+    display: none;
+    left:0;
+    z-index: 2;
+}
+.sub-right {
+    background-color: lightsalmon;
+    list-style: none;
+    position: absolute;
+    left: 100%;
+    /* left: 250px; */
+    top: 0px;
+    min-width: inherit;
+    display: none;
+    font-size: 80%;
+    font-weight: 20;
+}
+.small-sub {
+    list-style: none;
+    height: 40px;
+    position: relative;
+    width: 200px;
+    z-index: 3;
+}
+
+li.main-item.center:hover .sub {
+    display: block;
+
+}
+
+.smaller-sub {
+    list-style: none;
+   
+}
+
+li.small-sub:hover .smaller {
+    display: block;
+
+}
+
+li.small-sub:hover .sub-right {
+    display: block;
+
+}
+
+.header{
+    display: flex;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.user img{
+    width: 100%;
+}
+
+.logo, .user{
+    width: 5%;
+}
+
+.sub-header{
+    display: flex;
+}
+
+.myslide{
+    width: 70%;
+}
+
+.blog{
+    width: 30%;
+}
+
+.item-block{
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .sub-header{
+        display: unset;
+    }
+
+    .myslide{
+        width: 100%;
+    }
+}

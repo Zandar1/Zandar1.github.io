@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* let a = 3
+        let b = 4
+        a = a + b // -> a = 7
+        
+        a += b */
+/* 
+        let a = 1,
+            b = (a % 2) * 2,
+            c = a++ - b--,
+            d = "0";
+        
+            a-b+c-d */
+
+        let check = (a) => {
+            if (a % 2 === 0) {
+            console.log("day la so chan")
+        } else {
+           console.log("day la so le")
+        }
+        }
+
+        check(7)
+
+        let compare = (a,b) =>{
+            if (a > b){
+                console.log(a)
+            } else if (a = b){
+                console.log("a = b")
+            }
+            else{
+                console.log(b)
+            }
+        }
+
+        compare(15,20)
+
+        let season = (a) =>{
+            if (a >= 3){
+                console.log("mua xuan")
+            } else if (3 < a <= 6){
+                console.log("mua he")
+            }   else if (6 < a <= 9){
+                console.log("mua thu")
+            } else if ( 9 < a <= 12 ){
+                console.log("mua dong")
+            } else{
+                console.log("unvalid")
+            }
+        }
+
+        season(3)
+
+        let divisible = (a) =>{
+            if ( a % 5 === 0 & a % 11 === 0){
+                console.log("thoa man")
+            } else {
+                console.log("khong thoa man")
+            }
+        }
+
+        divisible(44)
+
+
+        let equation = (a,b) =>{
+            console.log(-b/a)
+        }
+
+        equation(5,6)
+    </script>
+</body>
+</html>

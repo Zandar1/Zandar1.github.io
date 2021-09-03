@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         /*    let convert(str) => {
+            if(typeof str !== 'string') {
+                alert('please enter text')
+                return
+            }else{
+                str= str.toLowerCase()
+                a = str.split(" ")
+            }
+        }
+        convert ("toi Ten La tung") */
+
+
+        /* const minNumbers = (arr) => {
+            if (arr.length === 0) {
+                alert('hay nhap it nhat 1 phan tu')
+            }
+            let min = arr [0]
+            for (i = 0; i <= arr.length - 1; i++) {
+                if (arr[i] < min){
+                    min = arr[i]
+                }
+            }
+            return min
+        } */
+        /* let check_min = minNumbers([4, 6, 3, 7, 2 ,9])
+        console.log('check_min', check_min)    */
+
+        /* const second_number = (arr) => {
+            if (arr.length === 0) {
+                alert('hay nhap it nhat 1 phan tu')
+            }
+            let max = arr [0]
+            for (i = 0; i <= arr.length -1; i++ )
+                if (arr [i] > max){
+                    max = arr[i]
+                }
+                return max
+        }
+        let check_max =  */
+       /*  const swap = (a,b) =>{
+            let temp = a
+                a = b 
+                b = temp
+        } */
+
+        const sap_xep_mang = (arr) => {
+            for (i = 0; i <= arr.length -1; i++){
+                for (j = 0; j <= arr.length-1; j++){
+                    if (arr[i] > arr[j]) {
+                        // doi vi tri cho nhau
+                        let temp = arr[i]
+                        arr [i] = arr [j]
+                        arr [j] = temp 
+                       /*  swap (arr[i], arr[j]) */ // khong dung duoc
+                    } 
+                }
+            }
+            return arr
+        }
+        /* let check_arr = sap_xep_mang ([4,6, 3, 7, 2,9])
+        console.log('check_arr :>> ', check_arr[1]);
+
+        let banA = {
+            age : 25,
+            name: 'tung',
+            sayHi: function(){
+                alert(`xin chao cac ban, minh la ${this.name}, nam nay minh ${this.age}`}
+            }
+        }
+
+        let isSingleok = false
+        banA.isSingle = isSingleok
+        delete */
+
+
+          // bai 4
+          const containString = (str,target) =>{
+                if (str.includes(target),0){
+                    console.log(true);
+                }else{
+                        console.log(false);
+                    }
+            }
+
+            let check_c = containString ('Trai dat nay hinh chu nhat', 'nhat')
+            console.log('check_c', check_c);
+        </script>
+</body>
+</html>

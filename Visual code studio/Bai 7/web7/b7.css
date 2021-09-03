@@ -1,0 +1,905 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menu */
+.header{
+    display: flex;
+    height: 72px;
+}
+
+.header .left img{
+    width: 75.1px;
+    height: 19.8px;
+    margin: 26.6px 37.5%;
+    
+}
+
+.left{
+    width: 50%;
+}
+
+.right{
+    width: 50%;
+    display: flex;
+}
+
+.menu{
+    margin: 27px 0px 26px 31.7px;
+    border-right: 2px solid #d6d6d6;
+    font-size: 14px;
+    min-width: 464px;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu ul :hover{
+    color: red;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.menu ul li{
+    margin: 0 2.1% 0 2.1%;
+    font-family: YoonGothic700-50;
+}
+
+.avatar{
+    margin: 26px 37.5% 26px 20px;
+    cursor: pointer;
+}
+
+.menu-shortcut{
+    display: none;
+}
+
+/* Phone screen menu*/
+@media screen and (max-width: 1140px) {
+    .header{
+        height: 68px;
+    }
+    .header .left img{
+        width: 115.3px;
+        height: 26.4px;
+        margin: 21px 0px 20.6px 18px;
+    }
+    .menu{
+        display: none;
+    }
+    .right{ 
+        position: relative;
+        top: 18px;
+        right: -40%;
+    }
+    .menu-2{
+        display: none;
+        position: relative;
+        top: -24px;
+        right: 100%;
+        width: 160px;
+        z-index: 1;
+        background-color: white;
+        height: 900px;
+        padding-left: 20px;
+    }
+    .menu-shortcut:hover .menu-2{
+        display: block;
+        animation: action 0.3s forwards;
+    }
+
+    @keyframes action{
+        0%{
+
+        }
+
+        100%{
+            position: relative;
+            top: -24px;
+            right: 71%;
+        }
+    }
+
+
+    .menu-2 ul{
+        display: unset;
+        list-style: none;
+    }
+
+    .menu-2 ul li{
+        padding: 20px 0 20px 0;
+    }
+    .avatar{
+        display: none;
+    }
+
+    .menu-shortcut{
+        display: block;
+    }
+}
+
+
+/* Banner */
+.word-color{
+    color: #ffffff;
+}
+.sub-header{
+    background-image: url("png/124617823.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 0;
+}
+.banner{
+    height: 640px;
+}
+
+.title{
+    height: 100px;
+    font-family: YoonGothic700-80;
+    font-size: 40px;    
+    padding: 238px 31% 0 31%;;
+}
+
+.sub-title{
+    font-family: YoonGothic700-50;
+    font-size: 25px;
+    height: 31px;
+    margin:  130px 0 64px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.action{
+    display: flex;
+    justify-content: center;
+    font-family: YoonGothic700-70;
+    font-size: 15px;
+    border: solid 1px #ffffff;
+    height: 58px;
+    align-items: center;
+    margin: 0px 42% 0px 42%;
+}
+
+/* Phone screen banner*/
+@media screen and (max-width: 1140px) {
+    .banner{
+        height: 383.2px;
+    }
+    .title{
+        font-family: YoonGothic700-80;
+        font-size: 20px;
+        padding: 104px 0% 22px 12.7%;
+        width: 325px;
+    }
+    .sub-title{
+        font-family: YoonGothic700-50;
+        font-size: 15px;
+        margin: 50px 0 30px 0;
+    }
+
+    .action{
+        font-family: YoonGothic700-70;
+        font-size: 10px;
+        height: 40px;
+        width: 164px;
+        margin: 0 30% 0 28%;
+    }
+}
+
+
+/* change pic */
+.numb ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.gach-1{
+    width: 37.2px;
+    height: 2.3px;
+    background-color: #495e79;
+    margin-top: 7px;
+}
+
+.gach-2{
+    width: 30px;
+    height: 2.3px;
+    background-color: #e4e4e4;
+    margin-top: 7px;
+}
+
+.so01{
+    margin-right: 16px;
+    width: 18px;
+    height: 20px;
+    font-size: 15px;
+    font-family: YoonGothic700-70;
+    color: #495e79;
+}
+
+.so02{
+    margin-left: 16px;
+    width: 19px;
+    height: 20px;
+    font-family: YoonGothic700-70;
+    font-size: 15px;
+    color: #b7b7b7;
+}
+
+/* Phone screen change pic*/
+@media screen and (max-width: 1140px) {
+    .numb ul{
+        margin-top: 20px;
+    }
+    .gach-1{
+        width: 22.4px;
+        height: 2px;
+    }
+
+    .gach-2{
+        width: 30.2px;
+        height: 2px;
+    }
+
+    .so01{
+        width: 18px;
+        height: 17px;  
+        font-size: 13px; 
+    }
+
+    .so2{
+        width: 18px;
+        height: 17px;
+        font-size: 13px;
+    }
+}
+
+/* Main title */
+.title-1{
+    width: 331px;
+    height: 43px;
+    font-family: YoonGothic700-70;
+    font-size: 32px;
+    color: #333333;
+    object-fit: contain;
+    margin: 80px 41.6% 20px 40.6%;
+}
+
+.title-2{
+    width: 320px;
+    height: 22px;
+    font-family: YoonGothic700-50;
+    font-size: 18px;
+    color: #707070;
+    margin: 0 42% 40px 41%;
+}
+
+/* Phone screen main title*/
+@media screen and (max-width: 1140px) {
+    .title-1{
+        width: 205px;
+        height: 26px;
+        font-size: 20px;
+        margin: 47.1px 22% 8px 22%;
+    }
+
+    .title-2{
+        width: 231px;
+        height: 16px;
+        font-size: 13px;
+        margin: 0 19.4% 24px 19.4%;
+    }
+}
+
+/* top image */
+.item-image img{
+    object-fit: contain;
+}
+
+.frame{
+    border: 2px outset rgba(0, 0, 0, 0.06);
+    width: 388px;
+    object-fit: contain;
+    background-color: #ffffff;
+    height: 542px;
+}
+
+.img-title{
+    font-family: YoonGothic700-70;
+    font-size: 25px;
+    margin: 20px 0px 10px 20px;
+    font-weight: bold;
+}
+
+.img-sub-title{
+    font-family: YoonGothic700-50;
+    font-size: 18px;
+    margin: 0px 0px 0px 20px;
+}
+/* Phone screen top image*/
+@media screen and (max-width: 1140px) {
+    .item-image img{
+        width: 204px;
+        height: 224px;
+        object-fit: contain;
+    }
+
+    .frame{
+        height: 319px;
+        width: 207px;
+        margin: 10px 0px 0px 70px;
+    }
+
+    .img-title{
+        font-family: YoonGothic700-70;
+        font-size: 15px;
+        margin: 12.8px 0px 6.1px 12px;
+    }
+
+    .img-sub-title{
+        font-family: YoonGothic700-50;
+        font-size: 13px;
+        margin: 0px 0px 0px 12px;
+    }
+}
+
+/* detail */
+.title-detail{
+    font-family: YoonGothic700-70;
+    font-size: 32px;
+    padding-top: 60px;
+    margin-left: 45%;
+    width: 200px;
+    height: 43px;
+}
+
+.sub-title-detail{
+    font-family: YoonGothic700-50;
+    font-size: 18px;
+    margin: 63px 0px 40px 42.4%;
+}
+.detail{
+    position: relative; 
+    width: 100%;
+    height: 719px;
+    margin-top: 80px;
+    background-image: url("png/opacity-change.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-detail{
+    display: flex;
+    justify-content: center;
+}
+
+.detail-1{
+    width: 346px;
+    height: 454px;
+    box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    margin-right: 20px;
+}
+
+.title-detail1{
+    font-family: YoonGothic700-70;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 20px 0px 12px 20px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.sub-title-detail1{
+    font-family: YoonGothic700-50;
+    font-size: 15px;
+    line-height: 1.47;
+    color: #333333;
+    margin: 0px 0px 16px 20px;
+}
+
+.time-1{
+    font-family: YoonGothic700-70;
+    font-size: 15px;
+    color: #ff9e5c;
+    margin-left: 20px;
+}
+
+.switchback{
+    position: relative;
+    top: 205px;
+    left: 38px;
+}
+
+.switchforward{
+    position: relative;
+    top: 205px;
+    right: 60px;
+}
+/* Phone screen detail*/
+@media screen and (max-width: 1140px) {
+    .title-detail{
+        font-family: YoonGothic700-70;
+        font-size: 20px;
+        margin-left: 118px;
+        padding-top: 30px;
+    }
+
+    .sub-title-detail{
+        font-family: YoonGothic700-50;
+        font-size: 13px;
+        margin: 20px 0 24px 75px;
+    }
+    .detail{
+        overflow: hidden;
+        height: 369px;
+    }
+
+    .detail-1{
+        width: 172px;
+        height: 225px;
+        box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.15);
+        margin-right: 16px;
+    }
+
+    .img-detail1 img{
+        height: 144px;
+        width: 172px;
+    }
+
+    .title-detail1{
+        font-family: YoonGothic700-70;
+        font-size: 13px;
+        margin: 12px 0 5px 12px;
+        overflow: hidden;
+        width: 148px;
+        height: 17px;
+    }
+
+    .sub-title-detail1{
+        font-family: YoonGothic700-50;
+        font-size: 10px;
+        overflow: hidden;
+        width: 148px;
+        height: 12px;
+        margin: 0 0 9px 12px;
+    }
+
+    .time-1{
+        font-family: YoonGothic700-70;
+        font-size: 10px;
+        width: 138px;
+        height: 14px;
+        overflow: hidden;
+        margin: 0 0 0 12px;
+    }
+    .switchback{
+        display: none;
+    }
+    .switchforward{
+        display: none;
+    }
+}
+
+/* info */
+.info-title{
+    width: 265px;
+    height: 43px;
+    font-family: YoonGothic700-70;
+    font-size: 32px;
+    margin: 80px 0 20px 43.2%;
+}
+
+.info-sub-title{
+    width: 365px;
+    height: 22px;
+    font-family: YoonGothic700-50;
+    font-size: 18px;
+    margin: 0 0 40px 40.9%;
+}
+
+.day-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.day1{
+    border: 0.5px solid #d6d6d6;
+    width: 136px ;
+    height: 84.24px ;
+    padding: 12.9px 0 10px 55.5px;
+}
+
+.day0{
+    border: 1px solid #ff9e5c;
+    background-color: #ff9e5c;
+    width: 137.08px;
+    height: 84.24px;
+    
+}
+
+.iday0{
+    color: #ffffff;
+    padding: 12.9px 0 5px 55.5px;
+    font-family: YoonGothic700-70;
+    font-size: 25px;
+}
+
+.iday-info0{
+    color: #ffffff;
+    padding: 0px 0 0px 51.5px;
+    font-family: YoonGothic700-50;
+    font-size: 18px;
+}
+
+.iday-info1{
+    color: #2b65f9;
+    font-family: YoonGothic700-70;
+    font-size: 18px;
+}
+
+.iday-info2{
+    color: #e76d6d;
+    font-family: YoonGothic700-70;
+    font-size: 18px;
+}
+
+.iday{
+    font-family: YoonGothic700-70;
+    font-size: 25px;
+}
+
+.iday-info{
+    font-family: YoonGothic700-50;
+    font-size: 18px;
+}
+
+.backicon{
+    margin: 0 16.9px 0 0;
+    cursor: progress;
+}
+
+.followicon{
+    margin: 0 0 0 16.6px;
+    cursor: progress
+}
+
+/* Phone screen info*/
+@media screen and (max-width: 1140px) {
+    .info-title{
+        width: 165px;
+        height: 26px;
+        font-family: YoonGothic700-70;
+        font-size: 20px;
+        margin: 50px 0 8px 27.5%;
+    }
+    .info-sub-title{
+        width: 265px;
+        height: 16px;
+        font-family: YoonGothic700-50;
+        font-size: 13px;
+        margin: 0 0 24px 15.3%;
+    }
+    .day0{
+        width: 58.1px;
+        height: 53.5px;
+    }
+
+    .day1{
+        width: 58.1px;
+        height: 53.5px;
+        padding: 8.3px 0 2px 21.1px;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .iday0{
+        font-family: YoonGothic700-70;
+        font-size: 13px;
+        padding: 8.3px 0 2px 21.1px;
+    }
+
+    .iday-info0{
+        font-family: YoonGothic700-50;
+        font-size: 10px;
+        padding: 0 0 0 19px;
+    }
+
+    .iday-info1{
+        font-family: YoonGothic700-50;
+        font-size: 10px;
+    }
+
+    .iday{
+        font-family: YoonGothic700-70;
+        font-size: 13px;
+    }
+
+    .iday-info{
+        font-family: YoonGothic700-50;
+        font-size: 10px;
+    }
+
+    .iday-info2{
+        font-family: YoonGothic700-50;
+        font-size: 10px;
+    }
+
+    .backicon{
+        width: 35px;
+        height: 53.5px;
+        margin: unset;
+        padding: 15px 0 0 16px;
+        border: 0.5px solid #d6d6d6;
+    }
+
+    .backicon svg{
+        width: 4px;
+        height: 6.4px;
+    }
+
+    .followicon{
+        width: 35px;
+        height: 53.5px;
+        margin: unset;
+        padding: 15px 0 0 14px;
+        border: 0.5px solid #d6d6d6;
+    }
+
+
+    .followicon svg{
+        width: 4px;
+        height: 6.4px;
+    }
+}
+
+/* place info */
+.place-info{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 100.5px 0;
+}
+
+.place1{
+    width: 386.7px;
+    height: 150px;
+    box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    border-top: 6px solid #ff9e5c;
+    margin-right: 20px;
+}
+
+.p1title{
+    font-family: YoonGothic700-70;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: bold;
+    margin: 30px 0 12px 20px;
+}
+
+.p1subtitle{
+    font-family: YoonGothic700-50;
+    font-size: 15px;
+    margin: 0 0 16px 20px;
+}
+
+.p1info{
+    display: flex;
+    margin: 0 0 0 20px;
+}
+
+.leftp1{
+    font-family: YoonGothic700-70;
+    font-size: 13px;
+    border-right: 1px solid #d6d6d6;
+    padding-right: 3px;
+}
+
+.rightp1{
+    font-family: YoonGothic700-70;
+    font-size: 13px;
+    padding-left: 8px;
+}
+
+.replacement{
+    display: none;
+}
+/* Phone screen place-info*/
+@media screen and (max-width: 1140px) {
+    .place-info{
+        display: none;
+    }
+
+    .replacement{
+        display: block;
+        width: 140px;
+        height: 16px;
+        font-family: YoonGothic700-50;
+        font-size: 13px;
+        color: #707070;
+        margin: 42px 0 70px 31.4%;
+    }
+}
+
+/* footer */
+.footer{
+    background-color: #495e79;
+}
+.footer-up{
+    width: 1200px;
+    display: flex;
+    border-bottom: 1px solid #d6d6d6;
+    margin: 0px 18.75% 0 18.75%;
+    padding: 38px 0 30px 0;
+}
+.logo-f img{
+    width: 90.1px;
+    height: 23.7px;
+}
+
+.connect{
+    display: flex;
+}
+
+.logo-connect svg{
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+.logo-connect{
+    padding: 0 8px 0 8px;
+}
+
+.connect{
+    position: relative;
+    left: 82%
+}
+
+/* footer-down */
+.footer-down{
+    padding: 34px 0 41px 18.75%;
+    display: flex;
+}
+
+.more-info{
+    display: flex;
+}
+
+.address{
+    font-family: YoonGothic700-50;
+    font-size: 13px;
+    color: #ffffff;
+    padding-bottom: 14px;
+    opacity: 0.8;
+}
+
+.phone{
+    opacity: 0.8;
+    font-family: YoonGothic700-50;
+    font-size: 13px;
+    color: #ffffff;
+    padding-bottom: 41px;
+}
+
+.word-more{
+    opacity: 0.8;
+    font-family: YoonGothic700-70;
+    font-size: 13px;
+    color: #ffffff;
+    padding-right: 8.8px;
+}
+
+.icon-more{
+    position: relative;
+    bottom: 5px;
+}
+
+.fpartmid{
+    padding: 135px 0 0 150px;
+    display: flex;
+}
+
+.before-copyright{
+    opacity: 0.8;
+    font-family: YoonGothic700-70;
+    font-size: 13px;
+    color: #ffffff;
+    padding-right: 20px;
+}
+
+.copyright{
+    opacity: 0.8;
+    font-family: YoonGothic700-70;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+/* Phone screen footer*/
+@media screen and (max-width: 1140px) {
+    .footer-up{
+        width: 324px;
+        margin: 0 18px 0 18px;
+        padding: 18px 0 20px 0;
+    }
+
+    .logo-f img{
+        width: 71.4px;
+        height: 19.5px;
+    }
+
+    .logo-connect svg{
+        width: 16.6px;
+        height: 19.5px;
+    }
+
+    .connect{
+        position: relative;
+        left: 48%;
+    }
+
+    .footer-down{
+        display: unset;
+        padding: unset;
+    }
+
+    .address{
+        opacity: 0.8;
+        font-family: YoonGothic700-50;
+        font-size: 10px;  
+        margin: 22px 0 11px 18px;
+        padding: unset;
+    }
+
+    .phone{
+        opacity: 0.8;
+        font-family: YoonGothic700-50;
+        font-size: 10px;
+        margin: 0 0 22px 18px;
+        padding: unset;
+    }
+
+    .word-more{
+        opacity: 0.8;
+        font-family: YoonGothic700-70;
+        font-size: 10px;
+        margin-left: 18px;
+    }
+
+    .icon-more{
+        width: 6.4px;
+        height: 4px;
+    }
+
+    .fpartmid{
+        display: unset;
+        padding: unset;
+    }
+
+    .more-info{
+        margin-bottom: 21px;
+    }
+
+    .before-copyright{
+        opacity: 0.8;
+        font-family: YoonGothic700-70;
+        font-size: 10px;
+        margin-left: 18px;
+    }
+
+    .copyright{
+        opacity: 0.8;
+        font-family: YoonGothic700-70;
+        font-size: 10px;
+        margin-left: 18px;
+    }

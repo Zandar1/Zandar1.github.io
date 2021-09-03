@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg-style{
+    border: 1px solid red;
+    background-color: #cc0000;
+    padding: 0 20px 0 20px;
+    color: white;
+    border-radius: 25px;
+}
+
+.font-menu{
+    font-size: 20px;
+}
+
+body{
+    background-color: #eff1f5;
+}
+/* thanh dang ky*/
+
+.login-link{
+    display: flex;
+    height: 40px;
+    background-color: black;   
+    justify-content: space-between;
+}
+
+.link{
+    margin-left: 70px;
+}
+
+img.padded{
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 20px;
+}
+
+.login-regis{
+    display: flex;
+}
+
+.register{
+    margin: 7px 40px 7px 0px;
+}
+
+.login{
+    margin: 7px 120px 7px 0px;
+}
+
+/* menu*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0082ba;
+    color: white;
+    height: 60px;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    flex-grow: 3;
+    font-size: 2.5em;
+    color: orange;
+    padding-left: 40px;
+}
+
+.main-menu{
+    display: flex;
+    list-style: none;
+    flex-grow: 3;
+    padding-left: 120px;
+}
+
+.main-item{
+    display: flex;
+    min-width: 110px;
+    font-size: 1.4em;
+}
+
+.search{
+    color: black;
+    border-radius: 10px;
+    outline: none;
+    flex-grow: 1 ;
+    height: 30px;
+}
+
+/*Review*/
+ul.review{
+    position: absolute;
+    list-style: none;
+    min-width: 250px;
+    top: 100px;
+    min-height: 100px;
+    color: black;
+    background-color: whitesmoke;
+    display: none;
+}
+
+.main-item:hover ul.review{
+    display: block;
+}
+
+li.typesR{
+    margin: 5px 50px 5px 40px;
+}
+
+li.typesR:hover{
+    border-bottom: 1px solid red;
+}
+
+/*software*/
+ul.software{
+    position: absolute;
+    list-style: none;
+    min-width: 250px;
+    top: 100px;
+    min-height: 100px;
+    color: black;
+    background-color: whitesmoke;
+    display: none;
+}
+
+.main-item:hover ul.software{
+    display: block;
+}
+
+li.typesS{
+    margin: 5px 50px 5px 40px;
+}
+
+li.typesS:hover{
+    border-bottom: 1px solid red;
+}
+
+/*games*/
+ul.games{
+    position: absolute;
+    list-style: none;
+    min-width: 200px;
+    top: 100px;
+    display: none;
+    color: black;
+    background-color: whitesmoke;
+    z-index: 200px;
+}
+
+.main-item:hover{
+    color: red;
+    background-color: #00cccc;
+    height: 60px;
+    align-items: center;
+}
+
+.main-item:hover ul.games{
+    display: block;
+}
+
+li.typesG{
+    margin: 5px 50px 5px 60px;
+}
+
+li.typesG:hover{
+    border-bottom: 1px solid red;
+}
+
+/*back to top*/
+a.top{
+    display: inline-block;  
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom:10px;
+    right: 10px;
+    background: #3097d1;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+/*keep menu*/
+.keep{
+    position: sticky;
+    top:0px;
+    left: 0px;
+}
+
+/* move*/
+.move{
+    display: flex;
+    margin: 60px 0px 5px 250px;
+}
+
+.home{
+    color:red;
+
+}
+.home:hover{
+    border-bottom: 1px solid red;
+}
+
+.news{
+    color:red;
+}
+
+.news:hover{
+    border-bottom: 1px solid red;
+}
+
+/*content 1*/
+/*.layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+.content{
+    border: 1px solid black;
+    width: 900px;
+    margin: 0px auto;
+    background-color: white;
+}
+
+.title{
+    font-size: 3em;
+    margin: 20px 5px 5px 20px;
+}
+
+.author{
+    display: flex;
+    margin: 0 0 5px 20px; 
+}
+
+.name{
+    color: red;
+}
+
+.name:hover{
+    border-bottom: 1px solid red; 
+}
+
+.summarize{
+    font-size: 1.8em;
+    margin: 0 0 5px 20px;
+    font-style:italic;
+}
+
+img.image{
+    width: 600px;
+    margin: 10px 0 5px 20px;
+}
+
+.credit{
+    margin: 0 0 30px 20px;
+}
+
+.detail{
+    margin: 5px 20px 2px 20px;
+    font-size: 1.4em;
+}
+
+.line{
+    margin: 15px 0 15px 0;
+    line-height: 1.5em;
+}
+
+
+/*footer*/
+.footer{
+    margin: 90px 0 0 0; 
+    height: 150px;
+    background-color:#252525; 
+    color: #a1a5a9;
+    font-size: 17px;
+}
+
+.brand{
+    font-size: 2.5em;
+    color: orange;
+}
+
+.f1{
+    display: block;
+    float: left;
+    margin: 20px 90px 10px 200px;
+}
+
+.f2{
+    display: block;
+    float:left;
+    margin: 40px 90px 10px 200px;
+}
+
+.amount{
+    margin: 50px 0 0 0;
+}
+
+.f3{
+    display: block;
+    float: left;
+    margin: 30px 0 10px 200px;
+}
+
+.a:hover{
+    border-bottom: 1px solid #a1a5a9;
+}
