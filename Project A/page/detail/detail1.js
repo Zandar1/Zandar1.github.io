@@ -6,7 +6,10 @@ let default_data = {
   img: '../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-1.jpg',
   name: 'Lenovo ThinkPad E15 AMD Ryzen 7-5700U 16GB 512GB SSD 15.6 Inch FHD Windows 10 Pro Laptop 20YG003VUK',
   discount_title: ' <i class="fas fa-fire"></i>SELLING FAST! Less than 10 remaining',
+  oldPrice: '£1448.97',
+  newPrice: '£1219.97',
   price: '35.171.600 đ',
+  save: '1',
   description: {
       Graphic_card: 'Radeon Graphics',
       Processor: 'AMD Ryzen 7 5700 U',
@@ -25,7 +28,7 @@ const renderImage = () => {
   if(data_detail.imgs.length > 0) {
       data_detail.imgs.forEach((item, index) => {
           str += `
-              <img src="${item}" onclick="myFunction(this) alt="...">
+              <img src="${item}" onclick="myFunction() alt="...">
           `
       });
   }
@@ -49,7 +52,7 @@ renderDes()
 wrap_detail.append(`
       <div class = "product-gallery">
       <div class="img-container">
-          <img id="imgProduct" src="${data_detail.smg}">
+          <img id="imgProduct" src="${data_detail.img}">
           <div id="myModal" class="modal">
               <span class="close">&times;</span>
               <img class="modal-content" id="img01">
@@ -71,8 +74,8 @@ wrap_detail.append(`
           <div class="discount-title">${data_detail.discount_title}</div>
           <div class="price-box">
               <div class="price-tag">
-                  <div class ="saving">You save: £229</div>
-                  <div class = "price">£1219.97</div>       
+                  <div class ="saving">You save:${data_detail.save}</div>
+                  <div class = "price">${data_detail.price}</div>       
               </div>
               <div class="add-button">Add to basket <i class="far fa-chevron-double-right"></i></div>
           </div>
@@ -99,11 +102,11 @@ wrap_detail.append(`
 
 `)
 
-const myFunction = (smallImg) =>
+/* const myFunction = (smallImg) =>
 {
     var fullImg = document.getElementById("imgProduct");
     fullImg.src = smallImg.src;
-}
+} */
 
 
 // Get the modal
