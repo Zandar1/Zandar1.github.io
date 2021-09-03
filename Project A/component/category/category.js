@@ -33,7 +33,8 @@ let products_popular = [
             Mouse_Type: 'Optical',
             Colour: 'Black',
         },
-        save: '£229',
+        discount_title: '',
+        save: '',
         sale: '',
         imgs: ['../../image/Mouse/logitech-g305/logitech-305-1.jpg', '../../image/Mouse/logitech-g305/logitech-305-2.jpg', '../../image/Mouse/logitech-g305/logitech-305-3.jpg', '../../image/Mouse/logitech-g305/logitech-305-4.jpg', '../../image/Mouse/logitech-g305/logitech-305-5.jpg']
     },
@@ -42,9 +43,10 @@ let products_popular = [
         img: '../../image/acer-nitro-5/nitro-5-1.jpg',
         name: 'Acer Nitro 5 AN515',
         des: '15.6" i5-10300H 8GB 512GB GTX 1660Ti',
-        oldPrice: '£869.97.97',
+        oldPrice: '£869.97',
         newPrice: '£699.97',
         price: '£699.97',
+        discount_title: '',
         description: {
             Graphic_card: 'GeForce GTX 1660Ti 6GB',
             Processor: 'Intel Core i5 10300H',
@@ -54,12 +56,13 @@ let products_popular = [
             Warranty: '1 year',
             Operating_System: 'Windows 10',
         },
+        save: '£170',
         sale: '11%',
         imgs: ['../../image/acer-nitro-5/nitro-5-1.jpg', '../../image/acer-nitro-5/nitro-5-2.jpg', '../../image/acer-nitro-5/nitro-5-3.jpg', '../../image/acer-nitro-5/nitro-5-4.jpg','../../image/acer-nitro-5/nitro-5-4.jpg','../../image/acer-nitro-5/nitro-5-5.jpg','../../image/acer-nitro-5/nitro-5-6.jpg','../../image/acer-nitro-5/nitro-5-7.jpg']
     },
     {
         id: 4,
-        img: '../../image/hyperx-cloud-2/hyperx-cloud-2.png',
+        img: '../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2.png',
         name: 'HyperX Cloud II',
         des: 'Wireless Gaming Headset',
         oldPrice: '£149.99',
@@ -71,8 +74,11 @@ let products_popular = [
             Simulated_surround_sound: 'HyperX 7.1 surround sound',
             Noise_cancelling: 'Passive noise cancelling',
         },
+        discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining',
+        save: '£45',
         sale: '43%',
-        imgs: ['../../img/desktop-computer-500x500.jpeg', '../../img/desktop-computer2-500x500.jpeg', '../../img/img-cate.png']
+        imgs: ['../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2.png', '../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-2.png',
+        '../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-3.png','../../image/Headphones/hyperx-cloud-2/hyperx-cloud-4.png','../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-5.png']
     },
     {
         id: 5,
