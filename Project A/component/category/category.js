@@ -78,7 +78,7 @@ let products_popular = [
         save: '£45',
         sale: '43%',
         imgs: ['../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2.png', '../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-2.png',
-        '../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-3.png','../../image/Headphones/hyperx-cloud-2/hyperx-cloud-4.png','../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-5.png']
+        '../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-3.png','../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-4.png','../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-5.png']
     },
     {
         id: 5,
@@ -102,26 +102,31 @@ let products_popular = [
         imgs: ['../../image/Macbook-air-13/macbook-air-13-1.jpg', '../../image/Macbook-air-13/macbook-air-13-2.jpg', '../../image/Macbook-air-13/macbook-air-13-3.jpg']
     },
 ]
+
+
 let business_product = [
     {
         id: 6,
         img: '../../image/Dell-Latitude-3520/Dell-Latitude-3520-1.jpg',
         name: 'Dell Latitude 3520',
-        des: '15.6" i7-10510U 16GB 512GB SSD',
-        oldPrice: '',
-        newPrice: '£1099.97',
-        price: '£1099.97',
-        sale: '',
+        des: '15.6" i5-10210U 8GB 256GB SSD',
+        oldPrice: '£769.97',
+        newPrice: '£709.97',
+        price: '£709.97',
+        save: '£60',
+        sale: '8%',
         description: {
-            Graphic_card: 'Quadro P520 4GB',
-            Processor: 'Intel Core i7 10510U',
+            Processor: 'Intel Core i5 10210U',
             Screen_size: '15.6 Inch Full HD Screen',
-            SSD: '512 GB',
-            Ram: '16GB',
-            Warranty: '3 years',
+            SSD: '256 GB',
+            Ram: '8GB',
+            Warranty: '1 years',
             Operating_System: 'Windows 10 Pro',
         },
-        imgs: ['../../img/desktop-computer-500x500.jpeg', '../../img/desktop-computer2-500x500.jpeg', '../../img/img-cate.png']
+        discount_title:'',
+        imgs: ['../../image/Dell-Latitude-3520/Dell-Latitude-3520-1.jpg', '../../image/Dell-Latitude-3520/Dell-Latitude-3520-2.jpg', 
+        '../../image/Dell-Latitude-3520/Dell-Latitude-3520-3.jpg','../../image/Dell-Latitude-3520/Dell-Latitude-3520-4.jpg',
+        '../../image/Dell-Latitude-3520/Dell-Latitude-3520-5.jpg','../../image/Dell-Latitude-3520/Dell-Latitude-3520-6.jpg']
     },
 
     {
@@ -132,7 +137,9 @@ let business_product = [
         oldPrice: '£1508.97',
         newPrice: '£1429.97',
         price: '£1429.97',
+        save: '£79',
         sale: '5%',
+        discount_title:'',
         description: {
             Graphic_card: 'Quadro P520 4GB',
             Processor: 'Intel Core i7 10510U',
@@ -142,6 +149,8 @@ let business_product = [
             Warranty: '3 years',
             Operating_System: 'Windows 10 Pro',
         },
+        imgs: ['../../image/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-1.jpg','../../image/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-2.jpg',
+        '../../image/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-3.jpg','../../image/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-4.jpg'],
     },
     {
         id: 8,
