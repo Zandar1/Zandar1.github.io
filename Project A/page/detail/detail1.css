@@ -28,7 +28,7 @@
 }
 .img-container img{
     height: 478px;
-    width: 664px;
+    /* width: 664px; */
     cursor: pointer;
 }
 
@@ -232,4 +232,8 @@
 .right-detail{
   border-bottom: 1px solid #C5C5C5;
   padding-bottom: 8px;
+}
+
+.key-des {
+  font-weight: 700;
 }
