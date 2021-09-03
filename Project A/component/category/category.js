@@ -1,7 +1,7 @@
 let products_popular = [
     {
         id: 1,
-        img: './image/Microsoft-Surface-i7/Microsoft -Surface-i7-1.jpg',
+        img: '../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-1.jpg',
         name: 'Microsoft Surface Pro 7',
         des: '12.3" i7-1065G7 16GB RAM ',
         oldPrice: '£1448.97',
@@ -20,7 +20,7 @@ let products_popular = [
     },
     {
         id: 2,
-        img: './image/logitech-g305/logitech-305-1.jpg',
+        img: '../../image/logitech-g305/logitech-305-1.jpg',
         name: 'Logitech G305 Black',
         des: 'Wireless Gaming Mouse',
         oldPrice: '',
@@ -37,7 +37,7 @@ let products_popular = [
     },
     {
         id: 3,
-        img: './image/acer-nitro-5/nitro-5-1.jpg',
+        img: '../../image/acer-nitro-5/nitro-5-1.jpg',
         name: 'Acer Nitro 5 AN515',
         des: '15.6" i5-10300H 8GB 512GB GTX 1660Ti',
         oldPrice: '£869.97.97',
@@ -57,7 +57,7 @@ let products_popular = [
     },
     {
         id: 4,
-        img: './image/hyperx-cloud-2/hyperx-cloud-2.png',
+        img: '../../image/hyperx-cloud-2/hyperx-cloud-2.png',
         name: 'HyperX Cloud II',
         des: 'Wireless Gaming Headset',
         oldPrice: '£149.99',
@@ -74,7 +74,7 @@ let products_popular = [
     },
     {
         id: 5,
-        img: './image/Macbook-air-13/macbook-air-13-1.jpg',
+        img: '../../image/Macbook-air-13/macbook-air-13-1.jpg',
         name: 'Apple MacBook Air 13',
         des: '13" Apple M1 8GB 256GB SSD',
         oldPrice: '£1099.97',
@@ -95,7 +95,7 @@ let products_popular = [
 let business_product = [
     {
         id: 6,
-        img: './image/Dell-Latitude-3520/Dell-Latitude-3520-1.jpg',
+        img: '../../image/Dell-Latitude-3520/Dell-Latitude-3520-1.jpg',
         name: 'Dell Latitude 3520',
         des: '15.6" i7-10510U 16GB 512GB SSD',
         oldPrice: '',
@@ -116,7 +116,7 @@ let business_product = [
 
     {
         id: 7,
-        img: './image/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-1.jpg',
+        img: '../../image/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-1.jpg',
         name: 'HP ZBook Firefly 15 G7',
         des: '15.6" i7-10510U 16GB 512GB SSD ',
         oldPrice: '£1508.97',
@@ -135,7 +135,7 @@ let business_product = [
     },
     {
         id: 8,
-        img: './image/Lenovo-V14-ADA/Lenovo-V14-ADA-1.jpg',
+        img: '../../image/Lenovo-V14-ADA/Lenovo-V14-ADA-1.jpg',
         name: 'Lenovo V14-ADA',
         des: ' 14" Ryzen 3 3250U 8 GB RAM 256 GB SSD',
         oldPrice: '£489.97',
@@ -154,7 +154,7 @@ let business_product = [
     },
     {
         id: 9,
-        img: './image/Asus-ExpertBook-P2/Asus-ExpertBook-P2-1.jpg',
+        img: '../../image/Asus-ExpertBook-P2/Asus-ExpertBook-P2-1.jpg',
         name: 'Asus ExpertBook P2',
         des: '14" i5-10210U 8GB 256GB SSD',
         oldPrice: '£753.97',
@@ -173,7 +173,7 @@ let business_product = [
     },
     {
         id: 10,
-        img: './image/Acer-TravelMate-P2/Acer-TravelMate-P2.png',
+        img: '../../image/Acer-TravelMate-P2/Acer-TravelMate-P2.png',
         name: 'Acer TravelMate P2',
         des: ' 15.6" i7-10510U 8GB 512GB SSD',
         oldPrice: '£789.97',
@@ -195,7 +195,7 @@ let business_product = [
 let gaming_product = [
     {
         id: 11,
-        img: './image/Lenovo-Legion-5/Lenovo-Legion-5.jpg',
+        img: '../../image/Lenovo-Legion-5/Lenovo-Legion-5.jpg',
         name: 'Lenovo Legion 5',
         des: '15.6" Ryzen 5 Full HD GeForce RTX 3060 6GB',
         oldPrice: '£979.97',
@@ -214,7 +214,7 @@ let gaming_product = [
     },
     {
         id: 12,
-        img: './image/Acer-ntro-5-2/acer-nitro-5-1.png',
+        img: '../../image/Acer-ntro-5-2/acer-nitro-5-1.png',
         name: 'Acer Nitro 5',
         des: '15.6" Ryzen 7 5800H 16 GB 1TB SSD RTX 3060 6GB',
         oldPrice: '£1169.97',
@@ -233,7 +233,7 @@ let gaming_product = [
     },
     {
         id: 13,
-        img: './image/Asus-ROG-G531/Asus-ROG-G531-1.jpg',
+        img: '../../image/Asus-ROG-G531/Asus-ROG-G531-1.jpg',
         name: 'Asus ROG Strix G G531',
         des: '15.6" i7-9750H 8GB 512GB SSD GTX 1660Ti ',
         oldPrice: '£1199.97',
@@ -252,7 +252,7 @@ let gaming_product = [
     },
     {
         id: 14,
-        img: './image/MSI-katana-GF66/MSI-katana-GF66-1.png',
+        img: '../../image/MSI-katana-GF66/MSI-katana-GF66-1.png',
         name: 'MSI Katana GF66',
         des: '15.6" i5-11400H 8GB 512GB SSD 144Hz GTX 1650 4GB',
         oldPrice: '',
@@ -271,7 +271,7 @@ let gaming_product = [
     },
     {
         id: 15,
-        img: './image/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-1.jpg',
+        img: '../../image/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-1.jpg',
         name: 'Lenovo Legion 7 15IMHg05',
         des: ' 15.6" i7-10875H 144Hz RTX 2070 Super Max-Q 8GB',
         oldPrice: '£1895.97',
@@ -293,7 +293,7 @@ let gaming_product = [
 let monitors =[
     {
         id: 16,
-        img: './image/Monitors/BenQ-ZOWIE-XL2411K/BenQ-ZOWIE-XL2411K-1.png',
+        img: '../../image/Monitors/BenQ-ZOWIE-XL2411K/BenQ-ZOWIE-XL2411K-1.png',
         name: 'BenQ ZOWIE XL2411K ',
         des: '24" 144Hz Full HD e-Sports Monitor',
         oldPrice: '£299.97',
@@ -313,7 +313,7 @@ let monitors =[
 
     {
         id: 17,
-        img: './image/Monitors/Acer-Nitro-RG270/Acer-Nitro-RG270-1.jpg',
+        img: '../../image/Monitors/Acer-Nitro-RG270/Acer-Nitro-RG270-1.jpg',
         name: 'Acer Nitro RG270 ',
         des: '27" IPS Full HD Gaming Monitor ',
         oldPrice: '£164.97',
@@ -333,7 +333,7 @@ let monitors =[
 
     {
         id: 18,
-        img: './image/Monitors/Samsung-C49HG90/Samsung-C49HG90-1.jpg',
+        img: '../../image/Monitors/Samsung-C49HG90/Samsung-C49HG90-1.jpg',
         name: 'Samsung C49HG90',
         des: '49" QLED Freesync 144Hz Curved Gaming Monitor',
         oldPrice: '',
@@ -353,7 +353,7 @@ let monitors =[
 
     {
         id: 19,
-        img: './image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-1.jpg',
+        img: '../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-1.jpg',
         name: 'Lenovo ThinkVision S27i-10',
         des: '27" IPS Full HD Monitor',
         oldPrice: '£184.97',
@@ -373,7 +373,7 @@ let monitors =[
    
     {
         id: 20,
-        img: './image/Monitors/Samsung-S32R750U-32/Samsung-S32R750U-32-1.png',
+        img: '../../image/Monitors/Samsung-S32R750U-32/Samsung-S32R750U-32-1.png',
         name: 'Samsung S32R750U 32"',
         des: '4K Ultra HD Clamp-Type Monitor ',
         oldPrice: '£429.97',
@@ -420,12 +420,12 @@ const showTitle = (title, idShow) => {
 }
 showTitle('Most popular', 'show-item-1')
 
-/* const setLocal = (index, product) => {
+const setLocal = (index, product) => {
     let item = product[index]
     localStorage.setItem('detail-data', JSON.stringify(item))
-    location.replace('file:///')
+    location.replace('https://zandar1.github.io/Project%20A/page/detail/detail1.html')
 }
- */
+
 const showProduct = (product, idShow, name) => {
     let showItem = $(`#${idShow}`)
     product.forEach((item, index) => {
