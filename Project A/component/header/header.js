@@ -4,11 +4,11 @@ header.append(`
 <div id = 'info-user'>
         <div class = 'left'>
             <i id ="toogle-menu-ipad" class="fas fa-bars fa-lg toogle-menu-ipad"></i>
-            <div class= 'logo'> <a href ="Zandar1.github.io/Project A/page/hompage/homepage.html">
+            <div class= 'logo'> <a href ="https://zandar1.github.io/Project%20A/page/hompage/homepage.html">
                 <img src="../../image/logo.jpg" alt=""> </a>
             </div>
             <div >
-            <a href ="Zandar1.github.io/Project A/page/hompage/homepage.html">
+            <a href ="https://zandar1.github.io/Project%20A/page/hompage/homepage.html">
                 <img src="../../image/logo-mobile.jpg" alt="" class = 'logo-mobile'>
                 </a>
             </div>
