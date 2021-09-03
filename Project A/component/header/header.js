@@ -5,10 +5,12 @@ header.append(`
         <div class = 'left'>
             <i id ="toogle-menu-ipad" class="fas fa-bars fa-lg toogle-menu-ipad"></i>
             <div class= 'logo'> <a href ="https://zandar1.github.io/Project%20A/homepage.html">
-                <img src="./image/logo.jpg" alt=""> </a>
+                <img src="../../image/logo.jpg" alt=""> </a>
             </div>
             <div >
-                <img src="./image/logo-mobile.jpg" alt="" class = 'logo-mobile'>
+            <a href ="https://zandar1.github.io/Project%20A/homepage.html">
+                <img src="../../image/logo-mobile.jpg" alt="" class = 'logo-mobile'>
+                </a>
             </div>
 
             <div class='search-input'>
