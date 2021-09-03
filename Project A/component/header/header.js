@@ -5,10 +5,10 @@ header.append(`
         <div class = 'left'>
             <i id ="toogle-menu-ipad" class="fas fa-bars fa-lg toogle-menu-ipad"></i>
             <div class= 'logo'>
-                <img src="../../image/logo.jpg" alt="">
+                <img src="./image/logo.jpg" alt="">
             </div>
             <div >
-                <img src="../../image/logo-mobile.jpg" alt="" class = 'logo-mobile'>
+                <img src="./image/logo-mobile.jpg" alt="" class = 'logo-mobile'>
             </div>
 
             <div class='search-input'>

@@ -308,7 +308,6 @@ ul.wrap-ul .item-menu:hover{
     .cart{
         margin-right:72px;
     }
-
 }
 
 @media only screen and (max-width: 1024px) {
@@ -336,6 +335,20 @@ ul.wrap-ul .item-menu:hover{
     .fa-user-circle{
         margin-left: 10px;
     }
+
+    ul.wrap-ul .item-menu{
+        font-size: 14px;
+    }
+
+    .item-start{
+        margin-left: 0px;
+    }
+    
+    .item-end{
+        margin-right: 0px;
+    }   
+
+
 }
 @media only screen and (max-width: 768px) {
     .user-login{
