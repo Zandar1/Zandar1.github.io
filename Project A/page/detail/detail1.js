@@ -3,7 +3,7 @@
 
 // create data
 let default_data = {
-  image: '../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-1.jpg',
+  img: '../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-1.jpg',
   name: 'Lenovo ThinkPad E15 AMD Ryzen 7-5700U 16GB 512GB SSD 15.6 Inch FHD Windows 10 Pro Laptop 20YG003VUK',
   discount_title: ' <i class="fas fa-fire"></i>SELLING FAST! Less than 10 remaining',
   price: '35.171.600 đ',
@@ -49,7 +49,7 @@ renderDes()
 wrap_detail.append(`
       <div class = "product-gallery">
       <div class="img-container">
-          <img id="imgProduct" src="${data_detail.image}">
+          <img id="imgProduct" src="${data_detail.smg}">
           <div id="myModal" class="modal">
               <span class="close">&times;</span>
               <img class="modal-content" id="img01">
