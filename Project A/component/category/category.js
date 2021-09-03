@@ -16,7 +16,7 @@ let products_popular = [
             Ram: '8GB',
         },
         sale: '16%',
-        imgs: ['../../img/desktop-computer-500x500.jpeg', '../../img/desktop-computer2-500x500.jpeg', '../../img/img-cate.png'],
+        imgs: ['../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-1.jpg', '../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-2.jpg', '../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-3.jpg','../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-4.jpg','../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-5.jpg'],
     },
     {
         id: 2,
