@@ -28,7 +28,7 @@ const renderImage = () => {
   if(data_detail.imgs.length > 0) {
       data_detail.imgs.forEach((item, index) => {
           str += `
-              <img src="${item}" onclick="myFunction() alt="...">
+              <img src="${item}" onclick="myFunction(this)" alt="...">
           `
       });
   }
@@ -102,11 +102,11 @@ wrap_detail.append(`
 
 `)
 
-/* const myFunction = (smallImg) =>
+ const myFunction = (smallImg) =>
 {
     var fullImg = document.getElementById("imgProduct");
     fullImg.src = smallImg.src;
-} */
+} 
 
 
 // Get the modal
