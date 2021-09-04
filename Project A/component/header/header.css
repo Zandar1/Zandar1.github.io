@@ -28,7 +28,7 @@
 
 /* --------------------------------------------------------------- LEFT ---------------------------------------------------------------*/
 #info-user .logo{
-    padding: 0 28px 0 112px;
+    margin: 0 28px 0 112px;
     cursor: pointer;
 }
 
@@ -278,7 +278,7 @@ ul.wrap-ul .item-menu:hover{
 /* ---------------------------------------------------------------Responsive - Header - menu--------------------------------------------------------------- */
 @media only screen and (max-width: 1920px) and (min-width: 1700px){
     #info-user .logo {
-        padding-left: 313px;
+        margin-left: 313px;
     }
     
     .item-start{
@@ -295,7 +295,7 @@ ul.wrap-ul .item-menu:hover{
 
 @media only screen and (max-width: 1500px) and (min-width: 1024px){
     #info-user .logo {
-        padding-left: 72px;
+        margin-left: 72px;
     }
 
     .item-start{
@@ -312,7 +312,7 @@ ul.wrap-ul .item-menu:hover{
 
 @media only screen and (max-width: 1024px) {
     #info-user .logo{
-        padding: 0 10px 0 12px;
+        margin: 0 10px 0 12px;
     }
     .user-login .up, .user-login .down{
         display: none;

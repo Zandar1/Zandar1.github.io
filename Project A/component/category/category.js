@@ -295,7 +295,7 @@ let gaming_product = [
         },
         imgs: ['../../image/Asus-ROG-G531/Asus-ROG-G531-1.jpg','../../image/Asus-ROG-G531/Asus-ROG-G531-2.jpg',
         '../../image/Asus-ROG-G531/Asus-ROG-G531-3.jpg','../../image/Asus-ROG-G531/Asus-ROG-G531-4.jpg',
-        '../../image/Asus-ROG-G531/Asus-ROG-G531-5.jpg','../../image/Asus-ROG-G531/Asus-ROG-G531-6.jpg']
+        '../../image/Asus-ROG-G531/Asus-ROG-G531-5.jpg']
     },
     {
         id: 14,
