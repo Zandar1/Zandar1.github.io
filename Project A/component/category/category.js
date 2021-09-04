@@ -68,6 +68,7 @@ let products_popular = [
         oldPrice: '£149.99',
         newPrice: '£104.99',
         price: '£104.99',
+        discount_title: '',
         description: {
             Wired_or_Wireless: 'Low-latency 2.4 GHz Wireless with long-lasting battery life',
             Microphone: 'Built-in mic monitoring',
@@ -161,6 +162,7 @@ let business_product = [
         newPrice: '£447.97',
         price: '£447.97',
         sale: '9%',
+        discount_title: '',
         description: {
             Graphic_card: 'Radeon Graphics',
             Processor: 'AMD Ryzen 3 3250U',
@@ -182,6 +184,7 @@ let business_product = [
         newPrice: '£594.97',
         price: '£594.97',
         sale: '21%',
+        discount_title: '',
         description: {
             Graphic_card: 'UHD Graphics 620',
             Processor: 'Intel Core i5-10210U',
@@ -207,6 +210,7 @@ let business_product = [
         newPrice: '£699.97',
         price: '£699.97',
         sale: '11%',
+        discount_title: '',
         description: {
             Graphic_card: 'UHD Graphics 620',
             Processor: 'Intel Core i7-10510U',
@@ -217,9 +221,9 @@ let business_product = [
             Operating_System: 'Windows 10 Pro',
             Safe_and_secure: 'Webcam privacy shield, TPM 2.0, Fingerprint sensor',
         },
-        imgs:['../../image/Acer-TravelMate-P2/Acer-TravelMate-P2.png','../../image/Acer-TravelMate-P2/Acer-TravelMate-P2-2.png',
-        '../../image/Acer-TravelMate-P2/Acer-TravelMate-P2-3.png','../../image/Acer-TravelMate-P2/Acer-TravelMate-P2-4.png',
-        '../../image/Acer-TravelMate-P2/Acer-TravelMate-P2-5.png']
+        imgs:['../../image/Acer-TravelMate-P2/Acer-TravelMate-P2.png','../../image/Acer-TravelMate-P2/Acer-TravelMate-P2-2.jpg',
+        '../../image/Acer-TravelMate-P2/Acer-TravelMate-P2-3.jpg','../../image/Acer-TravelMate-P2/Acer-TravelMate-P2-4.jpg',
+        '../../image/Acer-TravelMate-P2/Acer-TravelMate-P2-5.jpg']
     },
 ]
 
@@ -233,6 +237,7 @@ let gaming_product = [
         newPrice: '£899.97',
         price: '£699.97',
         sale: '8%',
+        discount_title: 'FREE GEFORCE NOW FOUNDERS MEMBERSHIP',
         description: {
             Graphic_card: 'GeForce RTX 3060 6GB',
             Processor: 'AMD Ryzen 5 5600H',
@@ -242,6 +247,9 @@ let gaming_product = [
             Warranty: '1 year',
             Operating_System: 'Windows 10',
         },
+        imgs: ['../../image/Lenovo-Legion-5/Lenovo-Legion-5.jpg','../../image/Lenovo-Legion-5/Lenovo-Legion-5-2.jpg',
+        '../../image/Lenovo-Legion-5/Lenovo-Legion-5-3.jpg','../../image/Lenovo-Legion-5/Lenovo-Legion-5-4.jpg',
+        '../../image/Lenovo-Legion-5/Lenovo-Legion-5-5.jpg','../../image/Lenovo-Legion-5/Lenovo-Legion-5-6.jpg']
     },
     {
         id: 12,
@@ -252,6 +260,7 @@ let gaming_product = [
         newPrice: '£1099.97',
         price: '£1099.97',
         sale: '6%',
+        discount_title: 'FREE GEFORCE NOW FOUNDERS MEMBERSHIP',
         description: {
             Graphic_card: 'GeForce RTX 3060 6GB',
             Processor: 'AMD Ryzen 7 5800H',
@@ -261,6 +270,9 @@ let gaming_product = [
             Warranty: '1 year',
             Operating_System: 'Windows 10',
         },
+        imgs: ['../../image/Acer-ntro-5-2/acer-nitro-5-1.png','../../image/Acer-ntro-5-2/acer-nitro-5-2.png',
+        '../../image/Acer-ntro-5-2/acer-nitro-5-3.png','../../image/Acer-ntro-5-2/acer-nitro-5-4.png',
+        '../../image/Acer-ntro-5-2/acer-nitro-5-5.png','../../image/Acer-ntro-5-2/acer-nitro-5-6.png']
     },
     {
         id: 13,
@@ -271,6 +283,7 @@ let gaming_product = [
         newPrice: '£899.97',
         price: '£899.97',
         sale: '25%',
+        discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining',
         description: {
             Graphic_card: 'GeForce GTX 1660Ti 6GB',
             Processor: 'Intel Core i7-9750H',
@@ -280,6 +293,9 @@ let gaming_product = [
             Warranty: '1 year',
             Operating_System: 'Windows 10',
         },
+        imgs: ['../../image/Asus-ROG-G531/Asus-ROG-G531-1.jpg','../../image/Asus-ROG-G531/Asus-ROG-G531-2.jpg',
+        '../../image/Asus-ROG-G531/Asus-ROG-G531-3.jpg','../../image/Asus-ROG-G531/Asus-ROG-G531-4.jpg',
+        '../../image/Asus-ROG-G531/Asus-ROG-G531-5.jpg','../../image/Asus-ROG-G531/Asus-ROG-G531-6.jpg']
     },
     {
         id: 14,
@@ -290,6 +306,7 @@ let gaming_product = [
         newPrice: '£699.97',
         price: '£699.97',
         sale: '',
+        discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining',
         description: {
             Graphic_card: 'GeForce GTX 1650 4GB',
             Processor: 'Intel Core i5-11400H',
@@ -299,6 +316,9 @@ let gaming_product = [
             Warranty: '1 year',
             Operating_System: 'Windows 10',
         },
+        imgs: ['../../image/MSI-katana-GF66/MSI-katana-GF66-1.png','../../image/MSI-katana-GF66/MSI-katana-GF66-2.png',
+        '../../image/MSI-katana-GF66/MSI-katana-GF66-3.png','../../image/MSI-katana-GF66/MSI-katana-GF66-4.png',
+        '../../image/MSI-katana-GF66/MSI-katana-GF66-5.png','../../image/MSI-katana-GF66/MSI-katana-GF66-6.png']
     },
     {
         id: 15,
@@ -309,6 +329,7 @@ let gaming_product = [
         newPrice: '£1299.97',
         price: '£1299.97',
         sale: '31%',
+        discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining', 
         description: {
             Graphic_card: 'GeForce GTX 2070 Super Max-Q 8GB',
             Processor: 'Intel Core i7-10875H',
@@ -325,7 +346,7 @@ let monitors =[
     {
         id: 16,
         img: '../../image/Monitors/BenQ-ZOWIE-XL2411K/BenQ-ZOWIE-XL2411K-1.png',
-        name: 'BenQ ZOWIE XL2411K ',
+        name: 'BenQ ZOWIE XL2411K',
         des: '24" 144Hz Full HD e-Sports Monitor',
         oldPrice: '£299.97',
         newPrice: '£184.97',
@@ -340,6 +361,8 @@ let monitors =[
             Warranty: '1 year',
             Operating_System: 'Windows 10',
         },
+        imgs: ['../../image/Monitors/BenQ-ZOWIE-XL2411K/BenQ-ZOWIE-XL2411K-1.png','../../image/Monitors/BenQ-ZOWIE-XL2411K/BenQ-ZOWIE-XL2411K-2.jpg',
+        '../../image/Monitors/BenQ-ZOWIE-XL2411K/BenQ-ZOWIE-XL2411K-3.jpg','../../image/Monitors/BenQ-ZOWIE-XL2411K/BenQ-ZOWIE-XL2411K-4.jpg']
     },
 
     {
