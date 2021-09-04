@@ -78,6 +78,7 @@
     font-size: 18px;
     line-height: 22px;
     padding: 0 2px 28px 8px;
+    height: 71.2px;
 }
 
 .new-price{
@@ -139,7 +140,7 @@
     }
 }
 
-@media only screen and (max-width: 1500px) and (min-width: 1024px){
+@media only screen and (max-width: 1500px) and (min-width: 1200px){
     .new-product-title {
         margin-left: 72px;
     }
@@ -149,6 +150,24 @@
     }
 }
 
+@media only screen and (max-width: 1200px) and (min-width: 1024px){
+    .new-product-title {
+        margin-left: 72px;
+    }
+
+    .view-all {
+        margin-right: 72px;
+    }
+    .show-item{
+        margin-bottom: 40px;
+        max-height: 450px;
+        overflow: hidden; 
+    }
+
+    .new-product{
+        margin-bottom: 30px;
+    }
+}
 @media only screen and (max-width: 1024px) {
     .new-product-title {
         margin-left: 12px;
@@ -164,6 +183,8 @@
 
     .show-item{
         margin-bottom: 20px;
+        max-height: 450px;
+        overflow: hidden; 
     }
 
     .banner{
@@ -197,5 +218,14 @@
 
     .view-all span{
         margin: 0 12px 0 20px;
+    }
+
+     .show-item{
+        overflow:unset;
+        max-height: unset;
+    } 
+
+    .item-card{
+        margin: 10px;
     }
 }

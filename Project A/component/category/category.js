@@ -170,6 +170,8 @@ let business_product = [
             Warranty: '1 year',
             Operating_System: 'Windows 10 Pro',
         },
+        imgs: ['../../image/Lenovo-V14-ADA/Lenovo-V14-ADA-1.jpg','../../image/Lenovo-V14-ADA/Lenovo-V14-ADA-2.jpg'
+                ,'../../image/Lenovo-V14-ADA/Lenovo-V14-ADA-3.jpg','../../image/Lenovo-V14-ADA/Lenovo-V14-ADA-4.jpg']
     },
     {
         id: 9,
@@ -186,9 +188,15 @@ let business_product = [
             Screen_size: '14 Inch Full HD Screen',
             SSD: '256 GB',
             Ram: '8GB',
+            Convenient_SensePoint_pointing_nub:'in the middle of the keyboard',
+            Safe_and_secure: 'Webcam privacy shield, TPM 2.0, Fingerprint sensor',
             Warranty: '1 year',
             Operating_System: 'Windows 10 Pro',
         },
+        imgs: ['../../image/Asus-ExpertBook-P2/Asus-ExpertBook-P2-1.jpg','../../image/Asus-ExpertBook-P2/Asus-ExpertBook-P2-2.jpg',
+        '../../image/Asus-ExpertBook-P2/Asus-ExpertBook-P2-3.jpg','../../image/Asus-ExpertBook-P2/Asus-ExpertBook-P2-4.jpg',
+        '../../image/Asus-ExpertBook-P2/Asus-ExpertBook-P2-5.jpg','../../image/Asus-ExpertBook-P2/Asus-ExpertBook-P2-6.jpg',
+        '../../image/Asus-ExpertBook-P2/Asus-ExpertBook-P2-7.jpg',]
     },
     {
         id: 10,
@@ -207,7 +215,11 @@ let business_product = [
             Ram: '8GB',
             Warranty: '1 year',
             Operating_System: 'Windows 10 Pro',
+            Safe_and_secure: 'Webcam privacy shield, TPM 2.0, Fingerprint sensor',
         },
+        imgs:['../../image/Acer-TravelMate-P2/Acer-TravelMate-P2.png','../../image/Acer-TravelMate-P2/Acer-TravelMate-P2-2.png',
+        '../../image/Acer-TravelMate-P2/Acer-TravelMate-P2-3.png','../../image/Acer-TravelMate-P2/Acer-TravelMate-P2-4.png',
+        '../../image/Acer-TravelMate-P2/Acer-TravelMate-P2-5.png']
     },
 ]
 
