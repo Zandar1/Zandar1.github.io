@@ -401,6 +401,7 @@ let monitors =[
         newPrice: '£809.97',
         price: '£809.97',
         sale: '',
+        discount_title:'',
         description: {
             Screen_size: '49 Inch',
             Response_time: '1MS',
@@ -424,6 +425,7 @@ let monitors =[
         newPrice: '£149.97',
         price: '£149.97',
         sale: '19%',
+        discount_title:'',
         description: {
             Screen_size: '27 Inch',
             Response_time: '4MS',
@@ -442,12 +444,13 @@ let monitors =[
     {
         id: 20,
         img: '../../image/Monitors/Samsung-S32R750U-32/Samsung-S32R750U-32-1.png',
-        name: 'Samsung S32R750U 32"',
-        des: '4K Ultra HD Clamp-Type Monitor ',
+        name: 'Samsung S32R750U',
+        des: '32" 4K Ultra HD Clamp-Type Monitor ',
         oldPrice: '£429.97',
         newPrice: '£329.97',
         price: '£329.97',
         sale: '23%',
+        discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining', 
         description: {
             Screen_size: '32 Inch',
             Response_time: '4MS',
@@ -455,8 +458,11 @@ let monitors =[
             Resolution: '3840 x 2160 Ultra HD 4K Resolution',
             Panel_type: 'VA',
             Warranty: '2 years',
-            Ports: 'HDMI',
+            Ports: 'HDMI',    
     },
+    imgs: ['../../image/Monitors/Samsung-S32R750U-32/Samsung-S32R750U-32-1.png','../../image/Monitors/Samsung-S32R750U-32/Samsung-S32R750U-32-2.png',
+    '../../image/Monitors/Samsung-S32R750U-32/Samsung-S32R750U-32-3.png','../../image/Monitors/Samsung-S32R750U-32/Samsung-S32R750U-32-4.png',
+    '../../image/Monitors/Samsung-S32R750U-32/Samsung-S32R750U-32-5.png','../../image/Monitors/Samsung-S32R750U-32/Samsung-S32R750U-32-6.png'],
 },
 ]
 
@@ -505,7 +511,7 @@ const showProduct = (product, idShow, name) => {
                     <div class="image-item">
                         <img src="${item.img}" alt="">
                     </div>
-                    <div class="product-name">${item.name}</div>
+                    <div class="product-name">${item.name} ${item.des}</div>
                     <div class="description">${item.des}</div>
                     <div class="new-price">${item.newPrice}</div>
                     <div class = "reduction">
