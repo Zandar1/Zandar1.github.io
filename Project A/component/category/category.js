@@ -339,6 +339,9 @@ let gaming_product = [
             Warranty: '1 year',
             Operating_System: 'Windows 10',
         },
+        igms: ['../../image/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-1.jpg','../../image/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-2.jpg',
+        '../../image/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-3.jpg','../../image/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-4.jpg',
+        '../../image/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-5.jpg','../../image/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-6.jpg']
     },
 ]
 
@@ -352,6 +355,7 @@ let monitors =[
         newPrice: '£184.97',
         price: '£184.97',
         sale: '38%',
+        discount_title: '',
         description: {
             Graphic_card: 'GeForce GTX 2070 Super Max-Q 8GB',
             Processor: 'Intel Core i7-10875H',
@@ -368,12 +372,13 @@ let monitors =[
     {
         id: 17,
         img: '../../image/Monitors/Acer-Nitro-RG270/Acer-Nitro-RG270-1.jpg',
-        name: 'Acer Nitro RG270 ',
+        name: 'Acer Nitro RG270',
         des: '27" IPS Full HD Gaming Monitor ',
         oldPrice: '£164.97',
         newPrice: '£144.97',
         price: '£1299.97',
         sale: '12%',
+        discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining', 
         description: {
             Screen_size: '27 Inch',
             Response_time: '1MS',
@@ -383,6 +388,8 @@ let monitors =[
             Warranty: '1 year',
             Ports: 'HDMI VGA',
         },
+        imgs: ['../../image/Monitors/Acer-Nitro-RG270/Acer-Nitro-RG270-1.jpg','../../image/Monitors/Acer-Nitro-RG270/Acer-Nitro-RG270-2.jpg',
+        '../../image/Monitors/Acer-Nitro-RG270/Acer-Nitro-RG270-3.jpg','../../image/Monitors/Acer-Nitro-RG270/Acer-Nitro-RG270-4.jpg']
     },
 
     {
@@ -403,6 +410,9 @@ let monitors =[
             Warranty: '2 years',
             Ports: 'HDMI DisplayPort',
         },
+        imgs: ['../../image/Monitors/Samsung-C49HG90/Samsung-C49HG90-1.jpg','../../image/Monitors/Samsung-C49HG90/Samsung-C49HG90-2.jpg',
+        '../../image/Monitors/Samsung-C49HG90/Samsung-C49HG90-3.jpg','../../image/Monitors/Samsung-C49HG90/Samsung-C49HG90-4.jpg',
+        '../../image/Monitors/Samsung-C49HG90/Samsung-C49HG90-5.jpg','../../image/Monitors/Samsung-C49HG90/Samsung-C49HG90-6.jpg']
     },
 
     {
@@ -423,6 +433,10 @@ let monitors =[
             Warranty: '3 years',
             Ports: 'HDMI VGA',
         },
+        igms: ['../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-1.jpg','../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-2.jpg',
+        '../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-3.jpg','../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-4.jpg',
+        '../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-5.jpg','../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-6.jpg',
+        '../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-7.jpg']
     },
    
     {
