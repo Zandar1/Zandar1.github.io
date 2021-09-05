@@ -70,7 +70,7 @@ wrap_detail.append(`
 
       <div class="col-12 col-lg-6 col-sm-12">
       <div class="right-detail">
-          <div class="name-product">${data_detail.name}</div>
+          <div class="name-product">${data_detail.name}${data_detail.des}</div>
           <div class="discount-title">${data_detail.discount_title}</div>
           <div class="price-box">
               <div class="price-tag">

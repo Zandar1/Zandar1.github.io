@@ -1,7 +1,7 @@
 let products_popular = [
     {
         id: 1,
-        img: '../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-1.jpg',
+        img: '../../image/Laptop/Microsoft-Surface-i7/Microsoft -Surface-i7-1.jpg',
         name: 'Microsoft Surface Pro 7',
         des: '12.3" i7-1065G7 16GB RAM ',
         oldPrice: '£1448.97',
@@ -40,7 +40,7 @@ let products_popular = [
     },
     {
         id: 3,
-        img: '../../image/acer-nitro-5/nitro-5-1.jpg',
+        img: '../../image/Laptop/acer-nitro-5/nitro-5-1.jpg',
         name: 'Acer Nitro 5 AN515',
         des: '15.6" i5-10300H 8GB 512GB GTX 1660Ti',
         oldPrice: '£869.97',
@@ -83,7 +83,7 @@ let products_popular = [
     },
     {
         id: 5,
-        img: '../../image/Macbook-air-13/macbook-air-13-1.jpg',
+        img: '../../image/Laptop/Macbook-air-13/macbook-air-13-1.jpg',
         name: 'Apple MacBook Air 13',
         des: '13" Apple M1 8GB 256GB SSD',
         oldPrice: '£1099.97',
@@ -108,7 +108,7 @@ let products_popular = [
 let business_product = [
     {
         id: 6,
-        img: '../../image/Dell-Latitude-3520/Dell-Latitude-3520-1.jpg',
+        img: '../../image/Laptop/Dell-Latitude-3520/Dell-Latitude-3520-1.jpg',
         name: 'Dell Latitude 3520',
         des: '15.6" i5-10210U 8GB 256GB SSD',
         oldPrice: '£769.97',
@@ -132,7 +132,7 @@ let business_product = [
 
     {
         id: 7,
-        img: '../../image/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-1.jpg',
+        img: '../../image/Laptop/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-1.jpg',
         name: 'HP ZBook Firefly 15 G7',
         des: '15.6" i7-10510U 16GB 512GB SSD ',
         oldPrice: '£1508.97',
@@ -155,7 +155,7 @@ let business_product = [
     },
     {
         id: 8,
-        img: '../../image/Lenovo-V14-ADA/Lenovo-V14-ADA-1.jpg',
+        img: '../../image/Laptop/Lenovo-V14-ADA/Lenovo-V14-ADA-1.jpg',
         name: 'Lenovo V14-ADA',
         des: ' 14" Ryzen 3 3250U 8 GB RAM 256 GB SSD',
         oldPrice: '£489.97',
@@ -177,7 +177,7 @@ let business_product = [
     },
     {
         id: 9,
-        img: '../../image/Asus-ExpertBook-P2/Asus-ExpertBook-P2-1.jpg',
+        img: '../../image/Laptop/Asus-ExpertBook-P2/Asus-ExpertBook-P2-1.jpg',
         name: 'Asus ExpertBook P2',
         des: '14" i5-10210U 8GB 256GB SSD',
         oldPrice: '£753.97',
@@ -203,7 +203,7 @@ let business_product = [
     },
     {
         id: 10,
-        img: '../../image/Acer-TravelMate-P2/Acer-TravelMate-P2.png',
+        img: '../../image/Laptop/Acer-TravelMate-P2/Acer-TravelMate-P2.png',
         name: 'Acer TravelMate P2',
         des: ' 15.6" i7-10510U 8GB 512GB SSD',
         oldPrice: '£789.97',
@@ -230,7 +230,7 @@ let business_product = [
 let gaming_product = [
     {
         id: 11,
-        img: '../../image/Lenovo-Legion-5/Lenovo-Legion-5.jpg',
+        img: '../../image/Laptop/Lenovo-Legion-5/Lenovo-Legion-5.jpg',
         name: 'Lenovo Legion 5',
         des: '15.6" Ryzen 5 Full HD GeForce RTX 3060 6GB',
         oldPrice: '£979.97',
@@ -253,7 +253,7 @@ let gaming_product = [
     },
     {
         id: 12,
-        img: '../../image/Acer-ntro-5-2/acer-nitro-5-1.png',
+        img: '../../image/Laptop/Acer-ntro-5-2/acer-nitro-5-1.png',
         name: 'Acer Nitro 5',
         des: '15.6" Ryzen 7 5800H 16 GB 1TB SSD RTX 3060 6GB',
         oldPrice: '£1169.97',
@@ -276,7 +276,7 @@ let gaming_product = [
     },
     {
         id: 13,
-        img: '../../image/Asus-ROG-G531/Asus-ROG-G531-1.jpg',
+        img: '../../image/Laptop/Asus-ROG-G531/Asus-ROG-G531-1.jpg',
         name: 'Asus ROG Strix G G531',
         des: '15.6" i7-9750H 8GB 512GB SSD GTX 1660Ti ',
         oldPrice: '£1199.97',
@@ -299,7 +299,7 @@ let gaming_product = [
     },
     {
         id: 14,
-        img: '../../image/MSI-katana-GF66/MSI-katana-GF66-1.png',
+        img: '../../image/Laptop/MSI-katana-GF66/MSI-katana-GF66-1.png',
         name: 'MSI Katana GF66',
         des: '15.6" i5-11400H 8GB 512GB SSD 144Hz GTX 1650 4GB',
         oldPrice: '',
@@ -322,7 +322,7 @@ let gaming_product = [
     },
     {
         id: 15,
-        img: '../../image/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-1.jpg',
+        img: '../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-1.jpg',
         name: 'Lenovo Legion 7 15IMHg05',
         des: ' 15.6" i7-10875H 144Hz RTX 2070 Super Max-Q 8GB',
         oldPrice: '£1895.97',
@@ -511,10 +511,10 @@ const showProduct = (product, idShow, name) => {
                     <div class="image-item">
                         <img src="${item.img}" alt="">
                     </div>
-                    <div class="product-name">${item.name} ${item.des}</div>
+                    <div class="product-name">${item.name}</div>
                     <div class="description">${item.des}</div>
                     <div class="new-price">${item.newPrice}</div>
-                    <div class = "reduction">
+                    <div class = "reduction" id ="reduction">
                             <div class = "old-price">${item.oldPrice}</div>
                             <span  style ="font-size: 20px; padding: 0 6px 0 6px;">/</span>
                             <div class = "sale-off"> Save ${item.sale}</div>
@@ -547,8 +547,6 @@ $(document).load($(window).bind("resize", listenWidth));
        $(".view-all-products").html("<div>Browse all</div>");
         } 
     }
-
-
 
 
 
