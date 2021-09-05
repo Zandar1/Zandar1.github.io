@@ -43,7 +43,7 @@ header.append(`
 
     <div id = 'main-menu'>
         <ul class="wrap-ul">
-            <li class = "item-menu item-start"> <i class="fas fa-laptop"></i> Laptops</li>
+            <li class = "item-menu item-start"> <i class="fas fa-laptop"></i> <a href="https://zandar1.github.io/Project%20A/page/Product_Laptop/product_laptop.html"> Laptops </a></li> 
             <li class = "item-menu"><i class="fas fa-headphones-alt"></i>Headphones</li>
             <li class = "item-menu"><i class="fas fa-mouse-pointer"></i>Mice</li>
             <li class = "item-menu"><i class="fal fa-keyboard"></i>Keyboards</li>

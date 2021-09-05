@@ -167,12 +167,12 @@ var GBPFormatter = new Intl.NumberFormat('en-US', {
     currency: 'GBP',
   });
 
-  const setLocal = (index,list) => {
+ /*  const setLocal = (index,list) => {
     let item = list[index]
     localStorage.setItem('detail-data', JSON.stringify(item))
     location.replace('https://zandar1.github.io/Project%20A/page/detail/detail1.html')
 }
-
+ */
 const renderList = (list,product) => {
     let str = "";
     list.forEach((item,index) => {  
