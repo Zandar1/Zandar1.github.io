@@ -354,7 +354,7 @@ let gaming_product = [
             Warranty: '1 year',
             Operating_System: 'Windows 10',
         },
-        igms: ['../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-1.jpg','../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-2.jpg',
+        imgs: ['../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-1.jpg','../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-2.jpg',
         '../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-3.jpg','../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-4.jpg',
         '../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-5.jpg','../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-6.jpg']
     },
@@ -454,7 +454,7 @@ let monitors =[
             Warranty: '3 years',
             Ports: 'HDMI VGA',
         },
-        igms: ['../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-1.jpg','../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-2.jpg',
+        imgs: ['../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-1.jpg','../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-2.jpg',
         '../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-3.jpg','../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-4.jpg',
         '../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-5.jpg','../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-6.jpg',
         '../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-7.jpg']
