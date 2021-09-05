@@ -9,7 +9,7 @@ let default_data = {
   oldPrice: '£1448.97',
   newPrice: '£1219.97',
   price: '35.171.600 đ',
-  save: '1',
+  save: 'You save: 1',
   description: {
       Graphic_card: 'Radeon Graphics',
       Processor: 'AMD Ryzen 7 5700 U',
@@ -74,7 +74,7 @@ wrap_detail.append(`
           <div class="discount-title">${data_detail.discount_title}</div>
           <div class="price-box">
               <div class="price-tag">
-                  <div class ="saving">You save:${data_detail.save}</div>
+                  <div class ="saving">${data_detail.save}</div>
                   <div class = "price">${data_detail.price}</div>       
               </div>
               <div class="add-button">Add to basket <i class="far fa-chevron-double-right"></i></div>

@@ -7,6 +7,7 @@ let products_popular = [
         oldPrice: '£1448.97',
         newPrice: '£1219.97',
         price: '£1219.97',
+        save: 'You save: £229',
         description: {
             Processor: 'Intel Core i7',
             Screen_size: '12.3 inch',
@@ -15,7 +16,6 @@ let products_popular = [
             Ram: '16GB',
         },
         discount_title: '',
-        save: '£229',
         sale: '16%',
         imgs: ['../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-1.jpg', '../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-2.jpg', '../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-3.jpg','../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-4.jpg','../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-5.jpg'],
     },
@@ -46,6 +46,8 @@ let products_popular = [
         oldPrice: '£869.97',
         newPrice: '£699.97',
         price: '£699.97',
+        save: 'You save: £170',
+        sale: '11%',
         discount_title: '',
         description: {
             Graphic_card: 'GeForce GTX 1660Ti 6GB',
@@ -56,8 +58,6 @@ let products_popular = [
             Warranty: '1 year',
             Operating_System: 'Windows 10',
         },
-        save: '£170',
-        sale: '11%',
         imgs: ['../../image/acer-nitro-5/nitro-5-1.jpg', '../../image/acer-nitro-5/nitro-5-2.jpg', '../../image/acer-nitro-5/nitro-5-3.jpg', '../../image/acer-nitro-5/nitro-5-4.jpg','../../image/acer-nitro-5/nitro-5-4.jpg','../../image/acer-nitro-5/nitro-5-5.jpg','../../image/acer-nitro-5/nitro-5-6.jpg','../../image/acer-nitro-5/nitro-5-7.jpg']
     },
     {
@@ -69,6 +69,8 @@ let products_popular = [
         newPrice: '£104.99',
         price: '£104.99',
         discount_title: '',
+        save: 'You save: £45',
+        sale: '43%',
         description: {
             Wired_or_Wireless: 'Low-latency 2.4 GHz Wireless with long-lasting battery life',
             Microphone: 'Built-in mic monitoring',
@@ -76,8 +78,6 @@ let products_popular = [
             Noise_cancelling: 'Passive noise cancelling',
         },
         discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining',
-        save: '£45',
-        sale: '43%',
         imgs: ['../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2.png', '../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-2.png',
         '../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-3.png','../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-4.png','../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-5.png']
     },
@@ -89,6 +89,8 @@ let products_popular = [
         oldPrice: '£1099.97',
         newPrice: '£899.97',
         price: '£899.97',
+        save: 'You save: £200',
+        sale: '18%',
         description: {
             Processor: 'M1',
             Screen_size: '13.3 Inch 2560 x 1600',
@@ -98,8 +100,6 @@ let products_popular = [
             Operating_System: 'MacOS',
         },
         discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining',
-        save: '£200',
-        sale: '18%',
         imgs: ['../../image/Macbook-air-13/macbook-air-13-1.jpg', '../../image/Macbook-air-13/macbook-air-13-2.jpg', '../../image/Macbook-air-13/macbook-air-13-3.jpg']
     },
 ]
@@ -114,7 +114,7 @@ let business_product = [
         oldPrice: '£769.97',
         newPrice: '£709.97',
         price: '£709.97',
-        save: '£60',
+        save: 'You save: £60',
         sale: '8%',
         description: {
             Processor: 'Intel Core i5 10210U',
@@ -138,7 +138,7 @@ let business_product = [
         oldPrice: '£1508.97',
         newPrice: '£1429.97',
         price: '£1429.97',
-        save: '£79',
+        save: 'You save: £79',
         sale: '5%',
         discount_title:'',
         description: {
@@ -162,6 +162,7 @@ let business_product = [
         newPrice: '£447.97',
         price: '£447.97',
         sale: '9%',
+        save: 'You save: £42',
         discount_title: '',
         description: {
             Graphic_card: 'Radeon Graphics',
@@ -183,6 +184,7 @@ let business_product = [
         oldPrice: '£753.97',
         newPrice: '£594.97',
         price: '£594.97',
+        save: 'You save: £159',
         sale: '21%',
         discount_title: '',
         description: {
@@ -209,6 +211,7 @@ let business_product = [
         oldPrice: '£789.97',
         newPrice: '£699.97',
         price: '£699.97',
+        save: 'You save: £90',
         sale: '11%',
         discount_title: '',
         description: {
@@ -236,6 +239,7 @@ let gaming_product = [
         oldPrice: '£979.97',
         newPrice: '£899.97',
         price: '£699.97',
+        save: 'You save: £80',
         sale: '8%',
         discount_title: 'FREE GEFORCE NOW FOUNDERS MEMBERSHIP',
         description: {
@@ -259,6 +263,7 @@ let gaming_product = [
         oldPrice: '£1169.97',
         newPrice: '£1099.97',
         price: '£1099.97',
+        save: 'You save: £70',
         sale: '6%',
         discount_title: 'FREE GEFORCE NOW FOUNDERS MEMBERSHIP',
         description: {
@@ -282,6 +287,7 @@ let gaming_product = [
         oldPrice: '£1199.97',
         newPrice: '£899.97',
         price: '£899.97',
+        save: 'You save: £300',
         sale: '25%',
         discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining',
         description: {
@@ -305,6 +311,7 @@ let gaming_product = [
         oldPrice: '',
         newPrice: '£699.97',
         price: '£699.97',
+        save: '',
         sale: '',
         discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining',
         description: {
@@ -328,6 +335,7 @@ let gaming_product = [
         oldPrice: '£1895.97',
         newPrice: '£1299.97',
         price: '£1299.97',
+        save: 'You save: £596',
         sale: '31%',
         discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining', 
         description: {
@@ -354,6 +362,7 @@ let monitors =[
         oldPrice: '£299.97',
         newPrice: '£184.97',
         price: '£184.97',
+        save: 'You save: 115£',
         sale: '38%',
         discount_title: '',
         description: {
@@ -377,6 +386,7 @@ let monitors =[
         oldPrice: '£164.97',
         newPrice: '£144.97',
         price: '£1299.97',
+        save: 'You save: £20',
         sale: '12%',
         discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining', 
         description: {
@@ -400,6 +410,7 @@ let monitors =[
         oldPrice: '',
         newPrice: '£809.97',
         price: '£809.97',
+        save: '',
         sale: '',
         discount_title:'',
         description: {
@@ -424,6 +435,7 @@ let monitors =[
         oldPrice: '£184.97',
         newPrice: '£149.97',
         price: '£149.97',
+        save: 'You save: £35',
         sale: '19%',
         discount_title:'',
         description: {
@@ -449,6 +461,7 @@ let monitors =[
         oldPrice: '£429.97',
         newPrice: '£329.97',
         price: '£329.97',
+        save: 'You save: £100',
         sale: '23%',
         discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining', 
         description: {
