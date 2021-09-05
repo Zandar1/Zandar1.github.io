@@ -17,7 +17,10 @@ let products_popular = [
         },
         discount_title: '',
         sale: '16%',
-        imgs: ['../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-1.jpg', '../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-2.jpg', '../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-3.jpg','../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-4.jpg','../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-5.jpg'],
+        imgs: ['../../image/Laptop/Microsoft-Surface-i7/Microsoft -Surface-i7-1.jpg', '../../image/Laptop/Microsoft-Surface-i7/Microsoft -Surface-i7-2.jpg',
+         '../../image/Laptop/Microsoft-Surface-i7/Microsoft -Surface-i7-3.jpg',
+         '../../image/Laptop/Microsoft-Surface-i7/Microsoft -Surface-i7-4.jpg',
+         '../../image/Laptop/Microsoft-Surface-i7/Microsoft -Surface-i7-5.jpg'],
     },
     {
         id: 2,
@@ -58,7 +61,10 @@ let products_popular = [
             Warranty: '1 year',
             Operating_System: 'Windows 10',
         },
-        imgs: ['../../image/acer-nitro-5/nitro-5-1.jpg', '../../image/acer-nitro-5/nitro-5-2.jpg', '../../image/acer-nitro-5/nitro-5-3.jpg', '../../image/acer-nitro-5/nitro-5-4.jpg','../../image/acer-nitro-5/nitro-5-4.jpg','../../image/acer-nitro-5/nitro-5-5.jpg','../../image/acer-nitro-5/nitro-5-6.jpg','../../image/acer-nitro-5/nitro-5-7.jpg']
+        imgs: ['../../image/Laptop/acer-nitro-5/nitro-5-1.jpg', '../../image/Laptop/acer-nitro-5/nitro-5-2.jpg', 
+        '../../image/Laptop/acer-nitro-5/nitro-5-3.jpg', '../../image/Laptop/acer-nitro-5/nitro-5-4.jpg',
+        '../../image/Laptop/acer-nitro-5/nitro-5-4.jpg','../../image/Laptop/acer-nitro-5/nitro-5-5.jpg',
+        '../../image/Laptop/acer-nitro-5/nitro-5-6.jpg','../../image/Laptop/acer-nitro-5/nitro-5-7.jpg']
     },
     {
         id: 4,
@@ -100,7 +106,8 @@ let products_popular = [
             Operating_System: 'MacOS',
         },
         discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining',
-        imgs: ['../../image/Macbook-air-13/macbook-air-13-1.jpg', '../../image/Macbook-air-13/macbook-air-13-2.jpg', '../../image/Macbook-air-13/macbook-air-13-3.jpg']
+        imgs: ['../../image/Laptop/Macbook-air-13/macbook-air-13-1.jpg', '../../image/Laptop/Macbook-air-13/macbook-air-13-2.jpg', 
+        '../../image/Laptop/Macbook-air-13/macbook-air-13-3.jpg']
     },
 ]
 
@@ -125,9 +132,9 @@ let business_product = [
             Operating_System: 'Windows 10 Pro',
         },
         discount_title:'',
-        imgs: ['../../image/Dell-Latitude-3520/Dell-Latitude-3520-1.jpg', '../../image/Dell-Latitude-3520/Dell-Latitude-3520-2.jpg', 
-        '../../image/Dell-Latitude-3520/Dell-Latitude-3520-3.jpg','../../image/Dell-Latitude-3520/Dell-Latitude-3520-4.jpg',
-        '../../image/Dell-Latitude-3520/Dell-Latitude-3520-5.jpg','../../image/Dell-Latitude-3520/Dell-Latitude-3520-6.jpg']
+        imgs: ['../../image/Laptop/Dell-Latitude-3520/Dell-Latitude-3520-1.jpg', '../../image/Laptop/Dell-Latitude-3520/Dell-Latitude-3520-2.jpg', 
+        '../../image/Laptop/Dell-Latitude-3520/Dell-Latitude-3520-3.jpg','../../image/Laptop/Dell-Latitude-3520/Dell-Latitude-3520-4.jpg',
+        '../../image/Laptop/Dell-Latitude-3520/Dell-Latitude-3520-5.jpg','../../image/Laptop/Dell-Latitude-3520/Dell-Latitude-3520-6.jpg']
     },
 
     {
@@ -150,8 +157,8 @@ let business_product = [
             Warranty: '3 years',
             Operating_System: 'Windows 10 Pro',
         },
-        imgs: ['../../image/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-1.jpg','../../image/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-2.jpg',
-        '../../image/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-3.jpg','../../image/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-4.jpg'],
+        imgs: ['../../image/Laptop/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-1.jpg','../../image/Laptop/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-2.jpg',
+        '../../image/Laptop/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-3.jpg','../../image/Laptop/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-4.jpg'],
     },
     {
         id: 8,
@@ -173,8 +180,8 @@ let business_product = [
             Warranty: '1 year',
             Operating_System: 'Windows 10 Pro',
         },
-        imgs: ['../../image/Lenovo-V14-ADA/Lenovo-V14-ADA-1.jpg','../../image/Lenovo-V14-ADA/Lenovo-V14-ADA-2.jpg'
-                ,'../../image/Lenovo-V14-ADA/Lenovo-V14-ADA-3.jpg','../../image/Lenovo-V14-ADA/Lenovo-V14-ADA-4.jpg']
+        imgs: ['../../image/Laptop/Lenovo-V14-ADA/Lenovo-V14-ADA-1.jpg','../../image/Laptop/Lenovo-V14-ADA/Lenovo-V14-ADA-2.jpg'
+                ,'../../image/Laptop/Lenovo-V14-ADA/Lenovo-V14-ADA-3.jpg','../../image/Laptop/Lenovo-V14-ADA/Lenovo-V14-ADA-4.jpg']
     },
     {
         id: 9,
@@ -198,10 +205,10 @@ let business_product = [
             Warranty: '1 year',
             Operating_System: 'Windows 10 Pro',
         },
-        imgs: ['../../image/Asus-ExpertBook-P2/Asus-ExpertBook-P2-1.jpg','../../image/Asus-ExpertBook-P2/Asus-ExpertBook-P2-2.jpg',
-        '../../image/Asus-ExpertBook-P2/Asus-ExpertBook-P2-3.jpg','../../image/Asus-ExpertBook-P2/Asus-ExpertBook-P2-4.jpg',
-        '../../image/Asus-ExpertBook-P2/Asus-ExpertBook-P2-5.jpg','../../image/Asus-ExpertBook-P2/Asus-ExpertBook-P2-6.jpg',
-        '../../image/Asus-ExpertBook-P2/Asus-ExpertBook-P2-7.jpg',]
+        imgs: ['../../image/Laptop/Asus-ExpertBook-P2/Asus-ExpertBook-P2-1.jpg','../../image/Laptop/Asus-ExpertBook-P2/Asus-ExpertBook-P2-2.jpg',
+        '../../image/Laptop/Asus-ExpertBook-P2/Asus-ExpertBook-P2-3.jpg','../../image/Laptop/Asus-ExpertBook-P2/Asus-ExpertBook-P2-4.jpg',
+        '../../image/Laptop/Asus-ExpertBook-P2/Asus-ExpertBook-P2-5.jpg','../../image/Laptop/Asus-ExpertBook-P2/Asus-ExpertBook-P2-6.jpg',
+        '../../image/Laptop/Asus-ExpertBook-P2/Asus-ExpertBook-P2-7.jpg',]
     },
     {
         id: 10,
@@ -224,9 +231,9 @@ let business_product = [
             Operating_System: 'Windows 10 Pro',
             Safe_and_secure: 'Webcam privacy shield, TPM 2.0, Fingerprint sensor',
         },
-        imgs:['../../image/Acer-TravelMate-P2/Acer-TravelMate-P2.png','../../image/Acer-TravelMate-P2/Acer-TravelMate-P2-2.jpg',
-        '../../image/Acer-TravelMate-P2/Acer-TravelMate-P2-3.jpg','../../image/Acer-TravelMate-P2/Acer-TravelMate-P2-4.jpg',
-        '../../image/Acer-TravelMate-P2/Acer-TravelMate-P2-5.jpg']
+        imgs:['../../image/Laptop/Acer-TravelMate-P2/Acer-TravelMate-P2.png','../../image/Laptop/Acer-TravelMate-P2/Acer-TravelMate-P2-2.jpg',
+        '../../image/Laptop/Acer-TravelMate-P2/Acer-TravelMate-P2-3.jpg','../../image/Laptop/Acer-TravelMate-P2/Acer-TravelMate-P2-4.jpg',
+        '../../image/Laptop/Acer-TravelMate-P2/Acer-TravelMate-P2-5.jpg']
     },
 ]
 
@@ -251,9 +258,9 @@ let gaming_product = [
             Warranty: '1 year',
             Operating_System: 'Windows 10',
         },
-        imgs: ['../../image/Lenovo-Legion-5/Lenovo-Legion-5.jpg','../../image/Lenovo-Legion-5/Lenovo-Legion-5-2.jpg',
-        '../../image/Lenovo-Legion-5/Lenovo-Legion-5-3.jpg','../../image/Lenovo-Legion-5/Lenovo-Legion-5-4.jpg',
-        '../../image/Lenovo-Legion-5/Lenovo-Legion-5-5.jpg','../../image/Lenovo-Legion-5/Lenovo-Legion-5-6.jpg']
+        imgs: ['../../image/Laptop/Lenovo-Legion-5/Lenovo-Legion-5.jpg','../../image/Laptop/Lenovo-Legion-5/Lenovo-Legion-5-2.jpg',
+        '../../image/Laptop/Lenovo-Legion-5/Lenovo-Legion-5-3.jpg','../../image/Laptop/Lenovo-Legion-5/Lenovo-Legion-5-4.jpg',
+        '../../image/Laptop/Lenovo-Legion-5/Lenovo-Legion-5-5.jpg','../../image/Laptop/Lenovo-Legion-5/Lenovo-Legion-5-6.jpg']
     },
     {
         id: 12,
@@ -275,9 +282,9 @@ let gaming_product = [
             Warranty: '1 year',
             Operating_System: 'Windows 10',
         },
-        imgs: ['../../image/Acer-ntro-5-2/acer-nitro-5-1.png','../../image/Acer-ntro-5-2/acer-nitro-5-2.png',
-        '../../image/Acer-ntro-5-2/acer-nitro-5-3.png','../../image/Acer-ntro-5-2/acer-nitro-5-4.png',
-        '../../image/Acer-ntro-5-2/acer-nitro-5-5.png','../../image/Acer-ntro-5-2/acer-nitro-5-6.png']
+        imgs: ['../../image/Laptop/Acer-ntro-5-2/acer-nitro-5-1.png','../../image/Laptop/Acer-ntro-5-2/acer-nitro-5-2.png',
+        '../../image/Laptop/Acer-ntro-5-2/acer-nitro-5-3.png','../../image/Laptop/Acer-ntro-5-2/acer-nitro-5-4.png',
+        '../../image/Laptop/Acer-ntro-5-2/acer-nitro-5-5.png','../../image/Laptop/Acer-ntro-5-2/acer-nitro-5-6.png']
     },
     {
         id: 13,
@@ -299,9 +306,9 @@ let gaming_product = [
             Warranty: '1 year',
             Operating_System: 'Windows 10',
         },
-        imgs: ['../../image/Asus-ROG-G531/Asus-ROG-G531-1.jpg','../../image/Asus-ROG-G531/Asus-ROG-G531-2.jpg',
-        '../../image/Asus-ROG-G531/Asus-ROG-G531-3.jpg','../../image/Asus-ROG-G531/Asus-ROG-G531-4.jpg',
-        '../../image/Asus-ROG-G531/Asus-ROG-G531-5.jpg']
+        imgs: ['../../image/Laptop/Asus-ROG-G531/Asus-ROG-G531-1.jpg','../../image/Laptop/Asus-ROG-G531/Asus-ROG-G531-2.jpg',
+        '../../image/Laptop/Asus-ROG-G531/Asus-ROG-G531-3.jpg','../../image/Laptop/Asus-ROG-G531/Asus-ROG-G531-4.jpg',
+        '../../image/Laptop/Asus-ROG-G531/Asus-ROG-G531-5.jpg']
     },
     {
         id: 14,
@@ -323,9 +330,9 @@ let gaming_product = [
             Warranty: '1 year',
             Operating_System: 'Windows 10',
         },
-        imgs: ['../../image/MSI-katana-GF66/MSI-katana-GF66-1.png','../../image/MSI-katana-GF66/MSI-katana-GF66-2.png',
-        '../../image/MSI-katana-GF66/MSI-katana-GF66-3.png','../../image/MSI-katana-GF66/MSI-katana-GF66-4.png',
-        '../../image/MSI-katana-GF66/MSI-katana-GF66-5.png','../../image/MSI-katana-GF66/MSI-katana-GF66-6.png']
+        imgs: ['../../image/Laptop/MSI-katana-GF66/MSI-katana-GF66-1.png','../../image/Laptop/MSI-katana-GF66/MSI-katana-GF66-2.png',
+        '../../image/Laptop/MSI-katana-GF66/MSI-katana-GF66-3.png','../../image/Laptop/MSI-katana-GF66/MSI-katana-GF66-4.png',
+        '../../image/Laptop/MSI-katana-GF66/MSI-katana-GF66-5.png','../../image/Laptop/MSI-katana-GF66/MSI-katana-GF66-6.png']
     },
     {
         id: 15,
@@ -347,9 +354,9 @@ let gaming_product = [
             Warranty: '1 year',
             Operating_System: 'Windows 10',
         },
-        igms: ['../../image/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-1.jpg','../../image/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-2.jpg',
-        '../../image/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-3.jpg','../../image/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-4.jpg',
-        '../../image/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-5.jpg','../../image/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-6.jpg']
+        igms: ['../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-1.jpg','../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-2.jpg',
+        '../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-3.jpg','../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-4.jpg',
+        '../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-5.jpg','../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-6.jpg']
     },
 ]
 

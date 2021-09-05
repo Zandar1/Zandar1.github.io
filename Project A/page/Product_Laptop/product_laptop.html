@@ -9,30 +9,20 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../component/header/header.css">
+    <link rel="stylesheet" href="../../component/footer/footer.css">
     <link rel="stylesheet" href="product_laptop.css">
 </head>
 <body>
-    <div class = "notification">
-        
-        <div class = "noti2"> 
-            <div class ="product_type">Business laptop</div>
-            <div class ="amount">(102 products)</div>
-        </div>
-        <div class ="noti3">
-            <span>Sort by:</span>
-            <div class="custom-select" style="width:200px;">
-                <select>
-                  <option value="0">Popularity</option>
-                  <option value="1">Alphabetical</option>
-                  <option value="2">Price (Low to High)</option>
-                  <option value="3">Price (High to Low)</option>
-                </select>
-              </div>
-        </div>
-    </div>
+    <div id = "header"></div>
 
 
-    <div class="all product">
+    
+
+
+    <div class="all_product">
         <div class = "filter">
             <div class = "noti1"> Filter</div>
             <div class = "brands">
@@ -260,13 +250,39 @@
 
         </div>
         <div class="productlist">
+            <div class = "notification">
+                <div class = "noti2"> 
+                    <div class ="product_type">Business laptop</div>
+                    <div class ="amount">(102 products)</div>
+                </div>
+                <div class ="noti3">
+                    <span>Sort by:</span>
+                    <div class="custom-select" style="width:200px;">
+                        <select>
+                          <option value="0">Popularity</option>
+                          <option value="1">Alphabetical</option>
+                          <option value="2">Price (Low to High)</option>
+                          <option value="3">Price (High to Low)</option>
+                        </select>
+                      </div>
+                </div>
+            </div>
+
+
+            
             <div id="productlist_item" class="productlist_item"></div>
           </div>
     </div>
 
- 
+    
+    <div id =></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    
+    <!-- Javascript -->
+    <script src="../../component/header/header.js"></script>
+    <script src="../../component/footer/footer.js"></script>
     <script src="./product_laptop.js"></script>
+
 </body>
 </html>
