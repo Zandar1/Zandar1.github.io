@@ -565,7 +565,9 @@ $(document).load($(window).bind("resize", listenWidth));
         if($(window).width()<720)
         {
        $(".view-all-products").html("<div>Browse all</div>");
-        } 
+        } else{
+        $(".view-all-products").html("<div>Browse all products</div>");
+        }
     }
 
 

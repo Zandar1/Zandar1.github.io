@@ -12,16 +12,16 @@ banner.append(`
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="3000">
-                <img src="../../image/dt.jpg" class="d-block w-100 banner-height"  alt="html_banner1">
+                <a href = ""> <img src="../../image/dt.jpg" class="d-block w-100 banner-height"  alt="html_banner1"> </a>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
-                <img src="../../image/hp-vb-dt.png" class="d-block w-100 banner-height" alt="html_banner2">
+                <a href = ""> <img src="../../image/hp-vb-dt.png" class="d-block w-100 banner-height" alt="html_banner2"> </a>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
-                <img src="../../image/dekstop.jpg" class="d-block w-100 banner-height" alt="html_banner3">
+                <a href = ""> <img src="../../image/dekstop.jpg" class="d-block w-100 banner-height" alt="html_banner3"> </a>
             </div>
             <div class="carousel-item">
-                <img src="../../image/mac.jpg" class="d-block w-100 banner-height" alt="html_banner4">
+                <a href = ""> <img src="../../image/mac.jpg" class="d-block w-100 banner-height" alt="html_banner4"> </a>
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

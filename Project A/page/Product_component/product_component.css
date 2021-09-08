@@ -1,0 +1,72 @@
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*-------------------------------------------------------------------CSS card -------------------------------------------------------------------*/
+.type_card{
+    max-width: 310px ;
+    background-color: #f5f5f5 ;
+    max-height: 260px;
+    border-bottom: 3px solid #FB4E4E;
+}
+
+.type_info{
+    overflow: hidden;
+    max-height: 200px;
+    border-bottom: 1px dotted black;
+    
+}
+
+.move-up h2{
+    text-align: center;
+}
+
+.type_info:hover .move-up{
+    animation: moveup 0.5s 0s forwards;
+}
+
+@keyframes moveup{
+    0%{ 
+        position:relative;
+        bottom: 0px;
+    }
+    100%{
+        position:relative;
+        bottom: 80px;
+    }
+}
+
+
+.link_shop{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+}
+
+.view{
+    height: 35px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #383673;
+    color: white;
+}
+
+.view:hover{
+    opacity: 0.7;
+    color: white;
+}
+
+/*----------------------------------------------------- cSS page ---------------------------------------------------*/
+.product_type{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.type_card{
+    margin-right: 30px;
+}

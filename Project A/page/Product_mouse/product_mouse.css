@@ -1,0 +1,185 @@
+/*------------------------------------create filter -------------------------------------------*/
+
+.brands_item{
+    display: block;
+    position: relative;
+    padding-left: 27px;
+    margin-bottom: 12px;
+    
+    font-size: 16px;
+    user-select: none;
+  }
+
+
+/* Hide the browser's default checkbox */
+.brands_item input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    cursor: pointer;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .brands_item:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .brands_item input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .brands_item input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .brands_item .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+  #hideFilter{
+      display: none;
+  }
+
+  .fa-chevron-down{
+      color: black;
+  }
+
+/* --------------------------------------------------------------CSS FILTER ---------------------------------------------------------------------*/
+.noti1{
+    font-family: Crimson Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.brands{
+    max-width: 245px;
+    max-height: 293px;
+    background-color: #D5E3FF;
+    padding: 0 25px 15px 18px;
+    margin-bottom: 15px;
+}
+
+.price-band{
+    background-color: #D5E3FF;
+    max-height: 150px;
+    max-width: 245px;
+    padding: 0 25px 15px 18px;
+    margin-bottom: 12px;
+}
+
+.Wire{
+    background-color: #D5E3FF;
+    max-height: 210px;
+    max-width: 245px;
+    padding: 0 25px 15px 18px;
+    margin-bottom: 12px;
+}
+.colour{
+    background-color: #D5E3FF;
+    max-height: 190px;
+    max-width: 245px;
+    padding: 0 25px 15px 18px;
+    margin-bottom: 12px;
+}
+
+.nameFilter{
+    display: flex;
+    font-family: Crimson Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 10px 0 12px 0;
+    border-bottom: 1px solid rgba(105, 105, 105, 0.5);
+    margin-bottom: 12px;
+}
+
+.fa-chevron-down{
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.fa-chevron-right{
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.nameFilter p{
+    margin: 0 120px 0 0;
+}
+
+.nameFilter p1{
+    margin: 0 85px 0 0;
+}
+.nameFilter p2{
+    margin: 0 17px 0 0;
+}
+
+.nameFilter p3{
+    margin: 0 82px 0 0;
+}
+
+.brands_item{
+    margin-bottom: 0;
+}
+.brands_item p{
+    font-family: Crimson Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+
+
+
+#hideFilter2{
+    margin-bottom: 10px;
+}
+
+input[type="number"]{
+    width: 80px;
+}
+
+
+button.apply {
+    background-color: #005ec4;
+    color: white;
+    border-radius: 2px;
+    width: 80px;
+}
+
+

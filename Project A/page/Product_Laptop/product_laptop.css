@@ -195,7 +195,16 @@
     margin-bottom: 10px;
 }
 
+input[type="number"]{
+    width: 80px;
+}
+
 /*------------------------------------------------------CSS PRODUCT --------------------------------------------*/
+.reduction span{
+    font-size: 16px;
+    padding: 0 6px 0 6px;
+}
+
 .item-card {
     max-width: 244px;
     height: 450px;
@@ -275,6 +284,7 @@
 
 .productlist{
     width: 70%;
+    max-width: 910px;
 }
 
 .productlist_item{
@@ -285,11 +295,13 @@
 
 .all_product{
     display: flex;
-    margin: 44px 112px 0 112px;
+    margin: 44px 112px 112px 112px;
+    justify-content: center;
 }
 
 .filter{
     width: 30%;
+    max-width: 390px;
 }
 
 .notification, .noti2, .noti3{
@@ -305,10 +317,10 @@
 }
 .notification{
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 36px;
 }
 .noti1{
-    margin-bottom: 25px;
+    margin-bottom: 36px;
 }
 
 .amount{
@@ -318,7 +330,6 @@
     font-size: 18px;
     line-height: 28px;
     color: #767676;
-    margin-left: 10px;
 }
 
 button.apply {
@@ -326,4 +337,117 @@ button.apply {
     color: white;
     border-radius: 2px;
     width: 80px;
+}
+
+.noti3 span{
+    padding-right: 10px;
+}
+
+
+
+/*--------------------------------------------------------------Responsive--------------------------------------------------------------*/
+@media only screen and (max-width: 1128px){
+    .all_product{
+        margin: 44px 72px 60px 72px; 
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .all_product{
+        margin: 24px 0px 60px 0px; 
+    }
+
+    .noti1, .noti2, .noti3, .nameFilter{
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .noti1, .notification{
+        margin-bottom: 20px;
+    }
+
+    .custom-select{
+        width: 150px;
+    }
+    .brands_item{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .filter{
+        max-width: 200px;
+        margin-right: 15px;
+    }
+
+    input[type="number"]{
+        width: 50px;
+    }
+
+    .nameFilter p{
+        margin: 0 94px 0 0;
+    }
+    
+    .nameFilter p1{
+        margin: 0 67px 0 0;
+    }
+    .nameFilter p2{
+        margin: 0 44px 0 0;
+    }
+    
+    .nameFilter p3{
+        margin: 0 65px 0 0;
+    }
+    
+    .nameFilter p4{
+        margin: 0 10px 0 0;
+    }
+    
+    .nameFilter p5{
+        margin: 0 46px 0 0;
+    }
+
+    
+    .product-name{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .description{
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .new-price{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .old-price{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .sale-off{
+        font-size: 17px;
+        line-height: 18px;
+    }
+
+
+    .image-item{
+        width: 160px;
+        height: 160px;
+    }
+
+    .item-card {
+        max-width: 170px;
+        margin-bottom: 16px;
+        max-height: 360px;
+    }
+
+    .reduction span{
+        font-size: 16px;
+        padding: 0 4px 0 4px;
+    }
+}
+
+@media only screen and (max-width: 730px){
 }
