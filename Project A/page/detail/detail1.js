@@ -6,9 +6,9 @@ let default_data = {
   img: '../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-1.jpg',
   name: 'Lenovo ThinkPad E15 AMD Ryzen 7-5700U 16GB 512GB SSD 15.6 Inch FHD Windows 10 Pro Laptop 20YG003VUK',
   discount_title: ' <i class="fas fa-fire"></i>SELLING FAST! Less than 10 remaining',
-  oldPrice: '£1448.97',
-  newPrice: '£1219.97',
-  price: '35.171.600 đ',
+  oldPrice: 1448.97,
+  newPrice: 1219.97,
+  price: 1219.97,
   save: 'You save: 1',
   description: {
       Graphic_card: 'Radeon Graphics',
@@ -23,6 +23,12 @@ let data_detail = JSON.parse(localStorage.getItem('detail-data')) || default_dat
 let wrap_detail = $('#wrap-detail')
 
 
+var GBPFormatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'GBP',
+  });
+
+  
 const renderImage = () => {
   let str = ""
   if(data_detail.imgs.length > 0) {
@@ -75,7 +81,7 @@ wrap_detail.append(`
           <div class="price-box">
               <div class="price-tag">
                   <div class ="saving">${data_detail.save}</div>
-                  <div class = "price">${data_detail.price}</div>       
+                  <div class = "price">${GBPFormatter.format(data_detail.price)}</div>       
               </div>
               <div class="add-button">Add to basket <i class="far fa-chevron-double-right"></i></div>
           </div>
