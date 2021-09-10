@@ -174,11 +174,11 @@ var GBPFormatter = new Intl.NumberFormat('en-US', {
     location.replace('https://zandar1.github.io/Project%20A/page/detail/detail1.html')
 }
  
-const renderList = (list,product) => {
+const renderList = (list,name) => {
     let str = "";
     list.forEach((item,index) => {  
         str += ` 
-        <div onclick="setLocal('${index}', '${product}')" class="item-card">
+        <div onclick="setLocal('${index}', '${name}')" class="item-card">
         <div class="image-item">
             <img src="${item.img}" alt="">
         </div>
