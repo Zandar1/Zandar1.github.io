@@ -24,7 +24,7 @@ let products_popular = [
     },
     {
         id: 2,
-        img: '../../image/Mouse/logitech-g305/logitech-305-1.jpg',
+        img: '../../image/Mouse/logitech-g305/logitech-305-1.png',
         name: 'Logitech G305 Black',
         des: 'Wireless Gaming Mouse',
         oldPrice: '',
@@ -39,7 +39,7 @@ let products_popular = [
         discount_title: '',
         save: '',
         sale: '',
-        imgs: ['../../image/Mouse/logitech-g305/logitech-305-1.jpg', '../../image/Mouse/logitech-g305/logitech-305-2.jpg', '../../image/Mouse/logitech-g305/logitech-305-3.jpg', '../../image/Mouse/logitech-g305/logitech-305-4.jpg', '../../image/Mouse/logitech-g305/logitech-305-5.jpg']
+        imgs: ['../../image/Mouse/logitech-g305/logitech-305-1.png', '../../image/Mouse/logitech-g305/logitech-305-2.jpg', '../../image/Mouse/logitech-g305/logitech-305-3.jpg', '../../image/Mouse/logitech-g305/logitech-305-4.jpg', '../../image/Mouse/logitech-g305/logitech-305-5.jpg']
     },
     {
         id: 3,
