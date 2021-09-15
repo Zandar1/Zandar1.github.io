@@ -526,7 +526,7 @@ var GBPFormatter = new Intl.NumberFormat('en-US', {
     currency: 'GBP',
   });
 
-
+ 
 const showProduct = (product, idShow, name) => {
     let showItem = $(`#${idShow}`)
     product.forEach((item, index) => {
