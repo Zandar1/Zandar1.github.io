@@ -46,7 +46,7 @@ header.append(`
             <a href="https://zandar1.github.io/Project%20A/page/Product_Laptop/product_laptop.html"> <li class = "item-menu item-start"> <i class="fas fa-laptop"></i> Laptops</li>  </a>
             <a href="https://zandar1.github.io/Project%20A/page/Product_headphones/product_headphones.html"><li class = "item-menu"><i class="fas fa-headphones-alt"></i>Headphones</li> </a>
             <a href="https://zandar1.github.io/Project%20A/page/Product_mouse/product_mouse.html"> <li class = "item-menu"><i class="fas fa-mouse-pointer"></i>Mice</li></a>
-            <a href="https://zandar1.github.io/Project%20A/page/Product_keyboard/product_keyboard.html"><li class = "item-menu"><i class="fal fa-keyboard"></i>Keyboards/li> </a>
+            <a href="https://zandar1.github.io/Project%20A/page/Product_keyboard/product_keyboard.html"><li class = "item-menu"><i class="fal fa-keyboard"></i>Keyboards</li> </a>
             <a href="https://zandar1.github.io/Project%20A/page/Product_monitors/product_monitors.html"><li class = "item-menu"><i class="fal fa-tv"></i>Monitors</li> </a>
             <a href="https://zandar1.github.io/Project%20A/page/Product_component/product_component.html"><li class = "item-menu item-end"><i class="fal fa-cogs"></i>Laptop Components</li></a>
         </ul>
