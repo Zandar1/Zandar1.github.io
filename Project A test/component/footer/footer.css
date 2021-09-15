@@ -1,0 +1,350 @@
+.wrapper{
+    height: 300px;
+    background: #F0F0F0;
+}
+
+#fter{
+    display: flex;
+    justify-content: center;
+}
+
+.type{
+    width: 200px;
+    list-style: none;
+    margin: 0 80px 0 0px;
+    padding: 28px 0; 
+}
+.header{
+    font-family: Crimson Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #1303C7;
+    border-bottom: 1px solid #000000;
+}
+
+.footer-item{
+    font-family: Crimson Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+.footer-item:hover{
+    text-decoration: underline;
+}
+.rules{
+    width: 200px;
+    list-style: none;
+    vertical-align: middle;
+    margin: 0 80px 0 0;
+    padding: 28px 0; 
+}
+
+.info{
+    width: 200px;
+    list-style: none;
+    vertical-align: middle;
+    margin: 0 8.69% 0 0;
+    padding: 28px 0; 
+}
+
+.contact-follow{
+    padding: 50px 0 0 0;
+}
+.contact-info{
+    display: flex;
+}
+
+.fol{
+    padding: 0 0 11.3px 0;
+}
+
+.cont{
+    padding: 0 0 12.33px 0;
+}
+
+.Us{
+    font-family: Crimson Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #1303C7;
+}
+
+.follow{
+    padding-bottom: 40.03px;
+}
+
+.phone{
+    display: flex;
+    margin-right: 49px;
+}
+
+.mail{
+    display: flex;
+}
+
+.phone-info{
+    font-family: Crimson Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 11px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.mail-info{
+    font-family: Crimson Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 11px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.phone-detail{
+    font-family: Crimson Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 2.05px;
+}
+
+.fa-phone{
+    font-size: 28px;
+    margin-right: 14px;
+    width: 28px;
+    height: 28px;
+}
+
+.fa-envelope{
+    font-size: 28px;
+    padding-right: 14px;
+}
+
+.fa-youtube{
+    font-size: 28px;
+    padding-right: 14px;
+}
+
+.fa-facebook{
+    font-size: 28px;
+    padding-right: 14px;
+}
+
+.fa-pinterest{
+    font-size: 28px;
+    padding-right: 14px;
+}
+
+.fa-instagram{
+    font-size: 28px;
+    padding-right: 14px;
+}
+
+.fa-twitter{
+    font-size: 28px;
+    padding-right: 14px;
+}
+
+/* ---------------------------------------------------------------Responsive - Footer--------------------------------------------------------------- */
+@media only screen and (max-width: 1920px) and (min-width: 1700px){
+    .type{
+        margin: 0 80px 0 0px;
+    }
+
+    .info{
+        margin-right: 132px;
+    }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1024px){
+    .type{
+        width: 150px;
+        margin: 0 50px 0 12px;
+    }
+    .rules{
+        width: 150px;
+        margin: 0 50px 0 0;
+    }
+    .info{
+        width: 150px;
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .wrapper{
+        height: 360px;
+    }
+    #fter{
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        margin: 0 12px 0 12px;
+    }
+    .contact-follow{
+        display: flex;
+        padding: 10px 0 0 0 ;
+        margin-left: 0px;
+    }
+    .follow{
+        margin-right:52px;
+        padding: 0;
+    }
+    .type{
+        width: 180px;
+        margin: 0 102px 0 12px;
+    }
+    .rules{
+        width: 180px;
+        margin: 0 102px 0 0;
+    }
+    .info{
+        width: 180px;
+        margin-right: 12px;
+    }
+    .header{
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .Us{
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .footer-item{
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 720px) {
+    .type{
+        width: 180px;
+        margin: 0 55.5px 0 0px;
+    }
+    .rules{
+        width: 180px;
+        margin: 0 55.5px 0 0;
+    }
+    .info{
+        width: 180px;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .contact-follow{
+        margin-left: 12px;
+    }
+    .header{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .footer-item{
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .Us{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .type{
+        width: 80px;
+        margin: 0 55.5px 0 12px;
+    }
+    .rules{
+        width: 80px;
+        margin: 0 55.5px 0 0;
+    }
+    .info{
+        width: 80px;
+        margin-right: 12px;
+    }
+
+    .fa-youtube, .fa-facebook, .fa-pinterest, .fa-instagram, .fa-twitter{
+        font-size: 10px;
+        padding-right: 7px;
+    }
+
+    .phone-info, .mail-info{
+        font-size: 6px;
+        line-height: 8px;
+    }
+
+    .phone-detail{
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .fa-phone{
+        font-size: 12px;
+    }
+
+    .fa-envelope{
+        font-size: 12px;
+    }
+
+    .phone{
+        margin-right: 10px;
+    }
+
+    .follow{
+        margin-right: 0;
+    }
+
+    .cont{
+        padding-left: 1px;
+    }
+
+    .wrapper{
+        height:280px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .type{
+        width: 80px;
+        margin: 0 20px 0 12px;
+    }
+    .rules{
+        width: 80px;
+        margin: 0 30px 0 0;
+    }
+    .fa-envelope{
+        padding-right: 4px;
+    }
+    .fa-phone{
+        padding-right: 4px;
+    }
+
+    .fa-youtube, .fa-facebook, .fa-pinterest, .fa-instagram, .fa-twitter{
+        font-size: 8px;
+        padding-right: 2px;
+    }
+    .cont{
+        padding: 0 0 0 10px;
+    }
+
+    .fol{
+        padding: 0;
+    }
+
+    .wrapper{
+        height:280px;
+    }
+}

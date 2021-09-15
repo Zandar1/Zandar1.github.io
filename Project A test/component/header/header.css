@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Crimson Text;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ---------------------------------------------------------------  Header  ---------------------------------------------------------------  */
+#info-user{
+    display: flex;
+    height: 100px; 
+    background-color: black;
+}
+
+#info-user > .left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#info-user > .right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+}
+
+/* --------------------------------------------------------------- LEFT ---------------------------------------------------------------*/
+#info-user .logo{
+    margin: 0 28px 0 112px;
+    cursor: pointer;
+}
+
+#info-user .logo-mobile{
+    display: none;
+    width: 32.23px;
+    height: 20px;
+}
+#info-user .logo-mobile img{
+    width: 32.23px;
+    height: 20px;
+} 
+#info-user .logo img{
+    height: 39.29px;
+    width: 150px;
+}
+
+.search-input{
+    display: flex;
+    flex: 1;
+}
+
+.search-input input{
+    flex: 1;
+    height: 44px;
+    max-width: 390px;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    padding-left: 16px;
+    font-size: 16px;
+    border: 1px solid #FE2E2E;
+}
+
+.search-input input:focus{
+    outline: none !important;
+    border-color: #D80A0A;
+    box-shadow: 0 0 10px #719ECE;
+}
+::placeholder{
+    color: #484848;
+}
+
+/* .search-input button{
+    width: 90px;
+} */
+.button{
+    background-color: #F86464;
+    border-radius: 0 5px 5px 0;
+    width: 90px;
+    height: 44px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+i.fal.fa-search{
+    color:white;
+}
+
+.button:hover{
+    background-color:#D80A0A;
+}
+
+.button:hover i.fal.fa-search{
+    color: black;
+}
+
+.toogle-menu-ipad{
+    color: white;
+    display: none;
+}
+
+/* ---------------------------------------------------------------  RIGHT  ---------------------------------------------------------------  */
+#info-user .right .right{
+    padding: 0 0 0 12px;
+}
+
+.user-login{
+    margin-right: 100px;
+}
+
+.user-login .up{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #D80A0A;
+    text-align-last: right;
+}
+
+.user-login .down{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.avatar{
+    cursor: pointer;
+    display: none;
+}
+
+.avatar:active{
+    color: #F86464;
+}
+
+.cart{
+    display: flex;
+    margin-right: 112px;
+}
+
+.cart-icon{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i.fal.fa-shopping-cart{
+    color: white;
+}
+
+.cart button{
+    background: #F86464 ;
+    border: none;
+}
+
+.cart-icon:hover{
+    background-color:#D80A0A;
+}
+
+.cart-icon:hover i.fal.fa-shopping-cart{
+    color: black;
+}
+
+.user-login .up{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #D80A0A;
+}
+
+.user-login .down{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.user-login .down:hover{
+    border-bottom: 0.5px solid #D80A0A;
+}
+
+.user-login .down:active{
+    color:#D80A0A;
+}
+
+.cart .right .up{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #D80A0A;
+}
+
+.cart .right .down{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+/* ---------------------------------------------------------------  Menu   --------------------------------------------------------------- */
+#main-menu{
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25) ;
+}
+ul.wrap-ul{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+
+ul.wrap-ul .item-menu{
+    width: 213px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; 
+    flex-grow: 1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+ul.wrap-ul .item-menu:hover{
+    cursor: pointer;
+    background: #FE2E2E;
+    color: white;
+}
+
+.item-start{
+    margin-left: 112px;
+}
+
+.item-end{
+    margin-right: 112px;
+}
+
+.fa-laptop{
+    display: none;
+}
+
+.fa-headphones-alt{
+    display: none;
+}
+
+.fa-keyboard{
+    display: none;
+}
+
+.fa-tv{
+    display: none;
+}
+
+.fa-cogs{
+    display: none;
+}
+
+.fa-mouse-pointer{
+    display: none   ;
+}
+
+
+/* ---------------------------------------------------------------Responsive - Header - menu--------------------------------------------------------------- */
+@media only screen and (max-width: 1920px) and (min-width: 1700px){
+    #info-user .logo {
+        margin-left: 313px;
+    }
+    
+    .item-start{
+        margin-left: 313px;
+    }
+    .item-end{
+        margin-right:313px;
+    }
+    .cart{
+        margin-right:313px;
+    }
+}
+
+
+@media only screen and (max-width: 1500px) and (min-width: 1024px){
+    #info-user .logo {
+        margin-left: 72px;
+    }
+
+    .item-start{
+        margin-left: 72px;
+    }
+
+    .item-end{
+        margin-right: 72px;
+    }
+    .cart{
+        margin-right:72px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #info-user .logo{
+        margin: 0 10px 0 12px;
+    }
+    .user-login .up, .user-login .down{
+        display: none;
+    }
+    .avatar{
+        display: block;
+    }
+    .cart{
+        margin: 12px;
+    }
+    #info-user .right .right{
+        padding: 0 0px 0 12px;
+    }
+    .user-login{
+        margin-right: 40px;
+    }
+    .announce{
+        font-size: 16px;
+    }
+    .fa-user-circle{
+        margin-left: 10px;
+    }
+
+    ul.wrap-ul .item-menu{
+        font-size: 14px;
+    }
+
+    .item-start{
+        margin-left: 0px;
+    }
+    
+    .item-end{
+        margin-right: 0px;
+    }   
+
+
+}
+@media only screen and (max-width: 768px) {
+    .user-login{
+        margin-right: 15px;
+    }
+
+    .item-start{
+        margin-left: 0px;
+    }
+
+    .item-end{
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #info-user{
+        height: 44px;
+    }
+
+    .toogle-menu-ipad{
+        display: block;
+        font-size: 15px;
+        padding: 0 12px 0 12px;
+    }
+
+    #info-user .logo{
+        display: none;
+    }
+
+    #info-user .logo-mobile{
+        display: block;
+    }
+
+    .search-input{
+       position: absolute;
+       left: 25%;
+    }
+    .search-input input{
+        height: 20px;
+        width: 136px;
+        font-size: 8px;
+        padding-left: 4px;
+    }
+
+    .button{
+        width: 36px;
+        height: 20px;
+    }
+
+    .fa-search{
+        font-size: 10px;
+    }
+    .cart .right{
+        display: none;
+    }
+
+    .user-login{
+        margin-right: 0;
+    }
+    .avatar{
+        font-size: 10px;
+    }
+    .announce{
+       display: none;
+    }
+
+    .cart{
+        width: 20px;
+        height: 20px;
+        margin: 0 12px 0 12px;
+    }
+    .cart-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    i.fal.fa-shopping-cart{
+        font-size: 10px;
+    }
+
+    #main-menu{
+        display: unset;
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        z-index: 2;
+        background-color: #FFFFFF;
+    }
+    ul.wrap-ul{
+        display: unset;
+    }
+
+    .item-start, .item-end{
+        margin: 0;
+    }
+
+    ul.wrap-ul .item-menu{
+        justify-content: flex-start;
+        margin: 0;
+        padding-left: 12px;
+        width: auto;
+        height: 30px;
+        text-transform: uppercase;
+    }
+
+    .fa-laptop{
+        display: block;
+        padding-right: 10px;
+    }
+
+    .fa-headphones-alt{
+        display: block;
+        padding-right: 14px;
+    }
+
+    .fa-keyboard{
+        display: block;
+        padding-right: 12px;
+    }
+  
+    .fa-tv{
+        display: block;
+        padding-right: 10px;
+    }
+
+    .fa-cogs{
+        display: block;
+        padding-right: 10px;
+    }
+
+    .fa-mouse-pointer{
+        display: block;
+        padding-right: 20px;
+    }
+}
