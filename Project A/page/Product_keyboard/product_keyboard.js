@@ -199,17 +199,18 @@ var GBPFormatter = new Intl.NumberFormat('en-US', {
   });
 
 
-  const setLocal = (index,product) => {
-    let item = product[index]
+  const setLocal = (index,list) => {
+    let item = list[index]
     localStorage.setItem('detail-data', JSON.stringify(item))
-    location.replace('https://zandar1.github.io/Project%20A/page/detail/detail1.html')
+    location.href = 'https://zandar1.github.io/Project%20A/page/detail/detail1.html'
 }
  
 const renderList = (list,name) => {
     let str = "";
-    list.forEach((item,index) => {  
+    console.log('list_product_mouse :>> ', list_product_mouse);
+    list.forEach((item,index) => { 
         str += ` 
-        <div onclick="setLocal('${index}', '${name}')" class="item-card">
+        <div onclick="setLocal(${index},'list_product_mouse')" class="item-card">
         <div class="image-item">
             <img src="${item.img}" alt="">
         </div>

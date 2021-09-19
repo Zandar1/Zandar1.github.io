@@ -202,7 +202,7 @@ var GBPFormatter = new Intl.NumberFormat('en-US', {
   const setLocal = (index,product) => {
     let item = product[index]
     localStorage.setItem('detail-data', JSON.stringify(item))
-    location.replace('https://zandar1.github.io/Project%20A/page/detail/detail1.html')
+    location.replace = 'https://zandar1.github.io/Project%20A/page/detail/detail1.html'
 }
  
 const renderList = (list,name) => {

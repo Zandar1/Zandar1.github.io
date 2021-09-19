@@ -517,7 +517,7 @@ showTitle('Most popular', 'show-item-1')
 const setLocal = (index, product) => {
     let item = product[index]
     localStorage.setItem('detail-data', JSON.stringify(item))
-    location.replace('https://zandar1.github.io/Project%20A/page/detail/detail1.html')
+    location.href = 'https://zandar1.github.io/Project%20A/page/detail/detail1.html'
 }
 
 
@@ -526,13 +526,13 @@ var GBPFormatter = new Intl.NumberFormat('en-US', {
     currency: 'GBP',
   });
 
-
+ 
 const showProduct = (product, idShow, name) => {
     let showItem = $(`#${idShow}`)
     product.forEach((item, index) => {
         showItem.append(
             `
-                <div onclick="setLocal(${index}, ${name})" class="col-xl-3 col-sm-6 col-md-3 width-col-cate">
+                <div onclick="setLocal(${index}, ${name})" class="col-6 col-xl-3 col-sm-6 col-md-3 width-col-cate">
                
                     <div class="item-card">
                     <div class="image-item">

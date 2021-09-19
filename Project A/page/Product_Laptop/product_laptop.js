@@ -171,12 +171,12 @@ var GBPFormatter = new Intl.NumberFormat('en-US', {
  const setLocal = (index,product) => {
     let item = product[index]
     localStorage.setItem('detail-data', JSON.stringify(item))
-    location.replace('https://zandar1.github.io/Project%20A/page/detail/detail1.html')
+    location.href = 'https://zandar1.github.io/Project%20A/page/detail/detail1.html'
 }
  
-const renderList = (list,name) => {
+const renderList = (product,name) => {
     let str = "";
-    list.forEach((item,index) => {  
+    product.forEach((item,index) => {  
         str += ` 
         <div onclick="setLocal('${index}', '${name}')" class="item-card">
         <div class="image-item">

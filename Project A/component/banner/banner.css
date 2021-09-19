@@ -86,4 +86,12 @@ button.carousel-control-prev {
     .banner-right{
         display:none;
     }
+    
+    .carousel-indicators [data-bs-target] {
+        width: 20px;
+    }
+
+    .carousel-indicators{
+        margin-bottom: 0;
+    }
 }
