@@ -169,12 +169,18 @@
     }
 }
 @media only screen and (max-width: 1024px) {
+    .new-product{
+        height: 44px;
+    }
+
     .new-product-title {
-        margin-left: 12px;
+       margin: 7px 0 7px 0;
     }
 
     .view-all {
-        margin-right: 12px;
+       margin: 7px 28px 7px 0;
+       max-height: 30px;
+       max-width: 110px;
     }
 
     .new-product{
@@ -221,11 +227,12 @@
     }
 
      .show-item{
-        overflow:unset;
-        max-height: unset;
+        max-height: 750px;
     } 
 
     .item-card{
         margin: 10px;
+        max-width: 200px;
+        height: 350px;
     }
 }
