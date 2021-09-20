@@ -178,7 +178,7 @@ const renderList = (product,name) => {
     let str = "";
     product.forEach((item,index) => {  
         str += ` 
-        <div onclick="setLocal('${index}', '${name}')" class="item-card">
+        <div onclick="setLocal(${index}, list_product_laptop)" class="item-card">
         <div class="image-item">
             <img src="${item.img}" alt="">
         </div>

@@ -1,5 +1,5 @@
 let list_item = $("#productlist_item");
-let list_product_mouse =[
+let list_headphones =[
     {
         id: 2,
         img: '../../image/Mouse/logitech-g305/logitech-305-1.png',
@@ -205,11 +205,11 @@ var GBPFormatter = new Intl.NumberFormat('en-US', {
     location.replace = 'https://zandar1.github.io/Project%20A/page/detail/detail1.html'
 }
  
-const renderList = (list,name) => {
+const renderList = (list) => {
     let str = "";
     list.forEach((item,index) => {  
         str += ` 
-        <div onclick="setLocal('${index}', '${name}')" class="item-card">
+        <div onclick="setLocal(${index}, list_headphones)" class="item-card">
         <div class="image-item">
             <img src="${item.img}" alt="">
         </div>

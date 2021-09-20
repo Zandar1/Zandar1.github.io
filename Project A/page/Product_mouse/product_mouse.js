@@ -205,12 +205,12 @@ var GBPFormatter = new Intl.NumberFormat('en-US', {
     location.href = 'https://zandar1.github.io/Project%20A/page/detail/detail1.html'
 }
  
-const renderList = (product,name) => {
-    console.log('name :>> ', name);
+const renderList = (product) => {
+
     let str = "";
     product.forEach((item,index) => {  
         str += ` 
-        <div onclick="setLocal(${index})" class="item-card">
+        <div onclick="setLocal(${index},list_product_mouse)" class="item-card">
         <div class="image-item">
             <img src="${item.img}" alt="">
         </div>
