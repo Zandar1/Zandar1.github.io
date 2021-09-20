@@ -37,8 +37,8 @@ let list_product_mouse =[
             Mouse_Type: 'Optical',
             Colour: 'Black',
         },
-        imgs: ['../../image/Mouse/Logitech-G-Pro/Logitech-G-Pro-1.png', '../../image/Mouse/Logitech-G-Pro/Logitech-G-Pro-2.png',
-        '../../image/Mouse/Logitech-G-Pro/Logitech-G-Pro-3.png', '../../image/Mouse/Logitech-G-Pro/Logitech-G-Pro-4.png']
+        imgs: ['../../image/Mouse/Logitech-G-Pro/Logitech-G-Pro-1.png', '../../image/Mouse/Logitech-G-Pro/Logitech-G-Pro-2.jpg',
+        '../../image/Mouse/Logitech-G-Pro/Logitech-G-Pro-3.jpg', '../../image/Mouse/Logitech-G-Pro/Logitech-G-Pro-4.jpg']
     },
     {
         id: 22,
@@ -122,8 +122,7 @@ let list_product_mouse =[
             Colour: 'Grey',
         },
         imgs: ['../../image/Mouse/ASUS-ROG-Keris/ASUS-ROG-Keris-1.jpg', '../../image/Mouse/ASUS-ROG-Keris/ASUS-ROG-Keris-2.jpg',
-        '../../image/Mouse/ASUS-ROG-Keris/ASUS-ROG-Keris-3.jpg','../../image/Mouse/ASUS-ROG-Keris/ASUS-ROG-Keris-4.jpg',
-        '../../image/Mouse/ASUS-ROG-Keris/ASUS-ROG-Keris-5.jpg']
+        '../../image/Mouse/ASUS-ROG-Keris/ASUS-ROG-Keris-3.jpg','../../image/Mouse/ASUS-ROG-Keris/ASUS-ROG-Keris-4.jpg']
     },
 
     {
@@ -143,7 +142,7 @@ let list_product_mouse =[
             Mouse_Type: 'Optical',
             Colour: 'Black',
         },
-        imgs: ['../../image/Mouse/Steelseries-Rival-110/Steelseries-Rival-110-1.jpg', '../../image/Mouse/Steelseries-Rival-110/Steelseries-Rival-110-2.jpg',
+        imgs: ['../../image/Mouse/Steelseries-Rival-110/Steelseries-Rival-110-1.jpg', '../../image/Mouse/Steelseries-Rival-110/Steelseries-Rival-110-2.png',
         '../../image/Mouse/Steelseries-Rival-110/Steelseries-Rival-110-3.jfif']
     },
 

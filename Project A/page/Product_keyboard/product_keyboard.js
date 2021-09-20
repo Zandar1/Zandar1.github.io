@@ -1,5 +1,5 @@
 let list_item = $("#productlist_item");
-let list_product_mouse =[
+let list_product_keyboard =[
     {
         id: 2,
         img: '../../image/Mouse/logitech-g305/logitech-305-1.png',
@@ -209,7 +209,7 @@ const renderList = (list) => {
     let str = "";
     list.forEach((item,index) => { 
         str += ` 
-        <div onclick="setLocal(${index},list_product_mouse)" class="item-card">
+        <div onclick="setLocal(${index},list_product_keyboard)" class="item-card">
         <div class="image-item">
             <img src="${item.img}" alt="">
         </div>
@@ -238,6 +238,6 @@ const renderList = (list) => {
       ${els}
     `);
   };
-  filterList(list_product_mouse);
+  filterList(list_product_keyboard);
 
   

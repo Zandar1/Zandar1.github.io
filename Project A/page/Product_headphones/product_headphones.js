@@ -1,111 +1,117 @@
 let list_item = $("#productlist_item");
 let list_headphones =[
     {
-        id: 2,
-        img: '../../image/Mouse/logitech-g305/logitech-305-1.png',
-        name: 'Logitech G305 Black',
-        des: 'Wireless Gaming Mouse',
-        oldPrice: '',
-        newPrice: 41.98,
-        price: 41.98,
+        id: 4,
+        img: '../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2.png',
+        name: 'HyperX Cloud II',
+        des: 'Wireless Gaming Headset',
+        oldPrice: 149.99,
+        newPrice: 104.99,
+        price: 104.99,
         discount_title: '',
-        save: '',
-        sale: '',
+        save: 'You save: £45',
+        sale: '43%',
         description: {
-            Programmable_buttons: '6',
-            Wired_or_Wireless: 'Wireless',
-            Mouse_Type: 'Optical',
-            Colour: 'Black',
+            Wired_or_Wireless: 'Low-latency 2.4 GHz Wireless with long-lasting battery life',
+            Microphone: 'Built-in mic monitoring',
+            Simulated_surround_sound: 'HyperX 7.1 surround sound',
+            Noise_cancelling: 'Passive noise cancelling',
         },
-        imgs: ['../../image/Mouse/logitech-g305/logitech-305-1.png', '../../image/Mouse/logitech-g305/logitech-305-2.jpg', '../../image/Mouse/logitech-g305/logitech-305-3.jpg', '../../image/Mouse/logitech-g305/logitech-305-4.jpg', '../../image/Mouse/logitech-g305/logitech-305-5.jpg']
-    },
-
-    {
-        id: 21,
-        img: '../../image/Mouse/Logitech-G-Pro/Logitech-G-Pro-1.png',
-        name: 'Logitech G Pro Hero',
-        des: 'Pro series Gaming Mouse',
-        oldPrice: 69.99,
-        newPrice: 49.99,
-        price: 49.99,
-        discount_title: '',
-        save: 'You save: £20',
-        sale: '29%',
-        description: {
-            Programmable_buttons: '6',
-            Wired_or_Wireless: 'Wired',
-            Mouse_Type: 'Optical',
-            Colour: 'Black',
-        },
-        imgs: ['../../image/Mouse/Logitech-G-Pro/Logitech-G-Pro-1.png', '../../image/Mouse/Logitech-G-Pro/Logitech-G-Pro-2.png',
-        '../../image/Mouse/Logitech-G-Pro/Logitech-G-Pro-3.png', '../../image/Mouse/Logitech-G-Pro/Logitech-G-Pro-4.png']
-    },
-    {
-        id: 22,
-        img: '../../image/Mouse/M65-RGB-ELITE/M65-RGB-ELITE-1.jpg',
-        name: 'M65 RGB ELITE Tunable',
-        des: 'FPS Gaming Mouse',
-        oldPrice: 59.99,
-        newPrice: 55.99,
-        price: 55.99,
-        discount_title: '',
-        save: 'You save: £4',
-        sale: '7%',
-        description: {
-            Programmable_buttons: '8',
-            Wired_or_Wireless: 'Wired',
-            Mouse_Type: 'Optical',
-            Colour: 'White',
-        },
-        imgs: ['../../image/Mouse/M65-RGB-ELITE/M65-RGB-ELITE-1.jpg', '../../image/Mouse/M65-RGB-ELITE/M65-RGB-ELITE-2.png',
-        '../../image/Mouse/M65-RGB-ELITE/M65-RGB-ELITE-3.png', '../../image/Mouse/M65-RGB-ELITE/M65-RGB-ELITE-4.png', 
-        '../../image/Mouse/M65-RGB-ELITE/M65-RGB-ELITE-5.png','../../image/Mouse/M65-RGB-ELITE/M65-RGB-ELITE-6.png']
-    },
-
-    {
-        id: 23,
-        img: '../../image/Mouse/Razer-DeathAdder/Razer-DeathAdder-1.jpg',
-        name: 'Razer DeathAdder',
-        des: 'Gaming Mouse',
-        oldPrice: 51.97,
-        newPrice: 27.97,
-        price: 27.97,
         discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining',
-        save: 'You save: £24',
-        sale: '7%',
-        description: {
-            Programmable_buttons: '5',
-            Wired_or_Wireless: 'Wired',
-            Mouse_Type: 'Optical',
-            Colour: 'Black',
-        },
-        imgs: ['../../image/Mouse/Razer-DeathAdder/Razer-DeathAdder-1.jpg', '../../image/Mouse/Razer-DeathAdder/Razer-DeathAdder-2.jpg',
-        '../../image/Mouse/Razer-DeathAdder/Razer-DeathAdder-3.jpg']
+        imgs: ['../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2.png', '../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-2.png',
+        '../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-3.png','../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-4.png','../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-5.png']
     },
 
     {
-        id: 24,
-        img: '../../image/Mouse/ZOWIE-S2/ZOWIE-S2-1.png',
-        name: 'Zowie S2',
-        des: 'Gaming Mouse For Esports',
-        oldPrice: 50.99,
-        newPrice: 42.99,
-        price: 42.99,
-        discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining',
-        save: 'You save: £8',
-        sale: '16%',
+        id: 29,
+        img: '../../image/Headphones/Apple-AirPo-Max/Apple-AirPo-Max-2.jpg',
+        name: 'Apple AirPods Max',
+        des: 'Sky Blue',
+        oldPrice: 549,
+        newPrice: 449,
+        price: 449,
+        discount_title: '',
+        save: 'You save: £100',
+        sale: '18%',
         description: {
-            Programmable_buttons: '5',
-            Wired_or_Wireless: 'Wired',
-            Mouse_Type: 'Optical',
+            Noise_cancelling: 'Active Noise Cancellation',
+            Wired_or_Wireless: 'Up to 20 hours of listening call on a single charge',
+            Function: 'Transparency mode, Adaptive EQ, Intuitive Digital Crown Control',
+            Quality:  'Rich, high-quality audio and voice',      
             Colour: 'Blue',
         },
-        imgs: ['../../image/Mouse/ZOWIE-S2/ZOWIE-S2-1.png', '../../image/Mouse/ZOWIE-S2/ZOWIE-S2-2.png',
-        '../../image/Mouse/ZOWIE-S2/ZOWIE-S2-3.png','../../image/Mouse/ZOWIE-S2/ZOWIE-S2-4.png']
+        imgs: ['../../image/Headphones/Apple-AirPo-Max/Apple-AirPo-Max-1.jpg', '../../image/Headphones/Apple-AirPo-Max/Apple-AirPo-Max-2.jpg',
+        '../../image/Headphones/Apple-AirPo-Max/Apple-AirPo-Max-3.jpg']
+    },
+    {
+        id: 30,
+        img: '../../image/Headphones/Sony_Wireless/Sony_Wireless_1.jpg',
+        name: 'Sony WH1000XM3',
+        des: 'Wireless Noise Cancelling Headphones',
+        oldPrice: 149,
+        newPrice: 99,
+        price: 99,
+        discount_title: '',
+        save: 'You save: £50',
+        sale: '33%',
+        description: {
+            Noise_cancelling: 'Automatic Artifical Intelligences Noise Cancelling',
+            Wired_or_Wireless: 'Wireless, full time charge 3hours,  35 hours of battery life',
+            Quick_charging: '10 Minutes charge for 60minutes playback',
+            Voice_Assistant: 'hands free helps on Android and IOS',
+            Earpads: 'Soft oval shaped earpads - All day comfort',
+            Colour: 'White',
+        },
+        imgs: ['../../image/Headphones/Sony_Wireless/Sony_Wireless_1.jpg', '../../image/Headphones/Sony_Wireless/Sony_Wireless_2.jpg',
+        '../../image/Headphones/Sony_Wireless/Sony_Wireless_3.jpg', '../../image/Headphones/Sony_Wireless/Sony_Wireless_4.jpg']
     },
 
     {
-        id: 25,
+        id: 31,
+        img: '../../image/Headphones/Logitech_G_Pro_Gen 2/Logitech_G_Pro_Gen 2_1.png',
+        name: 'Logitech G Pro Gen 2',
+        des: 'Gaming Headset',
+        oldPrice: 94.95,
+        newPrice: 78.95,
+        price: 78.95,
+        discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining',
+        save: 'You save: £16',
+        sale: '20%',
+        description: {
+            Wired_or_Wireless: 'Wired',
+            Sound_Modes:'Surround Headset, 2.0 (Hardware), 7.1 (Software)',
+            Microphone: 'Uni-directional Microphone, Removable Microphone, Flexible Microphone-arm',
+            Simulated_surround_sound: 'DTS Headphone:X 7.1, DTS',
+            Noise_cancelling: 'Active noise cancellation',
+        },
+        imgs: ['../../image/Headphones/Logitech_G_Pro_Gen 2/Logitech_G_Pro_Gen 2_1.png', '../../image/Headphones/Logitech_G_Pro_Gen 2/Logitech_G_Pro_Gen 2_2.png',
+        '../../image/Headphones/Logitech_G_Pro_Gen 2/Logitech_G_Pro_Gen 2_3.png','../../image/Headphones/Logitech_G_Pro_Gen 2/Logitech_G_Pro_Gen 2_4.png']
+    },
+
+    {
+        id: 32,
+        img: '../../image/Headphones/Razer_Kraken_Tournament/Razer_Kraken_Tournament_1.png',
+        name: 'Razer Kraken Tournament',
+        des: 'Green',
+        oldPrice: 83.99,
+        newPrice: 78.99,
+        price: 78.99,
+        discount_title: '',
+        save: 'You save: £5',
+        sale: '6%',
+        description: {
+            Wired_or_Wireless: 'Wired',
+            Sound_Modes:'2.0 (Hardware), Surround Headset',
+            Microphone: 'Uni-directional Microphone, Retractable Microphone',
+            Noise_cancelling: 'Passive noise cancellation',
+        },
+        imgs: ['../../image/Headphones/Razer_Kraken_Tournament/Razer_Kraken_Tournament_1.png', '../../image/Headphones/Razer_Kraken_Tournament/Razer_Kraken_Tournament_2.png',
+        '../../image/Headphones/Razer_Kraken_Tournament/Razer_Kraken_Tournament_3.png','../../image/Headphones/Razer_Kraken_Tournament/Razer_Kraken_Tournament_4.png',
+        '../../image/Headphones/Razer_Kraken_Tournament/Razer_Kraken_Tournament_5.png','../../image/Headphones/Razer_Kraken_Tournament/Razer_Kraken_Tournament_6.jpg']
+    },
+
+    {
+        id: 33,
         img: '../../image/Mouse/ASUS-ROG-Keris/ASUS-ROG-Keris-1.jpg',
         name: 'Asus ROG Keris',
         des: 'Wireless Lightweight Gaming Mouse',
@@ -127,7 +133,7 @@ let list_headphones =[
     },
 
     {
-        id: 26,
+        id: 34,
         img: '../../image/Mouse/Steelseries-Rival-110/Steelseries-Rival-110-1.jpg',
         name: 'Steelseries Rival 110',
         des: 'Gaming Mouse',
@@ -148,7 +154,7 @@ let list_headphones =[
     },
 
     {
-        id: 27,
+        id: 35,
         img: '../../image/Mouse/Apple-Magic-Mouse-2/Apple-Magic-Mouse-2-1.jpg',
         name: 'Apple Magic Mouse 2',
         des: '',
@@ -169,7 +175,7 @@ let list_headphones =[
 
 
     {
-        id: 28,
+        id: 36,
         img: '../../image/Mouse/HyperX-Pulsefire-Dart/HyperX-Pulsefire-Dart-1.jpg',
         name: 'HyperX Pulsefire Dart',
         des: 'Wireless Gaming Mouse',
@@ -238,6 +244,6 @@ const renderList = (list) => {
       ${els}
     `);
   };
-  filterList(list_product_mouse);
+  filterList(list_headphones);
 
   
