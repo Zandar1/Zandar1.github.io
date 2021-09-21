@@ -122,6 +122,13 @@
     margin-bottom: 50px;
 }
 
+.slash{
+    font-size: 20px; 
+    padding: 0 6px 0 6px;
+}
+
+
+
 /* ---------------------------------------------------------------Responsive - Newproduct--------------------------------------------------------------- */
 
 @media only screen and (min-width: 1200px) {
@@ -235,4 +242,69 @@
         max-width: 200px;
         height: 350px;
     }
+
+    .product-name,.description{
+        font-size: 14px;
+    }
+
+    .product-name{
+        padding: 10px 4px 5px 4px ;
+    }
+
+    .description{
+        padding: 0 4px 0 4px;
+    }
+
+    .new-price, .old-price{
+        padding-left: 4px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .sale-off{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .slash{
+        font-size: 18px;
+        padding: 0 4px 0 4px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .product-name,.description{
+        font-size: 12px;
+    }
+
+    .new-price, .old-price{
+        padding-left: 2px;
+        font-size: 14px;
+    }
+
+    .sale-off{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .col-small{
+        width: 100%;
+    }
+
+    .item-card{
+        margin: 20px auto;
+       
+    }
+
+    .description{
+        height: 40px;
+    }
+
+    .show-item{
+        overflow: unset;
+        max-height: unset;
+    }
+
 }

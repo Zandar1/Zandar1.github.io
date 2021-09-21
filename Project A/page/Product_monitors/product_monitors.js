@@ -1,111 +1,132 @@
 let list_item = $("#productlist_item");
 let list_product_monitors =[
     {
-        id: 2,
-        img: '../../image/Mouse/logitech-g305/logitech-305-1.png',
-        name: 'Logitech G305 Black',
-        des: 'Wireless Gaming Mouse',
-        oldPrice: '',
-        newPrice: 41.98,
-        price: 41.98,
+        id: 16,
+        img: '../../image/Monitors/BenQ-ZOWIE-XL2411K/BenQ-ZOWIE-XL2411K-1.png',
+        name: 'BenQ ZOWIE XL2411K',
+        des: '24" 144Hz Full HD e-Sports Monitor',
+        oldPrice: 299.97,
+        newPrice: 184.97,
+        price: 184.97,
+        save: 'You save: 115£',
+        sale: '38%',
         discount_title: '',
-        save: '',
-        sale: '',
         description: {
-            Programmable_buttons: '6',
-            Wired_or_Wireless: 'Wireless',
-            Mouse_Type: 'Optical',
-            Colour: 'Black',
+            Graphic_card: 'GeForce GTX 2070 Super Max-Q 8GB',
+            Processor: 'Intel Core i7-10875H',
+            Screen_size: '15.6 Inch Full HD 144Hz Screen',
+            SSD: '512 GB',
+            Ram: '16GB',
+            Warranty: '1 year',
+            Operating_System: 'Windows 10',
         },
-        imgs: ['../../image/Mouse/logitech-g305/logitech-305-1.png', '../../image/Mouse/logitech-g305/logitech-305-2.jpg', '../../image/Mouse/logitech-g305/logitech-305-3.jpg', '../../image/Mouse/logitech-g305/logitech-305-4.jpg', '../../image/Mouse/logitech-g305/logitech-305-5.jpg']
+        imgs: ['../../image/Monitors/BenQ-ZOWIE-XL2411K/BenQ-ZOWIE-XL2411K-1.png','../../image/Monitors/BenQ-ZOWIE-XL2411K/BenQ-ZOWIE-XL2411K-2.jpg',
+        '../../image/Monitors/BenQ-ZOWIE-XL2411K/BenQ-ZOWIE-XL2411K-3.jpg','../../image/Monitors/BenQ-ZOWIE-XL2411K/BenQ-ZOWIE-XL2411K-4.jpg']
     },
 
     {
-        id: 21,
-        img: '../../image/Mouse/Logitech-G-Pro/Logitech-G-Pro-1.png',
-        name: 'Logitech G Pro Hero',
-        des: 'Pro series Gaming Mouse',
-        oldPrice: 69.99,
-        newPrice: 49.99,
-        price: 49.99,
-        discount_title: '',
+        id: 17,
+        img: '../../image/Monitors/Acer-Nitro-RG270/Acer-Nitro-RG270-1.jpg',
+        name: 'Acer Nitro RG270',
+        des: '27" IPS Full HD Gaming Monitor ',
+        oldPrice: 164.97,
+        newPrice: 144.97,
+        price: 1299.97,
         save: 'You save: £20',
-        sale: '29%',
+        sale: '12%',
+        discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining', 
         description: {
-            Programmable_buttons: '6',
-            Wired_or_Wireless: 'Wired',
-            Mouse_Type: 'Optical',
-            Colour: 'Black',
+            Screen_size: '27 Inch',
+            Response_time: '1MS',
+            Refresh_Rate: '75Hz', 
+            Resolution: '1920 x 1080',
+            Panel_type: 'IPS',
+            Warranty: '1 year',
+            Ports: 'HDMI VGA',
         },
-        imgs: ['../../image/Mouse/Logitech-G-Pro/Logitech-G-Pro-1.png', '../../image/Mouse/Logitech-G-Pro/Logitech-G-Pro-2.png',
-        '../../image/Mouse/Logitech-G-Pro/Logitech-G-Pro-3.png', '../../image/Mouse/Logitech-G-Pro/Logitech-G-Pro-4.png']
-    },
-    {
-        id: 22,
-        img: '../../image/Mouse/M65-RGB-ELITE/M65-RGB-ELITE-1.jpg',
-        name: 'M65 RGB ELITE Tunable',
-        des: 'FPS Gaming Mouse',
-        oldPrice: 59.99,
-        newPrice: 55.99,
-        price: 55.99,
-        discount_title: '',
-        save: 'You save: £4',
-        sale: '7%',
-        description: {
-            Programmable_buttons: '8',
-            Wired_or_Wireless: 'Wired',
-            Mouse_Type: 'Optical',
-            Colour: 'White',
-        },
-        imgs: ['../../image/Mouse/M65-RGB-ELITE/M65-RGB-ELITE-1.jpg', '../../image/Mouse/M65-RGB-ELITE/M65-RGB-ELITE-2.png',
-        '../../image/Mouse/M65-RGB-ELITE/M65-RGB-ELITE-3.png', '../../image/Mouse/M65-RGB-ELITE/M65-RGB-ELITE-4.png', 
-        '../../image/Mouse/M65-RGB-ELITE/M65-RGB-ELITE-5.png','../../image/Mouse/M65-RGB-ELITE/M65-RGB-ELITE-6.png']
+        imgs: ['../../image/Monitors/Acer-Nitro-RG270/Acer-Nitro-RG270-1.jpg','../../image/Monitors/Acer-Nitro-RG270/Acer-Nitro-RG270-2.jpg',
+        '../../image/Monitors/Acer-Nitro-RG270/Acer-Nitro-RG270-3.jpg','../../image/Monitors/Acer-Nitro-RG270/Acer-Nitro-RG270-4.jpg']
     },
 
     {
-        id: 23,
-        img: '../../image/Mouse/Razer-DeathAdder/Razer-DeathAdder-1.jpg',
-        name: 'Razer DeathAdder',
-        des: 'Gaming Mouse',
-        oldPrice: 51.97,
-        newPrice: 27.97,
-        price: 27.97,
-        discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining',
-        save: 'You save: £24',
-        sale: '7%',
+        id: 18,
+        img: '../../image/Monitors/Samsung-C49HG90/Samsung-C49HG90-1.jpg',
+        name: 'Samsung C49HG90',
+        des: '49" QLED Freesync 144Hz Curved Gaming Monitor',
+        oldPrice: 900.97,
+        newPrice: 809.97,
+        price: 809.97,
+        save: 'You save: £91',
+        sale: '10%',
+        discount_title:'',
         description: {
-            Programmable_buttons: '5',
-            Wired_or_Wireless: 'Wired',
-            Mouse_Type: 'Optical',
-            Colour: 'Black',
+            Screen_size: '49 Inch',
+            Response_time: '1MS',
+            Refresh_Rate: '144Hz', 
+            Resolution: '3840 x 1080',
+            Panel_type: 'VA',
+            Warranty: '2 years',
+            Ports: 'HDMI DisplayPort',
         },
-        imgs: ['../../image/Mouse/Razer-DeathAdder/Razer-DeathAdder-1.jpg', '../../image/Mouse/Razer-DeathAdder/Razer-DeathAdder-2.jpg',
-        '../../image/Mouse/Razer-DeathAdder/Razer-DeathAdder-3.jpg']
+        imgs: ['../../image/Monitors/Samsung-C49HG90/Samsung-C49HG90-1.jpg','../../image/Monitors/Samsung-C49HG90/Samsung-C49HG90-2.jpg',
+        '../../image/Monitors/Samsung-C49HG90/Samsung-C49HG90-3.jpg','../../image/Monitors/Samsung-C49HG90/Samsung-C49HG90-4.jpg',
+        '../../image/Monitors/Samsung-C49HG90/Samsung-C49HG90-5.jpg','../../image/Monitors/Samsung-C49HG90/Samsung-C49HG90-6.jpg']
     },
 
     {
-        id: 24,
-        img: '../../image/Mouse/ZOWIE-S2/ZOWIE-S2-1.png',
-        name: 'Zowie S2',
-        des: 'Gaming Mouse For Esports',
-        oldPrice: 50.99,
-        newPrice: 42.99,
-        price: 42.99,
-        discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining',
-        save: 'You save: £8',
-        sale: '16%',
+        id: 19,
+        img: '../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-1.jpg',
+        name: 'Lenovo ThinkVision S27i-10',
+        des: '27" IPS Full HD Monitor',
+        oldPrice: 184.97,
+        newPrice: 149.97,
+        price: 149.97,
+        save: 'You save: £35',
+        sale: '19%',
+        discount_title:'',
         description: {
-            Programmable_buttons: '5',
-            Wired_or_Wireless: 'Wired',
-            Mouse_Type: 'Optical',
-            Colour: 'Blue',
+            Screen_size: '27 Inch',
+            Response_time: '4MS',
+            Refresh_Rate: '75Hz', 
+            Resolution: '1920 x 1080 Full HD Resolution',
+            Panel_type: 'IPS',
+            Warranty: '3 years',
+            Ports: 'HDMI VGA',
         },
-        imgs: ['../../image/Mouse/ZOWIE-S2/ZOWIE-S2-1.png', '../../image/Mouse/ZOWIE-S2/ZOWIE-S2-2.png',
-        '../../image/Mouse/ZOWIE-S2/ZOWIE-S2-3.png','../../image/Mouse/ZOWIE-S2/ZOWIE-S2-4.png']
+        imgs: ['../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-1.jpg','../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-2.jpg',
+        '../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-3.jpg','../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-4.jpg',
+        '../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-5.jpg','../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-6.jpg',
+        '../../image/Monitors/Lenovo-ThinkVision-S27i-10/Lenovo-ThinkVision-S27i-10-7.jpg']
     },
-
+   
     {
-        id: 25,
+        id: 20,
+        img: '../../image/Monitors/Samsung-S32R750U-32/Samsung-S32R750U-32-1.png',
+        name: 'Samsung S32R750U',
+        des: '32" 4K Ultra HD Clamp-Type Monitor ',
+        oldPrice: 429.97,
+        newPrice: 329.97,
+        price: 329.97,
+        save: 'You save: £100',
+        sale: '23%',
+        discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining', 
+        description: {
+            Screen_size: '32 Inch',
+            Response_time: '4MS',
+            Refresh_Rate: '60Hz', 
+            Resolution: '3840 x 2160 Ultra HD 4K Resolution',
+            Panel_type: 'VA',
+            Warranty: '2 years',
+            Ports: 'HDMI',    
+        },
+    imgs: ['../../image/Monitors/Samsung-S32R750U-32/Samsung-S32R750U-32-1.png','../../image/Monitors/Samsung-S32R750U-32/Samsung-S32R750U-32-2.png',
+    '../../image/Monitors/Samsung-S32R750U-32/Samsung-S32R750U-32-3.png','../../image/Monitors/Samsung-S32R750U-32/Samsung-S32R750U-32-4.png',
+    '../../image/Monitors/Samsung-S32R750U-32/Samsung-S32R750U-32-5.png','../../image/Monitors/Samsung-S32R750U-32/Samsung-S32R750U-32-6.png'],
+    },
+   
+  
+    {
+        id: 37,
         img: '../../image/Mouse/ASUS-ROG-Keris/ASUS-ROG-Keris-1.jpg',
         name: 'Asus ROG Keris',
         des: 'Wireless Lightweight Gaming Mouse',
@@ -127,7 +148,7 @@ let list_product_monitors =[
     },
 
     {
-        id: 26,
+        id: 38,
         img: '../../image/Mouse/Steelseries-Rival-110/Steelseries-Rival-110-1.jpg',
         name: 'Steelseries Rival 110',
         des: 'Gaming Mouse',
@@ -148,7 +169,7 @@ let list_product_monitors =[
     },
 
     {
-        id: 27,
+        id: 39,
         img: '../../image/Mouse/Apple-Magic-Mouse-2/Apple-Magic-Mouse-2-1.jpg',
         name: 'Apple Magic Mouse 2',
         des: '',
@@ -169,7 +190,7 @@ let list_product_monitors =[
 
 
     {
-        id: 28,
+        id: 40,
         img: '../../image/Mouse/HyperX-Pulsefire-Dart/HyperX-Pulsefire-Dart-1.jpg',
         name: 'HyperX Pulsefire Dart',
         des: 'Wireless Gaming Mouse',
@@ -238,6 +259,6 @@ const renderList = (product) => {
       ${els}
     `);
   };
-  filterList(list_product_mouse);
+  filterList(list_product_monitors);
 
   

@@ -27,7 +27,7 @@ let products_popular = [
         img: '../../image/Mouse/logitech-g305/logitech-305-1.png',
         name: 'Logitech G305 Black',
         des: 'Wireless Gaming Mouse',
-        oldPrice: '',
+        oldPrice: 50.98,
         newPrice: 41.98,
         price: 41.98,
         description: {
@@ -37,8 +37,8 @@ let products_popular = [
             Colour: 'Black',
         },
         discount_title: '',
-        save: '',
-        sale: '',
+        save: 'You save: £9',
+        sale: '18%',
         imgs: ['../../image/Mouse/logitech-g305/logitech-305-1.png', '../../image/Mouse/logitech-g305/logitech-305-2.jpg', '../../image/Mouse/logitech-g305/logitech-305-3.jpg', '../../image/Mouse/logitech-g305/logitech-305-4.jpg', '../../image/Mouse/logitech-g305/logitech-305-5.jpg']
     },
     {
@@ -414,11 +414,11 @@ let monitors =[
         img: '../../image/Monitors/Samsung-C49HG90/Samsung-C49HG90-1.jpg',
         name: 'Samsung C49HG90',
         des: '49" QLED Freesync 144Hz Curved Gaming Monitor',
-        oldPrice: '',
+        oldPrice: 900.97,
         newPrice: 809.97,
         price: 809.97,
-        save: '',
-        sale: '',
+        save: 'You save: £91',
+        sale: '10%',
         discount_title:'',
         description: {
             Screen_size: '49 Inch',
@@ -532,7 +532,7 @@ const showProduct = (product, idShow, name) => {
     product.forEach((item, index) => {
         showItem.append(
             `
-                <div onclick="setLocal(${index}, ${name})" class="col-6 col-xl-3 col-sm-6 col-md-3 width-col-cate">
+                <div onclick="setLocal(${index}, ${name})" class="col-6 col-xl-3 col-sm-6 col-md-4 col-small width-col-cate">
                
                     <div class="item-card">
                     <div class="image-item">
@@ -543,7 +543,7 @@ const showProduct = (product, idShow, name) => {
                     <div class="new-price">${GBPFormatter.format(item.newPrice)}</div>
                     <div class = "reduction" id ="reduction">
                             <div class = "old-price">${GBPFormatter.format(item.oldPrice)}</div>
-                            <span  style ="font-size: 20px; padding: 0 6px 0 6px;">/</span>
+                            <span  style ="" class = "slash">/</span>
                             <div class = "sale-off"> Save ${item.sale}</div>
                         </div>
                 </div>
