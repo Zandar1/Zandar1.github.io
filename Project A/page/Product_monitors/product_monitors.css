@@ -100,14 +100,14 @@
     margin-bottom: 12px;
 }
 
-.Wire{
+.Screen_size{
     background-color: #D5E3FF;
-    max-height: 210px;
+    max-height: 190px;
     max-width: 245px;
     padding: 0 25px 15px 18px;
     margin-bottom: 12px;
 }
-.colour{
+.Screen_refresh_rate{
     background-color: #D5E3FF;
     max-height: 190px;
     max-width: 245px;
@@ -144,12 +144,13 @@
 .nameFilter p1{
     margin: 0 85px 0 0;
 }
-.nameFilter p2{
-    margin: 0 17px 0 0;
-}
 
 .nameFilter p3{
     margin: 0 82px 0 0;
+}
+
+.nameFilter p4{
+    margin: 0 10px 0 0;
 }
 
 .brands_item{

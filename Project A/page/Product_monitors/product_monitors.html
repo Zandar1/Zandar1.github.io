@@ -60,28 +60,17 @@
                     </label>
 
                     <label onclick = "filterBrands(5)" class ="brands_item">
-                        <p>Asus</p>
+                        <p>LG</p>
                         <input type="checkbox">
                         <span class = "checkmark"></span>
                     </label>
 
                     <label onclick = "filterBrands(6)" class ="brands_item">
-                        <p>HyperX</p>
+                        <p>AOC</p>
                         <input type="checkbox">
                         <span class = "checkmark"></span>
                     </label>
 
-                    <label onclick = "filterBrands(7)" class ="brands_item">
-                        <p>Steelseries</p>
-                        <input type="checkbox">
-                        <span class = "checkmark"></span>
-                    </label>
-
-                    <label onclick = "filterBrands(8)" class ="brands_item">
-                        <p>Apple</p>
-                        <input type="checkbox">
-                        <span class = "checkmark"></span>
-                    </label>
                 </div>
             </div>
 
@@ -103,68 +92,77 @@
             </div>
 
             
-            <div class="Wire">
+            <div class= "Screen_size">
                 <div class = "nameFilter">
-                    <p2>Wired or Wireless</p2>
-                    <div class="icon">
-                        <i class="fas fa-chevron-down" id = "changeicon"></i>
-                    </div>
-                </div>
-
-                <div id = "hideFilter3">
-
-
-                    <label onclick = "filterWire(1)" class ="brands_item">
-                        <p>Wired</p>
-                        <input type="checkbox">
-                        <span class = "checkmark"></span>
-                    </label>
-
-                    <label onclick = "filterWire(2)" class ="brands_item">
-                        <p>Wireless</p>
-                        <input type="checkbox">
-                        <span class = "checkmark"></span>
-                    </label>
-                </div>    
-                
-
-            </div>
-
-            <div class= "colour">
-                <div class = "nameFilter">
-                    <p3>Colour</p3>
+                    <p3>Screen size</p3>
                     <div class="icon">
                         <i class="fas fa-chevron-down" id = "changeicon"></i>
                     </div>
                 </div>
 
                 <div id = "hideFilter4">
-                    <label onclick = "filterColour(1)" class ="brands_item">
-                        <p>Black</p>
+                    <label onclick = "filterSize(1)" class ="brands_item">
+                        <p>32’’ and above</p>
                         <input type="checkbox">
                         <span class = "checkmark"></span>
                     </label>
 
-                    <label onclick = "filterColour(2)" class ="brands_item">
-                        <p>White</p>
+                    <label onclick = "filterSize(2)" class ="brands_item">
+                        <p>27’’</p>
                         <input type="checkbox">
                         <span class = "checkmark"></span>
                     </label>
 
-                    <label onclick = "filterColour(3)" class ="brands_item">
-                        <p>Blue </p>
+                    <label onclick = "filterSize(3)" class ="brands_item">
+                        <p>24.5’’</p>
                         <input type="checkbox">
                         <span class = "checkmark"></span>
                     </label>
 
-                    <label onclick = "filterColour(4)" class ="brands_item">
-                        <p>Grey</p>
+                    <label onclick = "filterSize(4)" class ="brands_item">
+                        <p>24’’</p>
                         <input type="checkbox">
                         <span class = "checkmark"></span>
                     </label>
 
                 </div>
             </div>
+
+            <div class= "Screen_refresh_rate">
+                <div class = "nameFilter">
+                    <p4>Screen refresh rate</p4>
+                    <div class="icon">
+                        <i class="fas fa-chevron-down" id = "changeicon"></i>
+                    </div>
+                </div>
+                
+                <div id = "hideFilter5">
+                    <label onclick = "filterHZ(1)" class ="brands_item">
+                        <p>60Hz</p>
+                        <input type="checkbox">
+                        <span class = "checkmark"></span>
+                    </label>
+
+                    <label onclick = "filterHZ(2)" class ="brands_item">
+                        <p>144Hz </p>
+                        <input type="checkbox">
+                        <span class = "checkmark"></span>
+                    </label>
+
+                    <label onclick = "filterHZ(3)" class ="brands_item">
+                        <p>165Hz</p>
+                        <input type="checkbox">
+                        <span class = "checkmark"></span>
+                    </label>
+
+                    <label onclick = "filterHZ(4)" class ="brands_item">
+                        <p>240Hz</p>
+                        <input type="checkbox">
+                        <span class = "checkmark"></span>
+                    </label>
+                </div>
+            </div>
+
         </div>
 
 
@@ -189,7 +187,7 @@
             <div id="productlist_item" class="productlist_item"></div>
           </div>
     </div>
-
+<img src="" alt="">
 
 
     <div id = "footer"></div>
