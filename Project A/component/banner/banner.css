@@ -48,9 +48,6 @@ button.carousel-control-prev {
     height: 332px;
 }
 
-.hide-item{
-    display: none;
-}
 
 /* ---------------------------------------------------------------Responsive - Banner--------------------------------------------------------------- */
 @media only screen and (max-width: 768px){
