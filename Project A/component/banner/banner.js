@@ -18,11 +18,11 @@ banner.append(`
                 <a href = ""> <img src="../../image/hp-vb-dt.png" class="d-block w-100 banner-height" alt="html_banner2"> </a>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
-                <a href = ""> <img src="../../image/dekstop.jpg" class="d-block w-100 banner-height" alt="html_banner3"> </a>
+                <a href = "Zandar1.github.io/Project A/page/intel-evo-promotion/evo.html"> <img src="../../image/dekstop.jpg" class="d-block w-100 banner-height" alt="html_banner3"> </a>
             </div>
             <div class="carousel-item">
                 <a href = ""> <img src="../../image/mac.jpg" class="d-block w-100 banner-height" alt="html_banner4"> </a>
-        </div>
+            </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
