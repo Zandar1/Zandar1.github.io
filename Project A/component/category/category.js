@@ -498,7 +498,8 @@ const showTitle = (title, idShow) => {
         ${title}
     </div>
     <div class="view-all">
-        <span class = "view-all-products">Browse all products</span>
+        <span class = "view-all-products pc">Browse all products</span>
+        <span class = "view-all-products mobile">Browse all</span>
         <i class="fal fa-angle-right"></i>
     </div>
     </div>
@@ -566,7 +567,7 @@ showProduct(gaming_product, 'show-item-3','gaming_product')
 showTitle('Monitors','show-item-4')
 showProduct(monitors, 'show-item-4','monitors')
 
-$(document).load($(window).bind("resize", listenWidth));
+/* $(document).load($(window).bind("resize", listenWidth));
 
     function listenWidth( e ) {
         if($(window).width()<720)
@@ -576,7 +577,7 @@ $(document).load($(window).bind("resize", listenWidth));
         $(".view-all-products").html("<div>Browse all products</div>");
         }
     }
-
+ */
 
 
 

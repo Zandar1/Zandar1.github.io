@@ -1,4 +1,7 @@
 /* ---------------------------------------------------------------New-product--------------------------------------------------------------- */
+.mobile{
+    display: none;
+}
 .new-product {
     display: flex;
     background-color: #343434;
@@ -203,6 +206,19 @@
     .banner{
         margin-bottom: 36px;
     }
+
+    .mobile{
+        display: block;
+    }
+
+    .pc{
+        display: none;
+    }
+
+    .view-all {
+        font-size: 12px;
+        margin-right: 12px;
+    }
 }
 
 @media only screen and (max-width: 720px) {
@@ -294,8 +310,7 @@
     }
 
     .item-card{
-        margin: 20px auto;
-       
+        margin: 20px 0px;
     }
 
     .description{
@@ -307,4 +322,13 @@
         max-height: unset;
     }
 
+    .show-item{
+        max-height: 390px;
+        overflow: auto;
+    }
+
+    .row{
+        flex-wrap: nowrap;
+        --bs-gutter-x: -4.5rem;
+    }
 }

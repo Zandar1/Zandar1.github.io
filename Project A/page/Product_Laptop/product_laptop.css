@@ -191,9 +191,6 @@
 
 
 
-#hideFilter2{
-    margin-bottom: 10px;
-}
 
 input[type="number"]{
     width: 80px;
@@ -337,6 +334,7 @@ button.apply {
     color: white;
     border-radius: 2px;
     width: 80px;
+    margin-top: 10px;
 }
 
 .noti3 span{
@@ -450,4 +448,88 @@ button.apply {
 }
 
 @media only screen and (max-width: 730px){
+    .productlist_item{
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .all_product{
+        display: unset;
+    }
+
+    .filter-component{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 700px;
+        max-height: 280px;
+        overflow: scroll;
+    }
+
+    .productlist{
+        width: 100%;
+    }
+
+    .filter{
+        width: 100%;
+        max-width: 700px;
+        margin-bottom: 20px;
+    }
+
+    .brands,.price-band,.laptop-by-use,.Screen_size,.Screen_refresh_rate,.Graphics_card{
+        max-width: 700px;
+        width: 100%;
+    }
+
+    .brands #hideFilter1{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .nameFilter{
+        justify-content: space-between;
+    }
+    .brands .brands_item{
+        width: 25%;
+    }
+
+    .laptop-by-use #hideFilter3, .Screen_size #hideFilter4, .Screen_refresh_rate #hideFilter5{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .laptop-by-use .brands_item, .Screen_size .brands_item, .Screen_refresh_rate .brands_item{
+        width: 50%;
+    }
+    
+    .price-band input{
+        width: 130px;
+    }
+
+    .noti1{
+       display: flex;
+       justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .noti2, .amount,.noti3{
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .custom-select select{
+        width: 100px;
+    }
+
+    .noti3{
+        margin: 0;
+        justify-content: flex-end;
+    }
+
+    .custom-select{
+        width: 100px;
+    }
 }

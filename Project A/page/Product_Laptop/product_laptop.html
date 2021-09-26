@@ -25,6 +25,8 @@
     <div class="all_product">
         <div class = "filter">
             <div class = "noti1"> Filter</div>
+
+            <div class = "filter-component">
             <div class = "brands">
                 <div class = "nameFilter">
                     <p>Brands</p>
@@ -87,28 +89,30 @@
             </div>
 
             <div class = "price-band">
-                <div class = "nameFilter">
+                <div class = "nameFilter" onclick="hideFilter1()">
                     <p1>Price Band</p1>
                     <div class="icon">
-                        <i class="fas fa-chevron-down" id = "changeicon"></i>
+                        <i class="fas fa-chevron-down" id = "changeicon1"></i>
                     </div>
                 </div>
 
                 <div id = "hideFilter2">
-                    £
-                    <input type="number" >
-                    to
-                    <input type="number" >
+                    <div >
+                        £
+                        <input type="number" >
+                        to
+                        <input type="number" >
+                    </div>
+                    <button class ="apply">Apply</button>
                 </div>
-                <button class ="apply">Apply</button>
             </div>
 
             
             <div class="laptop-by-use">
-                <div class = "nameFilter">
+                <div class = "nameFilter" onclick="hideFilter2()">
                     <p2>Laptop by use</p2>
                     <div class="icon">
-                        <i class="fas fa-chevron-down" id = "changeicon"></i>
+                        <i class="fas fa-chevron-down" id = "changeicon2"></i>
                     </div>
                 </div>
 
@@ -245,6 +249,7 @@
 
 
                 </div>
+            </div>
 
             </div>
 

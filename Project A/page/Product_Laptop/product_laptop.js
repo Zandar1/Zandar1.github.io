@@ -11,6 +11,29 @@ let changeicon = $('#changeicon')
     }
   } 
 
+  let changeicon1 = $('#changeicon1')
+  const hideFilter1 = () => {
+    let x = document.getElementById('hideFilter2');
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      changeicon1.removeClass( "fas fa-chevron-down" ).addClass( "fas fa-chevron-right");  
+    } else {
+      x.style.display = "block";
+      changeicon1.removeClass( "fas fa-chevron-right" ).addClass( "fas fa-chevron-down" )
+    }
+  } 
+
+  let changeicon2 = $('#changeicon2')
+  const hideFilter2 = () => {
+    let x = document.getElementById('hideFilter3');
+    if (x.style.display === "block") {
+      x.style.display = "none";
+      changeicon2.removeClass( "fas fa-chevron-down" ).addClass( "fas fa-chevron-right");  
+    } else {
+      x.style.display = "block";
+      changeicon2.removeClass( "fas fa-chevron-right" ).addClass( "fas fa-chevron-down" )
+    }
+  } 
 let list_item = $("#productlist_item");
 let list_product_laptop =[
     {
