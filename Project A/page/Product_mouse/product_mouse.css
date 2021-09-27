@@ -326,3 +326,194 @@ button.apply {
 .noti3 span{
     padding-right: 10px;
 }
+
+/*--------------------------------------------------------------Responsive--------------------------------------------------------------*/
+@media only screen and (max-width: 1128px){
+    .all_product{
+        margin: 44px 72px 60px 72px; 
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .all_product{
+        margin: 24px 0px 60px 0px; 
+    }
+
+    .noti1, .noti2, .noti3, .nameFilter{
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .noti1, .notification{
+        margin-bottom: 20px;
+    }
+
+    .custom-select{
+        width: 150px;
+    }
+    .brands_item{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .filter{
+        max-width: 200px;
+        margin-right: 15px;
+    }
+
+    input[type="number"]{
+        width: 50px;
+    }
+
+    .nameFilter p{
+        margin: 0 94px 0 0;
+    }
+    
+    .nameFilter p1{
+        margin: 0 67px 0 0;
+    }
+    .nameFilter p2{
+        margin: 0 44px 0 0;
+    }
+    
+    .nameFilter p3{
+        margin: 0 65px 0 0;
+    }
+    
+    .nameFilter p4{
+        margin: 0 10px 0 0;
+    }
+    
+    .nameFilter p5{
+        margin: 0 46px 0 0;
+    }
+
+    
+    .product-name{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .description{
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .new-price{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .old-price{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .sale-off{
+        font-size: 17px;
+        line-height: 18px;
+    }
+
+
+    .image-item{
+        width: 160px;
+        height: 160px;
+    }
+
+    .item-card {
+        max-width: 170px;
+        margin-bottom: 16px;
+        max-height: 360px;
+    }
+
+    .reduction span{
+        font-size: 16px;
+        padding: 0 4px 0 4px;
+    }
+}
+
+@media only screen and (max-width: 730px){
+    .productlist_item{
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .all_product{
+        display: unset;
+    }
+
+    .filter-component{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 700px;
+        max-height: 280px;
+        overflow: scroll;
+    }
+
+    .productlist{
+        width: 100%;
+    }
+
+    .filter{
+        width: 100%;
+        max-width: 700px;
+        margin-bottom: 20px;
+    }
+
+    .brands,.price-band,.Wire,.colour{
+        max-width: 700px;
+        width: 100%;
+    }
+
+    .brands #hideFilter1{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .nameFilter{
+        justify-content: space-between;
+    }
+    .brands .brands_item{
+        width: 33.3%;
+    }
+
+    .Wire #hideFilter3, .colour #hideFilter4{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .wire .brands_item, .Screen_size .brands_item, .Screen_refresh_rate .brands_item{
+        width: 50%;
+    }
+    
+    .price-band input{
+        width: 130px;
+    }
+
+    .noti1{
+       display: flex;
+       justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .noti2, .amount,.noti3{
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .custom-select select{
+        width: 100px;
+    }
+
+    .noti3{
+        margin: 0;
+        justify-content: flex-end;
+    }
+
+    .custom-select{
+        width: 100px;
+    }
+}

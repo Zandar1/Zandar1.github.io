@@ -21,7 +21,8 @@ let list_product_keyboard =[
         imgs: ['../../image/Keyboards/Razer-Tartarus-Chroma/Razer-Tartarus-Chroma-1.jpg', '../../image/Keyboards/Razer-Tartarus-Chroma/Razer-Tartarus-Chroma-2.jpg',
          '../../image/Keyboards/Razer-Tartarus-Chroma/Razer-Tartarus-Chroma-3.jpg', '../../image/Keyboards/Razer-Tartarus-Chroma/Razer-Tartarus-Chroma-4.jpg',
         '../../image/Keyboards/Razer-Tartarus-Chroma/Razer-Tartarus-Chroma-5.png','../../image/Keyboards/Razer-Tartarus-Chroma/Razer-Tartarus-Chroma-6.jpg',
-        '../../image/Keyboards/Razer-Tartarus-Chroma/Razer-Tartarus-Chroma-7.jpg']
+        '../../image/Keyboards/Razer-Tartarus-Chroma/Razer-Tartarus-Chroma-7.jpg'],
+        brand: "Razer",
     },
 
     {
@@ -267,4 +268,52 @@ const renderList = (list) => {
   };
   filterList(list_product_keyboard);
 
-  
+  let filters = {
+    price: -1,
+    new: -1,
+    brand: -1,
+    rangePrice: {
+      from: -1,
+      to: -1
+    }
+  };
+
+  const handleFilterBrands= (data, order) => {
+    let newData;
+    if (order === 1) {
+      newData = data.filter((item) => {
+        return item.brandNew === "Denon";
+      });
+    }
+    if (order === 2) {
+      newData = data.filter((item) => {
+        return item.brandNew === "Pioneer";
+      });
+    }
+    if (order === 3) {
+      newData = data.filter((item) => {
+        return item.brandNew === "Numark";
+      });
+    }
+    if (order === 4) {
+      newData = data.filter((item) => {
+        return item.brandNew === "Akai";
+      });
+    }
+    return newData;
+  };
+
+  const handleFilter = () => {
+    // làm nhiệm vụ filter theo object filters
+    let newData = [...list_product_keyboard];
+    for (let f in filters) {
+      if (filters[f] === -1) {
+        delete filters[f];
+      }
+    }}
+
+  const filterBrands = (dom) => {
+    const order = +dom.value
+    filters.brandNew = order;
+    handleFilter();
+  };
