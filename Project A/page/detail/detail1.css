@@ -5,9 +5,10 @@
 
 .wrap-info{
   display: flex;
-  margin: 20px 112px 0 112px;
+  margin: 20px 112px 60px 112px;
   justify-content: center;
 }
+
 /*--------------------------------------------------------------Picture-left--------------------------------------------------------------*/
 .product-small-img{
     display: flex;
@@ -34,9 +35,8 @@
 }
 
 .product-gallery{
-    margin: 0px 20px 0 0;
-    width: 729px;
-    height: 712px;
+    margin: 0px 189px 0px 0;
+    max-width: 729px;
 }
 
 
@@ -45,7 +45,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 70px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -59,15 +59,15 @@
   .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    width: 100%;
+    max-width: 700px; 
   }
   
   /* Caption of Modal Image */
   #caption {
     margin: auto;
     display: block;
-    width: 80%;
+    width: 100%;
     max-width: 700px;
     text-align: center;
     color: #ccc;
@@ -110,6 +110,11 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  img#img01 {
+    width: 650px;
+    height: auto;
+}
   
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){
@@ -135,7 +140,7 @@
 
 .col-12.col-lg-6.col-sm-12{
   margin-left: 20px;
-  width: 547px;
+  max-width: 547px;
 }
 
 
@@ -243,22 +248,22 @@
 
 /*--------------------------------------------------------------Responsive--------------------------------------------------------------*/
 @media only screen and (max-width: 1128px){
-  .product-gallery{
-    width: 400px;
-    height: 400px;
-  }
   .img-container img{
     height: 400px;
     width: 400px;
 }
+
+.product-gallery{
+  margin: 0 20px 0px 0;
+}
+
+
 }
 
 @media only screen and (max-width: 1000px){
   .product-gallery{
-    width: 250px;
-    height: 250px;
+    margin: 0 20px 0px 0;
   }
-
   .img-container img{
     height: 200px;
     width: 200px;
@@ -295,7 +300,7 @@
 
 .wrap-info{
   display: flex;
-  margin: 20px 0px 0 0px;
+  margin: 20px 0px 40px 0px;
 }
 
 .price-tag{
@@ -326,6 +331,15 @@
     height: 100%;
     width: 100%;
 }
+  .product-small-img{
+    max-width: 440px;
+    overflow: scroll;
+    margin-left: 20px;
+  }
+
+  .guide{
+    margin-left: 20px;
+  }
 
   .product-small-img img{
     height: 40px;

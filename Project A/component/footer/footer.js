@@ -3,14 +3,15 @@ let footer = $('#footer')
 footer.append(`
 <div class = "wrapper">
         <div id = "fter">
+            
             <ul class = "type">
                 <li class = "header">products</li>
-                <li class = "footer-item">Laptops</li>
-                <li class = "footer-item">Headphones</li>
-                <li class = "footer-item">Mice</li>
-                <li class = "footer-item">Keyboards</li>
-                <li class = "footer-item">Monitors</li>
-                <li class = "footer-item">Laptop compontents</li>
+                <li class = "footer-item"> <a href="https://zandar1.github.io/Project%20A/page/Product_Laptop/product_laptop.html">Laptops </a></li>
+                <li class = "footer-item"> <a href="https://zandar1.github.io/Project%20A/page/Product_headphones/product_headphones.html">Headphones </a></li>
+                <li class = "footer-item"> <a href="https://zandar1.github.io/Project%20A/page/Product_mouse/product_mouse.html">Mice </a></li>
+                <li class = "footer-item"> <a href="https://zandar1.github.io/Project%20A/page/Product_keyboard/product_keyboard.html"> Keyboards </a> </li>
+                <li class = "footer-item"> <a href="https://zandar1.github.io/Project%20A/page/Product_monitors/product_monitors.html"> Monitors </a> </li>
+                <li class = "footer-item"> <a href="https://zandar1.github.io/Project%20A/page/Product_component/product_component.html">Laptop compontents </a></li>
             </ul>
 
             <ul class = "rules">

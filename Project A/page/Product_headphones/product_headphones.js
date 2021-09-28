@@ -203,10 +203,10 @@ var GBPFormatter = new Intl.NumberFormat('en-US', {
   });
 
 
-  const setLocal = (index,product) => {
-    let item = product[index]
+  const setLocal = (index,list) => {
+    let item = list[index]
     localStorage.setItem('detail-data', JSON.stringify(item))
-    location.replace = 'https://zandar1.github.io/Project%20A/page/detail/detail1.html'
+    location.href = 'https://zandar1.github.io/Project%20A/page/detail/detail1.html'
 }
  
 const renderList = (list) => {
