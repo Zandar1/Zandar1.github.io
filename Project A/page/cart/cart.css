@@ -1,0 +1,87 @@
+.cart-process{
+    display: flex;  
+    margin: 80px 112px 28px 112px;;
+}
+
+.process-active{
+    font-family: Crimson Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    background-color: #3954E4;
+    border-radius: 15px;
+    width: 250px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.mid{
+    margin: 0 42px 0 42px;
+}
+
+.process{
+    width: 250px;
+    height: 59px;
+    background-color: #ECECEC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;font-family: Crimson Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    border-radius: 15px;
+}
+
+.announce{
+    font-family: Crimson Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    margin: 0 112px 40px 112px;
+}
+
+#infomatin_checkout{
+    width: 396px;
+    height: 283px;
+    background-color: #D5E3FF;
+    font-family: Crimson Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    padding: 0 0 0 21px;
+}
+
+.basket-title{
+    margin: 12px 0 25px 0;
+}
+
+.quantity{
+    margin: 25px 126px 25px 0;
+}
+
+.price{
+    margin: 25px 111px 25px 0;
+}
+
+.go-checkout{
+    width: 295px;
+    height: 59px;
+    background-color: #2749FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 29px;
+    color:#FFFFFF;
+}
+
+#wrap-cart{
+    margin-bottom: 32px;
+}

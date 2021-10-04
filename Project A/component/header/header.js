@@ -31,7 +31,7 @@ header.append(`
 
             <div class= "cart">
                 <div class = "left">
-                    <button type="button" class = "cart-icon"><i class="fal fa-shopping-cart fa-lg"></i></button> 
+                    <button type="button" class = "cart-icon"><a href = "https://zandar1.github.io/Project%20A/page/cart/cart.html"><i class="fal fa-shopping-cart fa-lg"></i></a></button> 
                 </div>
                 <div class = "right">
                     <div class = "up"> 1 PRODUCT</div>

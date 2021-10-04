@@ -200,10 +200,10 @@ let default_data_cart = [
   const updataCheckout = () => {
     infomatin_checkout.html("");
     infomatin_checkout.append(`
-      <div>Basket detail</div>
-      <div>Total quantity: ${data_cart().length}</div>
-      <div>Total price : ${totalPrice()}</div>
-      <div>Proceed to checkout</div>
+      <div class ="basket-title" >Basket detail</div>
+      <div class = "quantity">Total quantity: <span class = "amount">${data_cart().length}</span></div>
+      <div class ="price">Total price : <span class ="number">${totalPrice()}<span> </div>
+      <div class ="go-checkout">Proceed to checkout</div>
   `);
   };
   
