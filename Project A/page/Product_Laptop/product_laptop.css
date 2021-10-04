@@ -476,7 +476,7 @@ button.apply {
         margin-bottom: 20px;
     }
 
-    .brands,.price-band,.laptop-by-use,.Screen_size,.Screen_refresh_rate{
+    .brands,.price-band,.laptop-by-use,.Screen_size,.Screen_refresh_rate, .Graphics_card{
         max-width: 700px;
         width: 100%;
     }
