@@ -159,6 +159,7 @@ i.fal.fa-search{
 
 i.fal.fa-shopping-cart{
     color: white;
+    display: flex;
 }
 
 .cart button{
