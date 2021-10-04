@@ -40,6 +40,12 @@ const renderImage = () => {
   }
   return str
 }
+
+const setLocal = (item) => {
+    localStorage.setItem('data-cart', JSON.stringify(item))
+    location.href = 'https://zandar1.github.io/Project%20A/page/cart/cart.html'
+}
+
 const renderDes = () => {
   let obj = data_detail.description
   let str = ''
@@ -83,7 +89,7 @@ wrap_detail.append(`
                   <div class ="saving">${data_detail.save}</div>
                   <div class = "price">${GBPFormatter.format(data_detail.price)}</div>       
               </div>
-              <div class="add-button">Add to basket <i class="far fa-chevron-double-right"></i></div>
+              <div class="add-button" onclick="setLocal(item)">Add to basket <i class="far fa-chevron-double-right"></i></div>
           </div>
           <div class= "availability">
               <i class="fal fa-check"></i>
