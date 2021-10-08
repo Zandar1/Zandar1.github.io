@@ -3,6 +3,7 @@
 
 // create data
 let default_data = {
+  id : 1,  
   img: '../../image/Microsoft-Surface-i7/Microsoft -Surface-i7-1.jpg',
   name: 'Lenovo ThinkPad E15 AMD Ryzen 7-5700U 16GB 512GB SSD 15.6 Inch FHD Windows 10 Pro Laptop 20YG003VUK',
   discount_title: ' <i class="fas fa-fire"></i>SELLING FAST! Less than 10 remaining',
@@ -22,6 +23,10 @@ let default_data = {
 let data_detail = JSON.parse(localStorage.getItem('detail-data')) || default_data
 let wrap_detail = $('#wrap-detail')
 
+let data_cart = () => {
+    return JSON.parse(localStorage.getItem("data-cart")) || [];
+  };
+
 
 var GBPFormatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
@@ -39,11 +44,6 @@ const renderImage = () => {
       });
   }
   return str
-}
-
-const setLocal = (item) => {
-    localStorage.setItem('data-cart', JSON.stringify(item))
-    location.href = 'https://zandar1.github.io/Project%20A/page/cart/cart.html'
 }
 
 const renderDes = () => {
@@ -89,7 +89,7 @@ wrap_detail.append(`
                   <div class ="saving">${data_detail.save}</div>
                   <div class = "price">${GBPFormatter.format(data_detail.price)}</div>       
               </div>
-              <div class="add-button" onclick="setLocal(item)">Add to basket <i class="far fa-chevron-double-right"></i></div>
+              <div class="add-button" onclick="addToCart()">Add to basket <i class="far fa-chevron-double-right"></i></div>
           </div>
           <div class= "availability">
               <i class="fal fa-check"></i>
@@ -140,3 +140,11 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 } 
+
+
+const addToCart = () =>{
+    let new_data_cart = [...data_cart()];
+    new_data_cart.push(data_detail)
+    localStorage.setItem('data-cart',JSON.stringify(new_data_cart))
+    alert('add sucess')
+}

@@ -85,3 +85,28 @@
 #wrap-cart{
     margin-bottom: 32px;
 }
+
+li.cart-item {
+    display: flex;
+    max-height: 200px;
+    width: 829px;
+    border: 1px solid black
+}
+
+.left-li {
+    /* height: 150px; */
+    padding: 34.21px 75px 34.21px 36px;
+}
+
+.right-li{
+    padding: 34.21px 0 26.37px 0;
+}
+
+img {
+    /* width: 100%; */
+    height: 150px;
+}
+
+.row{
+    justify-content: space-between;
+}

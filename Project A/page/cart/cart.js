@@ -132,6 +132,12 @@ let default_data_cart = [
     return count;
   };
   
+  var GBPFormatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'GBP',
+  });
+
+
   const updateLocal = (data) => {
     localStorage.setItem("data-cart", JSON.stringify(data));
     updateList();
@@ -171,15 +177,14 @@ let default_data_cart = [
   
   const append = (item, count) => {
     list_cart.append(`
-    <li>
+    <li class ="cart-item">
     <div class="left-li">
       <img src="${item.imgs[0]}" alt="" />
     </div>
   
     <div class="right-li">
-      <div>${item.id}</div>
-      <div>${item.name}</div>
-      <div>${item.price}</div>
+      <div>${item.name} ${item.des}</div>
+      <div>${GBPFormatter.format(item.price)}</div>
       <div>
         Quantity <button onclick="reduceProduct(${item.id})">-</button> ${count} <button onclick="addProduct(${item.id})">+</button>
       </div>
