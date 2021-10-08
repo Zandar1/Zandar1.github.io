@@ -183,12 +183,14 @@ let default_data_cart = [
     </div>
   
     <div class="right-li">
-      <div>${item.name} ${item.des}</div>
-      <div>${GBPFormatter.format(item.price)}</div>
-      <div>
-        Quantity <button onclick="reduceProduct(${item.id})">-</button> ${count} <button onclick="addProduct(${item.id})">+</button>
+      <div class = "cart-name">${item.name} ${item.des}</div>
+      <div class = "cart-price">${GBPFormatter.format(item.price)}</div>
+      <div class = "func-qty"> 
+      <div class = "qty">
+        <span> Quantity </span> <button class = "qty-decrease" onclick="reduceProduct(${item.id})">-</button> ${count} <button class ="qty-increase" onclick="addProduct(${item.id})">+</button>
       </div>
-      <div onclick="deleteProduct(${item.id})">delete</div>
+      <div class ="delete-item" onclick="deleteProduct(${item.id})"> <i class="far fa-trash-alt"></i> Delete</div>
+    </div>
     </div>
   </li>
   `);
@@ -207,7 +209,7 @@ let default_data_cart = [
     infomatin_checkout.append(`
       <div class ="basket-title" >Basket detail</div>
       <div class = "quantity">Total quantity: <span class = "amount">${data_cart().length}</span></div>
-      <div class ="price">Total price : <span class ="number">${totalPrice()}<span> </div>
+      <div class ="price">Total price : <span class ="number">${GBPFormatter.format(totalPrice())}<span> </div>
       <div class ="go-checkout">Proceed to checkout</div>
   `);
   };
