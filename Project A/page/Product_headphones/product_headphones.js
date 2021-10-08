@@ -2,7 +2,7 @@ let list_item = $("#productlist_item");
 let list_headphones =[
     {
         id: 4,
-        img: '../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2.png',
+        img: '../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2.jpg',
         name: 'HyperX Cloud II',
         des: 'Wireless Gaming Headset',
         oldPrice: 149.99,
@@ -18,8 +18,9 @@ let list_headphones =[
             Noise_cancelling: 'Passive noise cancelling',
         },
         discount_title: '<i class="fas fa-fire"></i> SELLING FAST! Less than 10 remaining',
-        imgs: ['../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2.png', '../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-2.png',
-        '../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-3.png','../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-4.png','../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-5.png']
+        imgs: ['../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2.jpg', '../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-2.jpg',
+        '../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-3.jpg','../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-4.jpg','../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-5.jpg',
+        '../../image/Headphones/hyperx-cloud-2/hyperx-cloud-2-6.jpg'],
     },
 
     {
