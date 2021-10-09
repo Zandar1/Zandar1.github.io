@@ -146,5 +146,5 @@ const addToCart = () =>{
     let new_data_cart = [...data_cart()];
     new_data_cart.push(data_detail)
     localStorage.setItem('data-cart',JSON.stringify(new_data_cart))
-    alert('add sucess')
+    alert('Add sucess')
 }
