@@ -34,6 +34,14 @@ let changeicon = $('#changeicon')
       changeicon2.removeClass( "fas fa-chevron-right" ).addClass( "fas fa-chevron-down" )
     }
   } 
+
+  let filters = {
+    brands: [],
+    byUse: [],
+    screenSize: [],
+    graphics: []
+}
+
 let list_item = $("#productlist_item");
 let list_product_laptop =[
     {
@@ -59,6 +67,7 @@ let list_product_laptop =[
           '../../image/Laptop/Microsoft-Surface-i7/Microsoft -Surface-i7-3.jpg',
         '../../image/Laptop/Microsoft-Surface-i7/Microsoft -Surface-i7-4.jpg',
         '../../image/Laptop/Microsoft-Surface-i7/Microsoft -Surface-i7-5.jpg'],
+        size: '12.3'
     },
 
     {
@@ -84,7 +93,8 @@ let list_product_laptop =[
         imgs: ['../../image/Laptop/acer-nitro-5/nitro-5-1.jpg', '../../image/Laptop/acer-nitro-5/nitro-5-2.jpg', 
         '../../image/Laptop/acer-nitro-5/nitro-5-3.jpg', '../../image/Laptop/acer-nitro-5/nitro-5-4.jpg',
         '../../image/Laptop/acer-nitro-5/nitro-5-4.jpg','../../image/Laptop/acer-nitro-5/nitro-5-5.jpg',
-        '../../image/Laptop/acer-nitro-5/nitro-5-6.jpg','../../image/Laptop/acer-nitro-5/nitro-5-7.jpg']
+        '../../image/Laptop/acer-nitro-5/nitro-5-6.jpg','../../image/Laptop/acer-nitro-5/nitro-5-7.jpg'],
+        size: '15.6'
     },
 
     {
@@ -108,7 +118,8 @@ let list_product_laptop =[
         discount_title:'',
         imgs: ['../../image/Laptop/Dell-Latitude-3520/Dell-Latitude-3520-1.jpg', '../../image/Laptop/Dell-Latitude-3520/Dell-Latitude-3520-2.jpg', 
         '../../image/Laptop/Dell-Latitude-3520/Dell-Latitude-3520-3.jpg','../../image/Laptop/Dell-Latitude-3520/Dell-Latitude-3520-4.jpg',
-        '../../image/Laptop/Dell-Latitude-3520/Dell-Latitude-3520-5.jpg','../../image/Laptop/Dell-Latitude-3520/Dell-Latitude-3520-6.jpg']
+        '../../image/Laptop/Dell-Latitude-3520/Dell-Latitude-3520-5.jpg','../../image/Laptop/Dell-Latitude-3520/Dell-Latitude-3520-6.jpg'],
+        size: '15.6'
     },
 
     {
@@ -133,6 +144,7 @@ let list_product_laptop =[
         },
         imgs: ['../../image/Laptop/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-1.jpg','../../image/Laptop/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-2.jpg',
         '../../image/Laptop/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-3.jpg','../../image/Laptop/HP-ZBook-Firefly-15/HP-ZBook-Firefly-15-4.jpg'],
+        size: '15.6'
     },
     {
         id: 8,
@@ -155,7 +167,8 @@ let list_product_laptop =[
             Operating_System: 'Windows 10 Pro',
         },
         imgs: ['../../image/Laptop/Lenovo-V14-ADA/Lenovo-V14-ADA-1.jpg','../../image/Laptop/Lenovo-V14-ADA/Lenovo-V14-ADA-2.jpg'
-                ,'../../image/Laptop/Lenovo-V14-ADA/Lenovo-V14-ADA-3.jpg','../../image/Laptop/Lenovo-V14-ADA/Lenovo-V14-ADA-4.jpg']
+                ,'../../image/Laptop/Lenovo-V14-ADA/Lenovo-V14-ADA-3.jpg','../../image/Laptop/Lenovo-V14-ADA/Lenovo-V14-ADA-4.jpg'],
+        size: '14'
     },
     {
         id: 9,
@@ -182,7 +195,8 @@ let list_product_laptop =[
         imgs: ['../../image/Laptop/Asus-ExpertBook-P2/Asus-ExpertBook-P2-1.jpg','../../image/Laptop/Asus-ExpertBook-P2/Asus-ExpertBook-P2-2.jpg',
         '../../image/Laptop/Asus-ExpertBook-P2/Asus-ExpertBook-P2-3.jpg','../../image/Laptop/Asus-ExpertBook-P2/Asus-ExpertBook-P2-4.jpg',
         '../../image/Laptop/Asus-ExpertBook-P2/Asus-ExpertBook-P2-5.jpg','../../image/Laptop/Asus-ExpertBook-P2/Asus-ExpertBook-P2-6.jpg',
-        '../../image/Laptop/Asus-ExpertBook-P2/Asus-ExpertBook-P2-7.jpg',]
+        '../../image/Laptop/Asus-ExpertBook-P2/Asus-ExpertBook-P2-7.jpg',],
+        size: '14'
     },
     {
         id: 10,
@@ -207,7 +221,8 @@ let list_product_laptop =[
         },
         imgs:['../../image/Laptop/Acer-TravelMate-P2/Acer-TravelMate-P2.png','../../image/Laptop/Acer-TravelMate-P2/Acer-TravelMate-P2-2.jpg',
         '../../image/Laptop/Acer-TravelMate-P2/Acer-TravelMate-P2-3.jpg','../../image/Laptop/Acer-TravelMate-P2/Acer-TravelMate-P2-4.jpg',
-        '../../image/Laptop/Acer-TravelMate-P2/Acer-TravelMate-P2-5.jpg']
+        '../../image/Laptop/Acer-TravelMate-P2/Acer-TravelMate-P2-5.jpg'],
+        size: '15.6'
     },
     {
         id: 11,
@@ -231,7 +246,8 @@ let list_product_laptop =[
         },
         imgs: ['../../image/Laptop/Lenovo-Legion-5/Lenovo-Legion-5.jpg','../../image/Laptop/Lenovo-Legion-5/Lenovo-Legion-5-2.jpg',
         '../../image/Laptop/Lenovo-Legion-5/Lenovo-Legion-5-3.jpg','../../image/Laptop/Lenovo-Legion-5/Lenovo-Legion-5-4.jpg',
-        '../../image/Laptop/Lenovo-Legion-5/Lenovo-Legion-5-5.jpg','../../image/Laptop/Lenovo-Legion-5/Lenovo-Legion-5-6.jpg']
+        '../../image/Laptop/Lenovo-Legion-5/Lenovo-Legion-5-5.jpg','../../image/Laptop/Lenovo-Legion-5/Lenovo-Legion-5-6.jpg'],
+        size: '15.6'
     },
     {
         id: 12,
@@ -255,7 +271,8 @@ let list_product_laptop =[
         },
         imgs: ['../../image/Laptop/Acer-ntro-5-2/acer-nitro-5-1.png','../../image/Laptop/Acer-ntro-5-2/acer-nitro-5-2.png',
         '../../image/Laptop/Acer-ntro-5-2/acer-nitro-5-3.png','../../image/Laptop/Acer-ntro-5-2/acer-nitro-5-4.png',
-        '../../image/Laptop/Acer-ntro-5-2/acer-nitro-5-5.png','../../image/Laptop/Acer-ntro-5-2/acer-nitro-5-6.png']
+        '../../image/Laptop/Acer-ntro-5-2/acer-nitro-5-5.png','../../image/Laptop/Acer-ntro-5-2/acer-nitro-5-6.png'],
+        size: '15.6'
     },
     {
         id: 13,
@@ -279,7 +296,8 @@ let list_product_laptop =[
         },
         imgs: ['../../image/Laptop/Asus-ROG-G531/Asus-ROG-G531-1.jpg','../../image/Laptop/Asus-ROG-G531/Asus-ROG-G531-2.jpg',
         '../../image/Laptop/Asus-ROG-G531/Asus-ROG-G531-3.jpg','../../image/Laptop/Asus-ROG-G531/Asus-ROG-G531-4.jpg',
-        '../../image/Laptop/Asus-ROG-G531/Asus-ROG-G531-5.jpg']
+        '../../image/Laptop/Asus-ROG-G531/Asus-ROG-G531-5.jpg'],
+        size: '15.6'
     },
     {
         id: 14,
@@ -303,7 +321,8 @@ let list_product_laptop =[
         },
         imgs: ['../../image/Laptop/MSI-katana-GF66/MSI-katana-GF66-1.png','../../image/Laptop/MSI-katana-GF66/MSI-katana-GF66-2.png',
         '../../image/Laptop/MSI-katana-GF66/MSI-katana-GF66-3.png','../../image/Laptop/MSI-katana-GF66/MSI-katana-GF66-4.png',
-        '../../image/Laptop/MSI-katana-GF66/MSI-katana-GF66-5.png','../../image/Laptop/MSI-katana-GF66/MSI-katana-GF66-6.png']
+        '../../image/Laptop/MSI-katana-GF66/MSI-katana-GF66-5.png','../../image/Laptop/MSI-katana-GF66/MSI-katana-GF66-6.png'],
+        size: '15.6'
     },
     {
         id: 15,
@@ -327,7 +346,8 @@ let list_product_laptop =[
         },
         imgs: ['../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-1.jpg','../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-2.jpg',
         '../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-3.jpg','../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-4.jpg',
-        '../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-5.jpg','../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-6.jpg']
+        '../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-5.jpg','../../image/Laptop/Lenovo-Legion 7-15IMHg05/Lenovo-Legion 7-15IMHg05-6.jpg'],
+        size: '15.6'
     },
 ]
 
@@ -343,7 +363,7 @@ var GBPFormatter = new Intl.NumberFormat('en-US', {
     location.href = 'https://zandar1.github.io/Project%20A/page/detail/detail1.html'
 }
  
-const renderList = (product,name) => {
+const renderList = (product) => {
     let str = "";
     product.forEach((item,index) => {  
         str += ` 
@@ -380,12 +400,70 @@ const renderList = (product,name) => {
   
 
   
-/* 
-let filters = {
-    price = -1,
-    new = -1,
-    brandnew =-1
-} */
+  const onfillter = () => {
+    // tao ra newArr moi -> da duoc filter
+
+    let {
+        brands,
+        screenSize
+    } = filters
+
+    let newArr = [...list_product_laptop].filter(item => {
+        // dieu kien de return -> tong hop tat ca ca option co trong filters
+        let isValid = false
+        brands.forEach(it => {
+            if (it.toLocaleLowerCase() === item.brand?.toLocaleLowerCase()) {
+                isValid = true
+                return
+            }
+        })
+        screenSize.forEach(it => {
+            if (it === 'than17' && +item.size > 17) {
+                isValid = true
+                return
+            }
+            if (it === '15-16' && +item.size >= 15 && +item.size <= 16) {
+                isValid = true
+                return
+            }
+            if (it === '13-14' && +item.size >= 13 && +item.size <= 14) {
+                isValid = true
+                return
+            }
+            if (it === 'less12' && +item.size <= 12) {
+                isValid = true
+                return
+            }
+        })
+        if (isValid) {
+            return item
+        }
+    })
+
+
+    // call function filterList(newArr)
+    filterList(newArr)
+}
+
+
+const pr_filterBrands = (brand) => {
+    let index = filters.brands.findIndex(item => item === brand)
+    if (index === -1) {
+        filters.brands.push(brand)
+    } else {
+        filters.brands.splice(index, 1)
+    }
+    onfillter()
+}
+const pr_filterBySize = (size) => {
+    let index = filters.screenSize.findIndex(item => item === size)
+    if (index === -1) {
+        filters.screenSize.push(size)
+    } else {
+        filters.screenSize.splice(index, 1)
+    }
+    onfillter()
+}
 
 
 
