@@ -22,7 +22,7 @@
 }
 
 .view-all {
-    margin: 11px 28px 11px 0;
+    margin: 11px 112px 11px 0;
     width: 204px;
     height: 39px;
     font-family: Crimson Text;
@@ -41,7 +41,7 @@
     background-color: #E00E0E;
 }
 .view-all span{
-    margin: 0 26px 0 24px;
+    margin: 0 4 px 0 32px;
 }
 .fa-angle-right{
     font-size: 18px;
@@ -219,6 +219,10 @@
         font-size: 12px;
         margin-right: 12px;
     }
+
+    .view-all span{
+        margin: 0 4px 0 26px;
+    }
 }
 
 @media only screen and (max-width: 720px) {
@@ -246,7 +250,7 @@
     }
 
     .view-all span{
-        margin: 0 12px 0 20px;
+        margin: 0 4px 0 26px;
     }
 
      .show-item{

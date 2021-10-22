@@ -35,9 +35,9 @@
     cursor: pointer;
 }
 
-.footer-item:hover{
-    text-decoration: underline;
-}
+    /* .footer-item:hover{
+        text-decoration: underline;
+    } */
 .rules{
     width: 200px;
     list-style: none;

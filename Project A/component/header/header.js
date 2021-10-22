@@ -1,5 +1,4 @@
 let header = $('#header')
-
 header.append(`
 <div id = 'info-user'>
         <div class = 'left'>
