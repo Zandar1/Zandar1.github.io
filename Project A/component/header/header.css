@@ -5,6 +5,13 @@
     font-family: Crimson Text;
 }
 
+#header{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
@@ -514,9 +521,12 @@ input:focus{
     }
 }
 
-#header{
-    position: sticky;
-    top: 0px;
-    left: 0px;
-    z-index: 2;
+@media only screen and (max-width: 350px) {
+    .user-login{
+        margin-right: 3px;
+    }
+
+    .cart{
+        margin-left: 0;
+    }
 }
