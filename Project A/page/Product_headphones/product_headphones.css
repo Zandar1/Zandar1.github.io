@@ -296,9 +296,8 @@ button.apply {
     font-size: 24px;
     line-height: 28px; 
 }
-.noti3{
-    margin-right: 17px;
-}
+
+
 .notification{
     justify-content: space-between;
     margin-bottom: 36px;
@@ -350,7 +349,7 @@ button.apply {
         margin-bottom: 20px;
     }
 
-    .custom-select{
+    .select{
         width: 150px;
     }
     .brands_item{
@@ -437,6 +436,18 @@ button.apply {
     .productlist_item{
         justify-content: space-around;
     }
+
+    select{
+        width: 100px;
+    }
+
+    .noti2{
+        margin-left: 12px;
+    }
+
+    .noti3{
+        margin-right: 12px;
+    }
 }
 
 @media only screen and (max-width: 680px){
@@ -498,6 +509,10 @@ button.apply {
        display: flex;
        justify-content: center;
     }
+
+    .select{
+        width: 70px;
+    }
 }
 
 @media only screen and (max-width: 400px){
@@ -506,16 +521,11 @@ button.apply {
         line-height: 17px;
     }
 
-    .custom-select select{
-        width: 100px;
-    }
-
     .noti3{
-        margin: 0;
         justify-content: flex-end;
     }
 
-    .custom-select{
+    select{
         width: 100px;
     }
 }

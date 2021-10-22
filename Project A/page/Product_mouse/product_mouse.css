@@ -296,9 +296,9 @@ button.apply {
     font-size: 24px;
     line-height: 28px; 
 }
-.noti3{
+/* .noti3{
     margin-right: 17px;
-}
+} */
 .notification{
     justify-content: space-between;
     margin-bottom: 36px;
@@ -348,8 +348,8 @@ button.apply {
         margin-bottom: 20px;
     }
 
-    .custom-select{
-        width: 150px;
+    select{
+        width: 130px;
     }
     .brands_item{
         font-size: 14px;
@@ -435,6 +435,14 @@ button.apply {
     .productlist_item{
         justify-content: space-around;
     }
+    
+    .noti2{
+        margin-left: 12px;
+    }
+
+    .noti3{
+        margin-right: 12px;
+    }
 }
 
 @media only screen and (max-width: 680px){
@@ -504,16 +512,15 @@ button.apply {
         line-height: 17px;
     }
 
-    .custom-select select{
+    select{
         width: 100px;
     }
 
     .noti3{
-        margin: 0;
         justify-content: flex-end;
     }
 
-    .custom-select{
+    select{
         width: 100px;
     }
 }

@@ -309,9 +309,9 @@ input[type="number"]{
     font-size: 24px;
     line-height: 28px; 
 }
-.noti3{
+/* .noti3{
     margin-right: 17px;
-}
+} */
 .notification{
     justify-content: space-between;
     margin-bottom: 36px;
@@ -364,9 +364,6 @@ button.apply {
         margin-bottom: 20px;
     }
 
-    .custom-select{
-        width: 150px;
-    }
     .brands_item{
         font-size: 14px;
         line-height: 16px;
@@ -451,6 +448,14 @@ button.apply {
     .productlist_item{
         justify-content: space-around;
     }
+
+    .noti3{
+        margin-right: 12px;
+    }
+
+    .noti2{
+        margin-left: 12px;
+    }
 }
 
 @media only screen and (max-width: 680px){
@@ -514,22 +519,21 @@ button.apply {
     }
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 412px){
     .noti2, .amount,.noti3{
         font-size: 15px;
         line-height: 17px;
     }
 
-    .custom-select select{
+    select{
         width: 100px;
     }
 
     .noti3{
-        margin: 0;
         justify-content: flex-end;
     }
 
-    .custom-select{
-        width: 100px;
+    .noti3 span{
+        padding-right: 0;
     }
 }
